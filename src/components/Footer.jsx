@@ -15,10 +15,14 @@ export default function Footer() {
           <FooterTextHolder title='Visit Us' description='3540 peachtree run Dover, DE 19901 United States'/>
         </div>
         <div className='smaller-footer-text-container'>
-        <RegularButton color='black-text' bgcolor='white-background' text='CONTACT US' width={120} height={40}/>
-        <RegularButton color='black-text' bgcolor='white-background' text='WATCH LIVE' width={120} height={40}/>
-        <RegularButton color='black-text' bgcolor='white-background' text='GIVE' width={120} height={40}/>
-        <Socials color='white' size={30}/>
+          <div>
+            <RegularButton color='black' bgcolor='white' text='CONTACT US' width={120} height={40}/>
+            <RegularButton color='black' bgcolor='white' text='WATCH LIVE' width={120} height={40}/>
+          </div>
+          <div>
+            <RegularButton color='black' bgcolor='white' text='GIVE' width={120} height={40}/>
+            <div className='footer-socials'><Socials color='white' size={30}/></div>
+          </div>
         </div>
         <div className='all-rights-reserved'><p>&copy;2024 By <b>HEIM Church</b> | All Rights Reserved</p></div>
       </div>

@@ -169,6 +169,7 @@ nav a.active-link {
   position: relative;
   display: flex;
   align-items: center;
+  overflow: scroll;
 }
 
 .home-button-container{
@@ -337,7 +338,7 @@ nav a.active-link {
     display: column;
     flex-direction: column;
   }
-  .link-containers{
+  .link-containers, .about-us-container{
     margin: 20px;
   }
   .request-container{
@@ -350,12 +351,107 @@ nav a.active-link {
   nav a{
     margin-bottom: 15px;
   }
+
+  .home-pg3-container{
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .home-pg3-container-1{
+    padding-bottom: 0px;
+    margin-bottom: -30px;
+  }
+
+  .request-container{
+    width: 300px !important;
+    height: 200px !important;
+  }
+
+  .request-container > img{
+    width: 300px !important;
+    height: 200px !important;
+  }
+  
+  .about-us-container{
+    max-width:fit-content;
+    max-width: 300px !important;
+    max-height: 200px !important;
+  }
+
+  .footer-text-container{
+    justify-content:center !important;
+    margin: 20px !important;
+    gap: .75rem !important;
+  }
+
+  .smaller-footer-text-container {
+    display: flex !important;
+    flex-wrap: wrap !important; /* Allows items to wrap to a new row when the container is full */
+    justify-content: center !important; /* Centers items horizontally */
+    align-items: center !important; /* Centers items vertically */
+    gap: .5rem !important; /* Adds spacing between items */
+    text-align: center !important;
+    overflow: auto !important; /* Optional: Allows scrolling if content overflows */
+    height: auto !important; /* Ensure the height adjusts based on content */
+    flex-direction: column;
+    margin-bottom: 5px !important;
+  }
+  .smaller-footer-text-container > div{
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .smaller-footer-text-container > div > *{
+    justify-content: center;
+    gap: 1rem;
+    width: 140px;
+  }
+
+  .home-pg1-container > div > *{
+    max-width: fit-content;
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    font-size: 3.5rem;
+    overflow: scroll;
+  }
+
+  .footer-socials{
+    padding: 0px !important;
+    display: flex !important;
+    width: 130px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+
+  .footer-socials > div{
+    display: flex !important;
+    width: 130px !important;
+    justify-content: center;
+  }
+
+  .welcome-to{
+    font-size: 5rem !important;
+  }
 }
 
 .link-container-holder{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-button-container{
+  display:flex;
+  margin-top: 20px;
+  width: 335px;
+  align-items: center;
+  justify-content:space-between;
+  gap: 1rem;
 }
 
 /* ---Footer styling--- */
@@ -394,11 +490,21 @@ footer {
 
 .smaller-footer-text-container{
   display: flex;
-  justify-content:space-around;
-  min-width: 800px;
   margin: 20px;
   padding: 0px 90px;
   align-items: center;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content:center;
+}
+
+.smaller-footer-text-container > div{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.smaller-footer-text-container > div > *{
+  margin: 0px 10px;
 }
 
 .all-rights-reserved{

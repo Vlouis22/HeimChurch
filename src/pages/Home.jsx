@@ -23,8 +23,8 @@ export default function Home() {
           <div className='white-text abril-fatface-regular size-very-large welcome-to' >WELCOME TO</div>
           <div className='white-text size-large roboto-regular'>HEIM CHURCH</div>
           <div className='home-button-container'>
-            <RegularButton color='white-text' bgcolor='blue-background' text='WATCH LIVE' width={150} height={50}/>
-            <RegularButton color='white-text' bgcolor='blue-background' text='GIVE' width={150} height={50}/>
+            <RegularButton color='white' bgcolor='blue' text='WATCH LIVE' width={150} height={50}/>
+            <RegularButton color='white' bgcolor='blue' text='GIVE' width={150} height={50}/>
           </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function Home() {
       <div className='home-pg2-container'>
         <h1 className="roboto-bold size-medium">Coming Up At HEIM Church</h1>
         <EventsContainer/>
-        <RegularButton color='white-text' bgcolor='blue-background' text='VIEW CALENDAR' width={200} height={80}/>
+        <RegularButton color='white' bgcolor='blue' text='VIEW CALENDAR' width={200} height={80}/>
       </div>
 
       <div className='home-pg3-container'>
