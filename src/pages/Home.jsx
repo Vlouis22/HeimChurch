@@ -23,8 +23,8 @@ export default function Home() {
           <div className='white-text abril-fatface-regular size-very-large welcome-to' >WELCOME TO</div>
           <div className='white-text size-large roboto-regular'>HEIM CHURCH</div>
           <div className='home-button-container'>
-            <RegularButton color='white' bgcolor='blue' text='WATCH LIVE' width={150} height={50}/>
-            <RegularButton color='white' bgcolor='blue' text='GIVE' width={150} height={50}/>
+            <RegularButton color='white' bgcolor='blue' text='WATCH LIVE' width={150} height={50} to='Watchlive'/>
+            <RegularButton color='white' bgcolor='blue' text='GIVE' width={150} height={50} to='Offering'/>
           </div>
         </div>
       </div>
@@ -32,21 +32,21 @@ export default function Home() {
       <div className='home-pg2-container'>
         <h1 className="roboto-bold size-medium">Coming Up At HEIM Church</h1>
         <EventsContainer/>
-        <RegularButton color='white' bgcolor='blue' text='VIEW CALENDAR' width={200} height={80}/>
+        <RegularButton color='white' bgcolor='blue' text='VIEW CALENDAR' width={200} height={80} to='Calendar'/>
       </div>
 
       <div className='home-pg3-container'>
         <div className='home-pg3-container-1'>
-          <AboutUs/>
+          <AboutUs to='About'/>
           <LinkContainers title="Follow Us" isIcons={true} icons={[<Instagram/>, <Facebook/>, <Youtube/>]} links={['Instagram', 'Facebook', 'Youtube']}/>
         </div>
         <div className='home-pg3-container-1'>
-          <Request title="In Need Of A Prayer?" width='500px' height='275px' buttonText='Request Prayer' image={prayer_request} buttonLink=''/>
+          <Request title="In Need Of A Prayer?" width='500px' height='275px' buttonText='Request Prayer' image={prayer_request} to='Prayer'/>
           <LinkContainers title="Get Involved"  icons={[]} links={['Giving', 'Groups']}/>
         </div>
         <div className='home-pg3-container-1'>
-          <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' buttonLink=''/>
-          <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' buttonLink=''/>
+          <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' to='Ride'/>
+          <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' to='Baptizing'/>
         </div>
       </div>
       <Footer/>
