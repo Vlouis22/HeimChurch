@@ -7,7 +7,7 @@ export default function RegularButton({ text, color, bgcolor, width, height, to 
   const [isHovered, setIsHovered] = useState(false);
 
   // Conditional class or style based on hover state
-  const hoverClass = isHovered ? `${color}-background` : `${bgcolor}-background`;
+  const hoverClass = isHovered ? `${color}-background ${bgcolor}-corner`: `${bgcolor}-background`;
   const textColorClass = isHovered ? `${bgcolor}-text` : `${color}-text`;
   const paragraphSize = Number(width / 7.5);
   const paragraphcss = `centered-text roboto-bold`;

@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import PaymentMethod from '../components/PaymentMethod'
 import CashappLogo from '../images/cashapplogo.webp'
-import ZelleLogo from '../images/zelle-logo.png' 
+import ZelleLogo from '../images/zelle-logo-smaller.png' 
 import PaypalLogo from '../images/paypallogo.webp'
 import VenmoLogo from '../images/venmologo.webp'
 import FakeQrCode from '../images/general_qr_code.png'
@@ -10,7 +10,7 @@ import FakeQrCode from '../images/general_qr_code.png'
 
 export default function Offering() {
   return (
-    <div className='offering-page'>
+    <div className='offering-page maximum-height'>
       <div className='offering-page-container'> 
         <div className='ways-to-give size-medium roboto-bold'>Ways To Give</div>
         <div className='payment-methods-container grey-background'>

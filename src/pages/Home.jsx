@@ -14,6 +14,11 @@ import Footer from '../components/Footer'
 
 
 export default function Home() {
+
+  const faceBookLink = 'https://www.facebook.com/people/HEIM-Church-LIVE/61553576407518/?mibextid=wwXIfr&rdid=cex9k3X5IaFQuv5Y&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EGnJNCVKr%2F%3Fmibextid%3DwwXIfr';
+  const instagramLink = 'https://www.instagram.com/heim_church/?igsh=N3dqOGN6NXFkYWc%3D';
+  const youtubeLink  = 'https://www.youtube.com/@heimchurch3540';
+
   return (
     <div className='home'>
 
@@ -38,11 +43,18 @@ export default function Home() {
       <div className='home-pg3-container'>
         <div className='home-pg3-container-1'>
           <AboutUs to='About'/>
-          <LinkContainers title="Follow Us" isIcons={true} icons={[<Instagram/>, <Facebook/>, <Youtube/>]} links={['Instagram', 'Facebook', 'Youtube']}/>
+          <LinkContainers title="Follow Us" 
+            isIcons={true} icons={[<Instagram/>, <Facebook/>, <Youtube/>]} 
+            links={['Instagram', 'Facebook', 'Youtube']} 
+            to={[instagramLink, faceBookLink, youtubeLink]}
+            />
         </div>
         <div className='home-pg3-container-1'>
           <Request title="In Need Of A Prayer?" width='500px' height='275px' buttonText='Request Prayer' image={prayer_request} to='Prayer'/>
-          <LinkContainers title="Get Involved"  icons={[]} links={['Giving', 'Groups']}/>
+          <LinkContainers title="Get Involved"  
+          icons={[]}
+          links={['Giving', 'Groups']}
+          to={['Offering', 'Others']}/>
         </div>
         <div className='home-pg3-container-1'>
           <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' to='Ride'/>

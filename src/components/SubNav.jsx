@@ -8,10 +8,10 @@ export default function SubNav({show}) {
     <nav>
         <NavLink to='/Youth' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Youth</NavLink>
         <NavLink to='/Womens' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Women's</NavLink>
-        <NavLink to='/Mens' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Men's</NavLink>
-        <NavLink to='/WorshipAndMusic' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Worship And Music</NavLink>
-        <NavLink to='/TechAndMedia' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Tech And Media</NavLink>
         <NavLink to='/Kids' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Kids</NavLink>
+        <NavLink to='/Others' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Others</NavLink>
+        {/* <NavLink to='/WorshipAndMusic' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Worship And Music</NavLink> */}
+        {/* <NavLink to='/TechAndMedia' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Tech And Media</NavLink> */}
     </nav>
 </div>
   )

@@ -10,6 +10,10 @@ import Calendar from './pages/Calendar';
 import Ride from './pages/Ride';
 import Prayer from './pages/Prayer';
 import Contact from './pages/Contact';
+import Youth from './pages/Youth';
+import Kids from './pages/Kids';
+import Womens from './pages/Womens';
+import Others from './pages/Others';
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
             <Route exact path="/Ride" element={<Ride/>}></Route>
             <Route exact path="/Prayer" element={<Prayer/>}></Route>
             <Route exact path="/Contact" element={<Contact/>}></Route>
+            <Route exact path="/Youth" element={<Youth/>}></Route>
+            <Route exact path="/Womens" element={<Womens/>}></Route>
+            <Route exact path="/Kids" element={<Kids/>}></Route>
+            <Route exact path="/Others" element={<Others/>}></Route>
         </Routes>
        </div>
     </Router>

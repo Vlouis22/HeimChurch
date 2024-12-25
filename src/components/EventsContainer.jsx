@@ -1,21 +1,39 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import EventHolder from './EventHolder';
+import { createClient } from "@supabase/supabase-js";
+import DefaultPicture from "../images/heimchurchlogo.JPG";
 
 export default function EventsContainer() {
 
-    const eventsArray = [1,2,3,4,5,6,7,8,9,10];
-    const imageAddress = 'https://wallpapers.com/images/hd/high-resolution-christmas-background-5cua70x6b1rjwro8.jpg'
+    const supabaseUrl = 'https://umkmlqwttydutvwgvrwn.supabase.co'
+    const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
+    const [events, setEvents] = useState([]);
     
-    const events = eventsArray.map((obj => {
-        return <EventHolder eventMonth={'Dec'} eventDay={`${obj}`} eventName={`Christmas event`} eventDescription={`event description placeholder`} eventBackground={imageAddress}/>
+    useEffect(() => {
+      async function getEvents() {
+        let { data: HeimChurchEvents, error } = await supabase
+          .from('HeimChurchEvents')
+          .select('*');
+    
+        if (error) {
+          console.error('Error fetching events:', error);
+        } else {
+          setEvents(HeimChurchEvents)
+        }
+      }
+      getEvents();
+    }, []);
+    
+    const upcomingEvents = events.map((obj => {
+        return <EventHolder eventMonth={obj.eventMonth} eventDay={obj.eventDay} eventName={obj.eventName} eventDescription={obj.eventDescription} eventBackground={obj.eventBackgroundPicture? obj.eventBackgroundPicture : DefaultPicture}/>
     }))
 
   return (
     <div className='home-page-event-container light-grey-background rounded-border'>
 
-        {events}    
-
+        {events && upcomingEvents}    
 
     </div>
   )

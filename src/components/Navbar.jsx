@@ -6,6 +6,7 @@ import SubNav from './SubNav';
 import Socials from './Socials';
 import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
+import ChurchLogoWhite from "../images/heimchurchlogo_processed.JPG";
 
 
 
@@ -42,9 +43,7 @@ export default function Navbar() {
 
   return (
     <header>
-        <p className='nav-churchname'>HEIM Church</p>
-        <p></p>
-        <p></p>
+        <p className='nav-churchname'><img src={ChurchLogoWhite} style={{width: '50px'}}></img>HEIM Church</p>
         <nav ref={navRef}>
         <NavLink to="/" exact className={({ isActive }) => (isActive ? "active-link" : "")}>
         Home

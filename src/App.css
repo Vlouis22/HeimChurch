@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
   padding: 0;
@@ -24,6 +25,7 @@ body, html {
   --blue: #0056D2;
   --lightGrey: #F3F3F3;
   --darkGrey: #D9D9D9;
+  --purple: #7311A0;
 }
 
 header{
@@ -62,6 +64,13 @@ header .nav-btn{
 header .nav-churchname{
   font-weight: bold;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  width: fit-content !important;
+  min-width: fit-content !important;
+  align-items: center !important;
 }
 
 @media only screen and (max-width: 1024px){
@@ -158,6 +167,12 @@ nav a.active-link {
   text-decoration: underline;
 }
 
+.socials-containers{
+  display: flex;
+  flex-direction: row;
+  width: fit-content !important;
+}
+
 /* ---Home page styling--- */
 @media(min-width: 900px){
   .welcome-to{
@@ -196,6 +211,7 @@ nav a.active-link {
   width: 100%;
   margin: 30px 0px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   overflow-x: scroll;
   padding-left: 20px;
@@ -217,7 +233,7 @@ nav a.active-link {
 
 .home-page-event-placeholder {
   min-width: 400px;
-  min-height: 300px;
+  min-height: 330px;
   height: 300px;
   margin-left: 20px;
   margin-right: 20px;
@@ -228,7 +244,7 @@ nav a.active-link {
 .image-container {
   position: relative;
   width: 100%; /* Match the width of the event placeholder */
-  height: 200px; /* Match the height of the event image */
+  height: 250px; /* Match the height of the event image */
   overflow: hidden; /* Prevent any overflowing content */
 }
 
@@ -437,6 +453,31 @@ nav a.active-link {
   .welcome-to{
     font-size: 5rem !important;
   }
+
+  .baptizing-page-1{
+    display: flex;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .baptizing-page-1-text-container{
+    width: 100% !important; 
+    min-width: 400px;
+  }
+
+  .ministry--subcontainer-1{
+    display: flex;
+    width: 90vw !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important; 
+    gap: 2rem;
+  }
+
+  .ministry--subcontainer-1 > div{
+    width: 100% !important;
+  }
+
 }
 
 .link-container-holder{
@@ -459,7 +500,7 @@ nav a.active-link {
 footer {
   width: 100%;
   height: 260px;
-  background-color: #7311A0;
+  background-color: var(--purple);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,8 +557,6 @@ footer {
 .offering-page, .about-page{
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  flex: 1;
 }
 
 .ways-to-give{
@@ -542,9 +581,9 @@ footer {
 }
 
 .payment-method {
-  flex: 0 1 330px; /* Prevents shrinking and sets the base size */
+  flex: 0 1 320px; /* Prevents shrinking and sets the base size */
   height: 420px; /* Fixed height of each item */
-  width: 330px; /* Fixed width of each item */
+  width: 320px; /* Fixed width of each item */
   display: flex;
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Centers content horizontally */
@@ -578,7 +617,7 @@ footer {
   padding: 3% 10%;
 }
 
-.about-page-welcome, .meet-our-leaders-text, .frequently-ask-questions-title{
+.about-page-welcome, .frequently-ask-questions-title{
   width: 100%;
   background-color: white;
   height: fit-content;
@@ -589,7 +628,42 @@ footer {
   border-radius: 10px;
 }
 
-.meet-our-leaders-container, .frequently-asked-questions{
+.meet-our-leaders-text{
+  width: 100%;
+  background-color: #f5f5f5;
+  height: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.meet-our-leaders-container {
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  overflow: scroll;
+}
+
+.meet-our-leaders-container{
+  height: 400px;
+}
+
+.frequently-asked-questions{
   background-color: white;
   width: 100%;
   border-radius: 10px;
@@ -598,12 +672,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.meet-our-leaders-container{
-  height: 400px;
-}
-.frequently-asked-questions{
   margin-top: 50px;
   height: auto;
   max-height: 500px;
@@ -611,36 +679,57 @@ footer {
 }
 
 
-.meet-our-leaders-container-inside{
+.meet-our-leaders-container-inside {
   width: 100%;
-  height: 100%;
-  margin: 30px 0px;
-  display: flex;
-  align-items: center;
-  overflow-x: scroll;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-}
-
-.leader-container{
-  width: 100%;
-  height: 100%;
-  min-width: 500px;
   display: flex;
   flex-direction: row;
-  /* box-shadow: 3px 0px 0px 1px black; */
-  padding: 5px;
-  gap: 1.2rem;
-  margin-left: 30px;
+  gap: 20px;
+  padding: 0 10px;
+  justify-items: center;
 }
 
-.leader-container-text{
-  padding: 5px;
+.leader-container {
+  max-width: 650px;
+  min-width: 500px;
+  min-height: 260px;
+  max-height: 300px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
-  gap: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: scroll;
+}
+
+.leader-container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #333;
+}
+
+.leader-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.leader-container-text p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.leader-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin-bottom: 15px;
+  object-fit: cover;
 }
 
 .questions-container{
@@ -659,6 +748,344 @@ footer {
     gap: 1rem;
     text-align: center;
 } 
+
+
+/* ---Live styling--- */
+
+
+.live-and-upcominglive-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.live-and-upcominglive-container > iframe{
+    border-radius: 5px;
+}
+
+
+.upcominglive-container{
+  display: flex;
+  width: 40%;
+  min-width:max-content;
+  justify-content: center;
+  padding: 1rem 3rem;
+}
+
+.upcominglive-container-child, .view-previous-lives{
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  gap: 1rem;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.view-previous-lives{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+
+.video-container {
+  width: 300px;
+  height: 250px;
+  max-width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-container > a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-container:hover .video-image {
+  opacity: 0.9;
+}
+
+.video-title {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  word-wrap: break-word;
+  border-top: 1px solid #eaeaea;
+  width: 100%;
+  text-decoration: underline;
+  overflow: hidden;
+}
+.view-previous-lives-videos-container{
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  justify-content: space-between;
+}
+
+/* ---Calendar styling--- */
+
+.heim-church-calendar{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.heim-calendar-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem; 
+  color: #333; 
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-bottom: 2px solid #777; 
+}
+
+/* ---Baptizing styling--- */
+
+.baptizing-page {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px 20%; 
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.baptizing-page-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.baptizing-page-1 img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.baptizing-page-1-text-container {
+  max-width: 35%;
+  padding: 20px;
+  text-align: center;
+}
+
+.baptizing-page-1-text-container h4 {
+  font-size: 1.2rem;
+  color: #0073e6; 
+  margin-bottom: 8px;
+}
+
+.baptizing-page-1-text-container p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.baptizing-page h3 {
+  text-align: center;
+  color: #0073e6;
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+}
+
+.baptizing-page p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.baptizing-page img {
+  display: block;
+  max-width: 80%;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interested-in-baptizing {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333; 
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: #f7f7f7; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.interested-in-baptizing:hover {
+  background-color: #e6f2ff; /* Light blue background on hover */
+  color: #003d80; /* Even darker blue for hover effect */
+  text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* ---Prayer styling--- */
+
+.prayer--container, .ride--container {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent background to improve text visibility */
+  border-radius: 8px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+}
+
+.prayer--container > form, .ride--container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.prayer--container > form > label, .ride--container > form > label {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.regular-input-height {
+  height: 35px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.regular-input-width {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+form > input, form > div > input, form > textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+form > input:focus, form > div > input:focus, form > textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form > textarea {
+  min-height: 100px;
+  max-height: 300px;
+  overflow: auto;
+  resize: vertical;
+}
+
+form > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+form > div > input {
+  width: 100%;
+}
+
+form > button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form > button:hover {
+  background-color: #0056b3;
+}
+
+form > button:active {
+  background-color: #004085;
+}
+
+/* ---Ministry styling--- */
+
+.ministry--container{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  /* line-height: 1.6; */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent background to improve text visibility */
+  border-radius: 8px;
+  max-width: 1400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  padding: 1rem 4rem;
+}
+
+.ministry--subcontainer-1{
+  display: flex;
+  flex-direction: row;
+  max-height: 600px;
+  overflow: scroll;
+  justify-content:space-evenly;
+}
+
+.ministry--subcontainer-1 > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 35%;
+}
+.ministry-paragraphs{
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.ministry-subcontainer-leaders{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ---General styling--- */
 
@@ -772,27 +1199,26 @@ footer {
 
 .general-container{
   height: auto;
-  margin: 30px 0px;
   display: flex;
   padding: 30px 0px;
   position: relative;
   flex-wrap: wrap;
-  justify-content:center;
-  gap: 2rem;
-
+  justify-content:space-evenly;
+  width: 100%;
+  gap: 1rem;
 }
 
 .text-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  min-width: 300px;
+  min-width: 250px;
+  max-width: 330px;
   height: 200px;
   min-height: 200px;
   border-radius: 10px;
   padding: 5px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 
@@ -809,4 +1235,36 @@ nav{
 
 .button:hover{
   cursor: pointer;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.maximum-height{
+  min-height: 100vh;
+  flex: 1;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  color: #000;
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+  transform: translateX(-38px);
+  animation: l21 .5s infinite alternate linear;
+}
+
+@keyframes l21 {
+  50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+  100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+}
+
+
+.blue-corner{
+  border: 2px solid var(--blue);
 }
