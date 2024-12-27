@@ -23,6 +23,7 @@ function App() {
        <div className='content'>
         <Routes>
             <Route exact path="/" element={<Home/>}></Route>
+            <Route exact path="/Home" element={<Home/>}></Route>
             <Route exact path="/About" element={<About/>}></Route>
             <Route exact path="/Watchlive" element={<Watchlive/>}></Route>
             <Route exact path="/Baptizing" element={<Baptizing/>}></Route>

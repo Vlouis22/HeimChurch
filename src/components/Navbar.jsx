@@ -45,11 +45,16 @@ export default function Navbar() {
     <header>
         <p className='nav-churchname'><img src={ChurchLogoWhite} style={{width: '50px'}}></img>HEIM Church</p>
         <nav ref={navRef}>
-        <NavLink to="/" exact className={({ isActive }) => (isActive ? "active-link" : "")}>
-        Home
-        </NavLink>
+        <NavLink to="/Home" exact className={({ isActive }) => (isActive ? "active-link" : "")}>Home</NavLink>
             <NavLink to='/About' exact className={({ isActive }) => (isActive ? "active-link" : "")}>About</NavLink>
-            <div className='navbar-minitries'>Ministries<SubNav/></div>
+            <div className='navbar-minitries subnav-ministries'>Ministries<SubNav/></div>
+
+            {/* this is the sub navbar ad it should only show up if in smaller screen size*/}
+            <NavLink to='/Youth' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Youth</NavLink>
+            <NavLink to='/Womens' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Women's</NavLink>
+            <NavLink to='/Kids' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Kids</NavLink>
+            <NavLink to='/Others' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Others</NavLink>
+
             <NavLink to='/WatchLive' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Watch Live</NavLink>
             <NavLink to='/Offering'exact className={({ isActive }) => (isActive ? "active-link" : "")}>Offering</NavLink>
             {window.innerWidth < 1024? <Socials/> : null}

@@ -22,8 +22,10 @@ export default function LinkContainers({title, isIcons, icons, links, to}) {
     }
 
     function handleClick(i) {
-        let navigation = `/` + to[i];
-        navigate(navigation);
+        if (!to[i].startsWith('http')) {
+            let navigation = `/` + to[i];
+            navigate(navigation);
+        }
       }
 
   return (

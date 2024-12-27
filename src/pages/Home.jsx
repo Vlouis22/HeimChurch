@@ -26,7 +26,7 @@ export default function Home() {
         <img src={churchimage} className='home-church-image'></img>
         <div className='centered'>
           <div className='white-text abril-fatface-regular size-very-large welcome-to' >WELCOME TO</div>
-          <div className='white-text size-large roboto-regular'>HEIM CHURCH</div>
+          <div className='white-text size-large roboto-regular welcome-to-heim-church'>HEIM CHURCH</div>
           <div className='home-button-container'>
             <RegularButton color='white' bgcolor='blue' text='WATCH LIVE' width={150} height={50} to='Watchlive'/>
             <RegularButton color='white' bgcolor='blue' text='GIVE' width={150} height={50} to='Offering'/>

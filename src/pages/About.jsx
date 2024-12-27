@@ -13,22 +13,23 @@ export default function About() {
   }
 
   return (
+    <>
     <div className='about-page' style={backgroundImg}>
       <div className='about-page-container'>
         <div className='about-page-welcome size-medium bold montserrat'>Welcome to HEIM Church</div>
-        <div className='general-container about-text-container' style={{width: '100%'}}>
+        {/* <div className='general-container about-text-container' style={{width: '100%'}}>
         <TextContainer title='Background' description='this description will contain information about the church background'/>
         <TextContainer title='Our Mission' description='this description will contain information about the church mission'/>
         <TextContainer title='Our Values' description='this description will contain information about the church values'/>
-        </div>
-        <div className='meet-our-leaders-container'>
+        </div> */}
+        {/* <div className='meet-our-leaders-container'>
           <div className='meet-our-leaders-text bold montserrat' style={{fontSize: '20px'}}>Meet Our Leaders</div>
           <div className='meet-our-leaders-container-inside'>
             <Leader name='Leader name' description='leader description'/>
             <Leader name='Leader name' description='leader description'/>
             <Leader name='Leader name' description='leader description'/>
           </div>
-        </div>
+        </div> */}
         <div className='frequently-asked-questions'>
           <div className='frequently-ask-questions-title bold montserrat' style={{fontSize: '20px'}}>Frequently Asked Questions</div>
           <div className='questions-container'>
@@ -48,11 +49,23 @@ export default function About() {
               <p><b>4. Are there any Bible study sessions?</b></p>
               <p>Yes, we hold Bible study sessions every Wednesday at 6:30 PM. Everyone is welcome!</p>
               </div>
+              <div>
+              <p><b>5. How can I visit the church if I don't have a ride?</b></p>
+              <p>We have transportation to and from church, fill out a ride request form if this will be your first time visiting the church.</p>
+              </div>
+              <div>
+              <p><b>6. What do you have for young adults?</b></p>
+              <p>If you're a young adult, we encourage you to join the youth ministry! We host a variety of activities, including Bible study sessions, social events, etc...</p>
+              </div>
+              <div>
+              <p><b>7. I don't speak Haitian Creole, can I still visit?</b></p>
+              <p>Absolutely! We would be delighted to have you visit. While our church services are primarily conducted in Haitian Creole, we also incorporate French and English throughout the service. Additionally, we provide translation services for your convenience.</p>
+              </div>
           </div>
-
         </div>
       </div>
-      <Footer/>
     </div>
+    <Footer/>
+    </>
   )
 }

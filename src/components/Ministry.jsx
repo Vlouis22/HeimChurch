@@ -4,7 +4,7 @@ import Footer from './Footer'
 export default function Ministry({name, picture1, picture2, picture3, picture4, descriptionTitle1, description1, descriptionTitle2, description2, descriptionTitle3, description3, descriptionTitle4, questions}) {
   return (
     <>
-    <div className='ministry--container'>
+    <div className='ministry--container maximum-height'>
       <div style={{width: '100%', textAlign: 'center', fontSize: '38px'}} className='blue-text bold'>Welcome to the {name} ministry page</div>
 
       <div style={{marginTop: '35px'}} className='ministry--subcontainer-1'>

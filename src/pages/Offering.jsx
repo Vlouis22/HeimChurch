@@ -10,7 +10,7 @@ import FakeQrCode from '../images/general_qr_code.png'
 
 export default function Offering() {
   return (
-    <div className='offering-page maximum-height'>
+    <div className='offering-page maximum-height page'>
       <div className='offering-page-container'> 
         <div className='ways-to-give size-medium roboto-bold'>Ways To Give</div>
         <div className='payment-methods-container grey-background'>

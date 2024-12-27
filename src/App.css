@@ -173,6 +173,11 @@ nav a.active-link {
   width: fit-content !important;
 }
 
+.subnav-invisible{
+  visibility:hidden;
+  display: none;
+}
+
 /* ---Home page styling--- */
 @media(min-width: 900px){
   .welcome-to{
@@ -345,7 +350,32 @@ nav a.active-link {
   margin: 0.2rem 0; 
 }
 
+/*animations for homepage */
+.welcome-to, .welcome-to-heim-church, footer > div{
+  animation: popUp .7s ease-in forwards;
+}
+
+.welcome-to-heim-church{
+  animation: popUp .4s ease-in forwards;
+}
+
+.welcome-to-heim-church{
+  opacity: 0;
+  animation-delay: .3s;
+}
+
+
 @media(max-width: 1024px){
+
+  .subnav-ministries{
+      display: none;
+  }
+
+  .subnav-invisible{
+    visibility: visible;
+    display: flex;
+  }
+
   .home-pg3-container{
     padding: 0;
     margin: 0;
@@ -555,8 +585,11 @@ footer {
 
 /* ---Offering page--- */
 .offering-page, .about-page{
+  flex: 1;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 .ways-to-give{
@@ -615,6 +648,7 @@ footer {
 
 .about-page-container{
   padding: 3% 10%;
+  flex: 1;
 }
 
 .about-page-welcome, .frequently-ask-questions-title{
@@ -674,7 +708,6 @@ footer {
   align-items: center;
   margin-top: 50px;
   height: auto;
-  max-height: 500px;
   overflow-y: scroll;
 }
 
@@ -791,10 +824,9 @@ footer {
 
 .view-previous-lives{
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-
 }
 
 .video-container {
@@ -857,10 +889,12 @@ footer {
   width: 60%;
   min-width: 60%;
   background-color: black;
-  height: 30vw;
-  min-height: 30vh;
+  height: 35vw;
+  min-height: 35vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .not-live-container > img{
@@ -871,6 +905,9 @@ footer {
   min-width:  60%;
   min-height: 40%;
   align-self: center;
+  overflow: hidden;
+  padding-top: 8%;
+  transform: scale(1.7);
 }
 
 
@@ -880,6 +917,8 @@ footer {
   align-self:last baseline;
   margin-bottom: 20px;
   margin-right: 20px;
+  max-width: 12rem;
+  min-width: 100px;
 }
 
 /* ---Calendar styling--- */
@@ -966,16 +1005,16 @@ footer {
 
 .interested-in-baptizing {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.4rem !important;
   font-weight: 500;
   color: #333; 
   margin: 20px auto;
   padding: 15px 20px;
-  background-color: #f7f7f7; 
+  background-color: var(--darkGrey); 
   border: 1px solid #ddd; 
   border-radius: 8px; 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
+  max-width: 100%;
   line-height: 1.6;
 }
 
@@ -1077,19 +1116,25 @@ form > button:active {
 
 /* ---Ministry styling--- */
 
-.ministry--container{
+.ministry--container, .contact--container {
   font-family: 'Roboto', sans-serif;
   color: #333;
   /* line-height: 1.6; */
   margin: 20px auto;
   padding: 10px;
-  background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent background to improve text visibility */
+  background-color: rgba(249, 249, 249, 0.8);
   border-radius: 8px;
   max-width: 1400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center;
   padding: 1rem 4rem;
+}
+.contact--container{
+  max-width: 80% !important;
+  margin-top: 5% !important;
+  justify-content: center;
+  text-align: center;
 }
 
 .ministry--subcontainer-1{
@@ -1117,6 +1162,38 @@ form > button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* ---Contact Us styling--- */
+
+.contact--container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section {
+  margin-bottom: 20px;
+}
+
+.contact-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #555;
+}
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 /* ---General styling--- */
@@ -1299,4 +1376,26 @@ nav{
 
 .blue-corner{
   border: 2px solid var(--blue);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page{
+  flex: 1;
+  height: 100vh;
+  min-height: 100vh;
 }
