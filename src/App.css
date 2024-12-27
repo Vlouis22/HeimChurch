@@ -678,6 +678,9 @@ footer {
   overflow-y: scroll;
 }
 
+.womens-frequently-asked-questions{
+  margin-top: -50px !important;
+}
 
 .meet-our-leaders-container-inside {
   width: 100%;
@@ -848,6 +851,35 @@ footer {
   width: 100%;
   overflow-x: scroll;
   justify-content: space-between;
+}
+
+.not-live-container{
+  width: 60%;
+  min-width: 60%;
+  background-color: black;
+  height: 30vw;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.not-live-container > img{
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  min-width:  60%;
+  min-height: 40%;
+  align-self: center;
+}
+
+
+.not-live-container-text{
+  z-index: 10000;
+  bottom: 100%;
+  align-self:last baseline;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 /* ---Calendar styling--- */

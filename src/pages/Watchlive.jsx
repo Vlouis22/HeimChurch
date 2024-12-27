@@ -3,10 +3,18 @@ import RegularButton from '../components/RegularButton';
 import fakeData from './fakeData.js';
 import Video from '../components/Video.jsx';
 import Footer from '../components/Footer.jsx';
-import HeimChurchLogo from '../images/heimchurchlogo.JPG'
+import HeimChurchLogo from '../images/heimchurchlogo.JPG';
+import { createClient } from "@supabase/supabase-js";
+import { LuMessageSquare } from "react-icons/lu";
 
 
 export default function Watchlive() {
+
+  const supabaseUrl = 'https://umkmlqwttydutvwgvrwn.supabase.co'
+  const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  
+  const [isLive, setIsLive] = useState(false);
 
   const localStorageVideos= 'videoData';
   const localStorageLastAccessed = 'lastUpdated';
@@ -62,16 +70,127 @@ export default function Watchlive() {
   function displayVideos(videos){
     if(videos != null && videos && videos.length > 0){
       return videos.map((item, index) =>{
-        return <div key={index}><Video title={item.snippet.title} videoId={item.snippet.resourceId.videoId} url={item.snippet.thumbnails.maxres.url}/></div>
+        return <div key={index}>
+            <Video title={item.snippet.title} videoId={item.snippet.resourceId.videoId} url={item.snippet.thumbnails.maxres.url}/>
+          </div>
       })
     }
+  }
+
+  useEffect(() => {
+
+    let isChurchLive = false;
+    let lastupdated;
+
+    const currentTime = new Date();
+
+    async function getStatus(){
+
+      let { data: churchLiveStatus, error } = await supabase
+      .from('churchLiveStatus')
+      .select('*')
+      setIsLive(churchLiveStatus[0]);
+
+      isChurchLive = churchLiveStatus[0].isLive;
+      lastupdated = new Date(churchLiveStatus[0].lastUpdated);
+
+      if(isChurchLive){
+        const fifteenMinutesInMilliseconds = 15 * 60 * 1000;
+        if((currentTime - lastupdated) > fifteenMinutesInMilliseconds){
+          // fetch for new status
+          setIsLive(true);
+          checkForLive();
+          console.log("checking to see if the live is still going on");
+        }
+        else{
+          // show the live
+          setIsLive(true);
+          console.log("the live is still going on");
+        }
+      }
+      else {
+        const fiveMinutesInMilliseconds = 5 * 60 * 1000;
+        if((currentTime - lastupdated) > fiveMinutesInMilliseconds){
+          // need to check live status again
+          setIsLive(false);
+          checkForLive();
+          console.log("checking to see if there is still no live")
+
+        }
+        else{
+          // show no live status 
+          setIsLive(false);
+          console.log("There is no live")
+        }
+      }
+    }
+
+    getStatus();
+
+  }, []);
+
+  async function checkForLive(){
+    const apiKey = process.env.REACT_APP_test_api_key;
+    const channelId = process.env.REACT_APP_church_channelId;
+
+    // URL to fetch live broadcasts
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&type=video&eventType=live&key=${apiKey}`;
+
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        if (data.items && data.items.length > 0) {
+          updateLiveStatusToDatabase(true);
+          setIsLive(true);
+        } else {
+          updateLiveStatusToDatabase(false);
+          setIsLive(false);
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching YouTube live status:", error);
+        // setting is live to true if unable to fetch for new live status
+        setIsLive(true);
+      });
+  }
+
+  async function updateLiveStatusToDatabase(isLive){
+    const currentTime = new Date();
+    const { data, error } = await supabase
+    .from('churchLiveStatus')
+    .update({ isLive: isLive, lastUpdated: currentTime})
+    .eq('id', 1)
+    .select()
   }
 
   return (
     <>
     <div  className='maximum-height'>
       <div className='live-and-upcominglive-container'>
-      <iframe width={pageWidth} height={pageHeight} src={source} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+
+      {!isLive && (
+        <div className='not-live-container'>
+          <img
+            src={HeimChurchLogo}
+          />
+        <div className='not-live-container-text'>
+          <RegularButton text={<span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          <LuMessageSquare style={{paddingLeft: '3px'}}/> Request Prayer</span>} color="white" bgcolor="blue" width="150px" height="50px" to='Prayer'/>
+        </div>
+        </div>
+      )}
+      
+      {isLive && 
+        <iframe width={pageWidth} height={pageHeight} src={source} title="YouTube video player" frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+        </iframe>
+      }
         <div className='upcominglive-container'>
           <div className='upcominglive-container-child'>
             <div className='inter bold'>Upcoming Live Streams</div>
