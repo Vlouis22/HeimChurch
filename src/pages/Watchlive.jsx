@@ -20,7 +20,7 @@ export default function Watchlive() {
   const localStorageLastAccessed = 'lastUpdated';
 
   let pageWidth = (document.documentElement.scrollWidth) * .6;
-  let pageHeight = pageWidth * .61;
+  let pageHeight = pageWidth * .562;
 
   const [isLoaded, setisLoaded] = useState(false);
   const [anErrorOccured, setAnErrorOccurred] = useState(false);
