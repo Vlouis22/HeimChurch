@@ -11,8 +11,8 @@
 }
 
 body, html {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   height: 100%; /* Ensure the body spans the full viewport height */
   display: flex;
   flex-direction: column;
@@ -212,16 +212,16 @@ nav a.active-link {
 }
 
 .home-page-event-container{
-  height: 400px;
+  height: auto;
+  max-height: 450px;
   width: 100%;
-  margin: 30px 0px;
+  margin: 30px 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   overflow-x: scroll;
-  padding-left: 20px;
-  padding-right: 20px;
   position: relative;
+  padding: 30px;
 }
 
 .payment-methods-container{
@@ -237,19 +237,22 @@ nav a.active-link {
 }
 
 .home-page-event-placeholder {
-  min-width: 400px;
-  min-height: 330px;
-  height: 300px;
+  min-width: 300px;
+  width: 400px;
+  max-width: 40vw;
+  height: 400px;
   margin-left: 20px;
   margin-right: 20px;
   position: relative; 
   text-align: start;
+  overflow: hidden;
 }
 
 .image-container {
   position: relative;
   width: 100%;
   height: 250px;
+  max-height: 250px;
   overflow: hidden; 
 }
 
@@ -364,6 +367,7 @@ nav a.active-link {
   animation-delay: .3s;
 }
 
+/* smaller screen*/
 
 @media(max-width: 1024px){
 
@@ -497,7 +501,7 @@ nav a.active-link {
 
   .ministry--subcontainer-1{
     display: flex;
-    width: 90vw !important;
+    width: 100vw !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important; 
@@ -508,6 +512,15 @@ nav a.active-link {
     width: 100% !important;
   }
 
+  .ministry--subcontainer-1{
+    justify-content: center;
+    align-items: center !important;
+  }
+
+  .ministry--container{
+    padding: 2% 0% !important;
+    margin: 0% !important;
+  }
 }
 
 .link-container-holder{
@@ -536,6 +549,8 @@ footer {
   align-items: center;
   margin-top: auto;
   color: white;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer-text-holder{
@@ -546,7 +561,6 @@ footer {
   flex-direction: column;
   text-align: center;
   box-shadow: 2px 2px 1px 1px black;
-  gap: 1rem;
   
 }
 
@@ -831,9 +845,9 @@ footer {
 
 .video-container {
   width: 300px;
-  height: 250px;
+  height: 280px;
   max-width: 100%;
-  margin: 10px;
+  margin: 0px 10px 10px 0px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -1129,7 +1143,9 @@ form > button:active {
   background-size: cover;
   background-position: center;
   padding: 1rem 4rem;
+  align-items: center;
 }
+
 .contact--container{
   max-width: 80% !important;
   margin-top: 5% !important;
@@ -1141,7 +1157,6 @@ form > button:active {
   display: flex;
   flex-direction: row;
   max-height: 600px;
-  overflow: scroll;
   justify-content:space-evenly;
 }
 
@@ -1487,4 +1502,49 @@ nav{
   flex: 1;
   height: 100vh;
   min-height: 100vh;
+}
+
+/* Phone display */
+@media(max-width: 600px){
+  .welcome-to{
+    width: 100vw !important;
+    font-size: 4rem !important;
+  }
+
+  .welcome-to-heim-church{
+    width: 100vw !important;
+    font-size: 3rem !important;
+  }
+
+  .home-church-image{
+    width: 120%;
+    height: 60%;
+  }
+
+  .home-page-event-container{
+    width: 100vw;
+    height: auto !important;
+    padding: 20px !important;
+    display:flexbox;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-color: rgb(93, 93, 93) var(--darkGrey); /* For Firefox (thumb and track) */
+    
+  }
+
+  .ministry-picture{
+    width: 95vw;
+    height: auto;
+  }
+
+  .live-and-upcominglive-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .live-and-upcominglive-container > div:first-child{
+    width: 100vw;
+  }
 }

@@ -8,8 +8,6 @@ import { NavLink } from "react-router-dom";
 import ChurchLogoWhite from "../images/heimchurchlogo_processed.JPG";
 
 
-
-
 export default function Navbar() {
 
     const navRef = useRef();
@@ -58,7 +56,7 @@ export default function Navbar() {
                 <NavLink to='/Others' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Other Ministries</NavLink>
 
                 <NavLink to='/WatchLive' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Watch Live</NavLink>
-                {/* <NavLink to='/Offering' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Offering</NavLink> */}
+                <NavLink to='/Offering' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Offering</NavLink>
                 {window.innerWidth < 1024 ? <Socials /> : null}
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />

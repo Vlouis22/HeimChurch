@@ -1,6 +1,11 @@
 import React from 'react'
 
 export default function EventHolder({eventName, eventBackground, eventDay, eventMonth, eventDescription}) {
+
+  if(eventName.length > 30){
+    eventName = eventName.slice(0, 81) + '...';
+  }
+
   return (
     <div className='grey-background rounded-border black-text home-page-event-placeholder'> 
     <div className='image-container'>
@@ -10,7 +15,7 @@ export default function EventHolder({eventName, eventBackground, eventDay, event
         <h3 style={{textAlign: 'center'}}>{eventDay}</h3>
         </div>
     </div>
-    <h2 style={{paddingTop: '15px'}}>{eventName}</h2>
+    <h2 style={{paddingTop: '15px'}} >{eventName}</h2>
     <div style={{paddingTop: '5px'}}>{eventDescription}</div>
     </div>
   )
