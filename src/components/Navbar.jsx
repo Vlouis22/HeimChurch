@@ -6,9 +6,12 @@ import Socials from './Socials';
 import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import ChurchLogoWhite from "../images/heimchurchlogo_processed.JPG";
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Navbar() {
+
+    const navigate = useNavigate();
 
     const navRef = useRef();
     const showNavbar = () => {
@@ -37,26 +40,35 @@ export default function Navbar() {
         };
     }, []);
 
+    async function refreshPage() {
+        await sleep(1); // Wait for 2 seconds
+        window.location.reload(true); // Set to `true` to force a reload from the server
+      };
+
+    function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
 
     return (
         <header>
             <p className='nav-churchname'>
                 <img src={ChurchLogoWhite} style={{ width: '50px' }}></img>
-                <NavLink to="/Home" exact className={({ isActive }) => (isActive ? "active-link" : "")} style={{ textDecoration: 'none', color: 'black' }}>HEIM Church</NavLink>
+                <NavLink to="/Home" exact className={({ isActive }) => (isActive ? "active-link" : "")} style={{ textDecoration: 'none', color: 'black' }} onClick={refreshPage}>HEIM Church</NavLink>
             </p>
             <nav ref={navRef}>
-                <NavLink to="/Home" exact className={({ isActive }) => (isActive ? "active-link" : "")}>Home</NavLink>
-                <NavLink to='/About' exact className={({ isActive }) => (isActive ? "active-link" : "")}>About</NavLink>
+                <NavLink to="/Home" exact className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Home</NavLink>
+                <NavLink to='/About' exact className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>About</NavLink>
                 <div className='navbar-minitries subnav-ministries'>Ministries<SubNav /></div>
 
                 {/* this is the sub navbar ad it should only show up if in smaller screen size*/}
-                <NavLink to='/Youth' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Youth Ministry</NavLink>
-                <NavLink to='/Womens' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Women's Ministry</NavLink>
+                <NavLink to='/Youth' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Youth Ministry</NavLink>
+                <NavLink to='/Womens' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Women's Ministry</NavLink>
                 {/* <NavLink to='/Kids' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Kids Ministry</NavLink> */}
-                <NavLink to='/Others' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Other Ministries</NavLink>
+                <NavLink to='/Others' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Other Ministries</NavLink>
 
-                <NavLink to='/WatchLive' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Watch Live</NavLink>
-                <NavLink to='/Offering' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Offering</NavLink>
+                <NavLink to='/WatchLive' exact className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Watch Live</NavLink>
+                <NavLink to='/Offering' exact className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Offering</NavLink>
                 {window.innerWidth < 1024 ? <Socials /> : null}
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />
