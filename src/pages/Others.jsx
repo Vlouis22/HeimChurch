@@ -26,11 +26,11 @@ export default function Others() {
           <div className="faq-container">
             <div className="faq-item">
               <p className="faq-question">
-                <b>1. What groups are available besides Youth, Women's, and Kids?</b>
+                <b>1. What groups are available besides Youth and Women's?</b>
               </p>
               <p className="faq-answer">
-                In addition to these groups, we also have Men's Ministry, the Tech and Media Team, 
-                the Musicians' Group, and the Worship Team.
+              In addition to these groups, we also have Men's Ministry, the Tech and Media Team, the Kids' Team,
+               the Musicians' Group, and the Worship Team.
               </p>
             </div>
             <div className="faq-item">

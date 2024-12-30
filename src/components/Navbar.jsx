@@ -55,11 +55,11 @@ export default function Navbar() {
                 {/* this is the sub navbar ad it should only show up if in smaller screen size*/}
                 <NavLink to='/Youth' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Youth Ministry</NavLink>
                 <NavLink to='/Womens' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Women's Ministry</NavLink>
-                <NavLink to='/Kids' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Kids Ministry</NavLink>
+                {/* <NavLink to='/Kids' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Kids Ministry</NavLink> */}
                 <NavLink to='/Others' exact className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Other Ministries</NavLink>
 
                 <NavLink to='/WatchLive' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Watch Live</NavLink>
-                <NavLink to='/Offering' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Offering</NavLink>
+                {/* <NavLink to='/Offering' exact className={({ isActive }) => (isActive ? "active-link" : "")}>Offering</NavLink> */}
                 {window.innerWidth < 1024 ? <Socials /> : null}
                 <button className='nav-btn nav-close-btn' onClick={showNavbar}>
                     <FaTimes />
