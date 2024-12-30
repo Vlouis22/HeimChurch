@@ -7,6 +7,7 @@ export default function EventsContainer() {
 
     const supabaseUrl = 'https://umkmlqwttydutvwgvrwn.supabase.co'
     const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
+    console.log("this is the supabase key: ", supabaseKey)
     const supabase = createClient(supabaseUrl, supabaseKey);
 
     const [events, setEvents] = useState([]);
