@@ -5,8 +5,6 @@ import Socials from './Socials'
 
 export default function Footer() {
 
-
-
   return (
     <footer className='white-text'>
       <div>

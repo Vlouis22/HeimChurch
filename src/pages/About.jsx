@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
-import TextContainer from '../components/TextContainer'
-import Leader from '../components/Leader'
+// import TextContainer from '../components/TextContainer'
+// import Leader from '../components/Leader'
 import outsideChurchPic from '../images/church-outside-picture.png'
 
 export default function About() {

@@ -14,7 +14,7 @@ export default function AboutUs({to}) {
 
   return (
     <div className='about-us-container'>
-        <img className='about-us-img rounded-border' src={churchimage}></img>
+        <img className='about-us-img rounded-border' src={churchimage} alt='picture of the church'></img>
         <div className='about-us-text button' onClick={handleClick}><p className='white-text underlined size-medium'>About Us</p></div>
     </div>
   )

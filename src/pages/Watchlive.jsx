@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import RegularButton from '../components/RegularButton';
-import fakeData from './fakeData.js';
+// import fakeData from './fakeData.js';
 import Video from '../components/Video.jsx';
 import Footer from '../components/Footer.jsx';
 import HeimChurchLogo from '../images/heimchurchlogo.JPG';

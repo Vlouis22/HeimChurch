@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from "react";
-import { Link } from 'react-router-dom';
 import SubNav from './SubNav';
 import Socials from './Socials';
 import { useState, useEffect } from 'react';
