@@ -1,7 +1,5 @@
 # HEIM Church Website
 
-Heim Church Website
-
 Welcome to the official Heim Church website repository! This project is dedicated to creating a dynamic, user-friendly, and inclusive platform for Heim Church to connect with its community.
 
 # About HEIM Church 
