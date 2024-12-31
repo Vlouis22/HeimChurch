@@ -1528,8 +1528,32 @@ nav{
     display:flexbox;
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
-    scrollbar-color: rgb(93, 93, 93) var(--darkGrey); /* For Firefox (thumb and track) */
+    scrollbar-color: rgb(93, 93, 93) var(--darkGrey);
     
+  }
+  .home-page-event-container::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  .home-page-event-container::-webkit-scrollbar-thumb {
+    background-color: rgb(93, 93, 93); 
+    border-radius: 10px;
+  }
+  
+  .home-page-event-container::-webkit-scrollbar-track {
+    background-color: var(--darkGrey);
+  }
+
+  .baptizing-page{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2rem .8rem;
+  }
+
+  .baptizing-picture{
+    width: 100% !important;
   }
 
   .ministry-picture{

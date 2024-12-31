@@ -8,7 +8,7 @@ export default function Baptizing() {
     <>
     <div className='baptizing-page'>
       <div className='baptizing-page-1'>
-      <img className='' width='60%' height='100%' src={BaptizingPicture}></img>
+      <img className='baptizing-picture' width='60%' height='100%' src={BaptizingPicture}></img>
 
       <div className='baptizing-page-1-text-container'>
         <h4>What is Baptism?</h4>
