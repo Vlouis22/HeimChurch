@@ -24,14 +24,7 @@ export default function Prayer() {
     const name = event.target.name;
     const value = event.target.value;
     setPrayerRequest(values => ({...prayerRequest, [name]: value}));
-    console.log(prayerRequest)
   }
-
-  useEffect(() => {
-    console.log(process.env.REACT_APP_SERVICE_ID_FOR_PRAYER);
-    console.log(process.env.REACT_APP_TEMPLATE_ID_FOR_PRAYER);
-    console.log(process.env.REACT_APP_PUBLIC_KEY_FOR_PRAYER);
-  }, []);
 
 
   return (

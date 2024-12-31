@@ -9,8 +9,11 @@ export default function Instagram({color, size}) {
 
 
   return (
-    <a href={instagramLink} target='blank' style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}>
-        <FaInstagram/>
-    </a>
+    <div>
+      <a href={instagramLink} target='blank' style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}>
+          <FaInstagram/>
+      </a>
+    </div>
+
   )
 }

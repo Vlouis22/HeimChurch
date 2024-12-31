@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import RegularButton from '../components/RegularButton';
-// import fakeData from './fakeData.js';
+import fakeData from './fakeData.js';
 import Video from '../components/Video.jsx';
 import Footer from '../components/Footer.jsx';
 import HeimChurchLogo from '../images/heimchurchlogo.JPG';
 import { createClient } from "@supabase/supabase-js";
 import { LuMessageSquare } from "react-icons/lu";
-
+import {supabase} from '../utils/supabaseClient.js'
 
 export default function Watchlive() {
-
-  const supabaseUrl = 'https://umkmlqwttydutvwgvrwn.supabase.co'
-  const supabaseKey = process.env.REACT_APP_SUPABASE_KEY;
-  const supabase = createClient(supabaseUrl, supabaseKey);
   
   const [isLive, setIsLive] = useState(false);
 
@@ -37,10 +33,11 @@ export default function Watchlive() {
     const date = new Date();
     let currentTime = date.getHours();
 
+    // if found video in local storage that is not outdated, no need to get new videos
     if (videos != null){
       setData(videos)
       setisLoaded(true)
-      console.log(`loaded video from local storage. Last hour accessed: ${lastAccessed}`)
+      // console.log(`loaded video from local storage. Last hour accessed: ${lastAccessed}`)
     }
 
     async function getRecordedVideos() {
@@ -67,6 +64,7 @@ export default function Watchlive() {
     }
   }, []);
 
+  // after receiving data for the videos, this function will be be used to render the videos 
   function displayVideos(videos){
     if(videos != null && videos && videos.length > 0){
       return videos.map((item, index) =>{
@@ -100,12 +98,12 @@ export default function Watchlive() {
           // fetch for new status
           setIsLive(true);
           checkForLive();
-          console.log("checking to see if the live is still going on");
+          // console.log("checking to see if the live is still going on");
         }
         else{
           // show the live
           setIsLive(true);
-          console.log("the live is still going on");
+          // console.log("the live is still going on");
         }
       }
       else {
@@ -114,13 +112,13 @@ export default function Watchlive() {
           // need to check live status again
           setIsLive(false);
           checkForLive();
-          console.log("checking to see if there is still no live")
+          // console.log("checking to see if there is still no live")
 
         }
         else{
           // show no live status 
           setIsLive(false);
-          console.log("There is no live")
+          console.log("There are currently no live events")
         }
       }
     }
