@@ -506,6 +506,7 @@ nav a.active-link {
     justify-content: center !important;
     align-items: center !important; 
     gap: 2rem;
+    height: auto !important;
   }
 
   .ministry--subcontainer-1 > div{
@@ -519,7 +520,6 @@ nav a.active-link {
 
   .ministry--container{
     padding: 2% 0% !important;
-    margin: 0% !important;
   }
 }
 
@@ -1156,7 +1156,6 @@ form > button:active {
 .ministry--subcontainer-1{
   display: flex;
   flex-direction: row;
-  max-height: 600px;
   justify-content:space-evenly;
 }
 
