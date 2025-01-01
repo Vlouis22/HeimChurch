@@ -32,7 +32,7 @@ export default function RegularButton({ text, color, bgcolor, width, height, to 
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className={paragraphcss} style={{ fontSize: paragraphSize.toLocaleString() }}>
+        <div className={paragraphcss} style={{ fontSize: paragraphSize }}>
           {text}
         </div>
       </div>
