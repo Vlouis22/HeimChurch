@@ -14,12 +14,18 @@ export default function Footer() {
         </div>
         <div className='smaller-footer-text-container'>
           <div>
-            <RegularButton color='black' bgcolor='white' text='CONTACT US' width={120} height={40} to='Contact'/>
-            <RegularButton color='black' bgcolor='white' text='WATCH LIVE' width={120} height={40} to='Watchlive' />
+            <div className='footer-button-container'>
+              <RegularButton color='black' bgcolor='white' text='CONTACT US' width={120} height={40} to='Contact'/>
+            </div>
+            <div className='footer-button-container'>
+              <RegularButton color='black' bgcolor='white' text='WATCH LIVE' width={120} height={40} to='Watchlive' />
+            </div>
           </div>
           <div>
-            <RegularButton color='black' bgcolor='white' text='GIVE' width={120} height={40} to='Offering'/>
-            <div className='footer-socials'><Socials color='white' size={30}/></div>
+            <div className='footer-button-container'>
+              <RegularButton color='black' bgcolor='white' text='GIVE' width={120} height={40} to='Offering'/>  
+            </div>
+            <div className='footer-socials footer-button-container' width={120} ><Socials color='white' size={30}/></div>
           </div>
         </div>
         <div className='all-rights-reserved'><p>&copy;2024 By <b>HEIM Church</b> | All Rights Reserved</p></div>

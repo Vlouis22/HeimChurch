@@ -204,8 +204,8 @@ export default function Watchlive() {
           {!isLoaded && !anErrorOccured &&  <div className='loader'></div>}
           {!isLoaded && anErrorOccured &&  <div className=''>An unexpected error occured. Please try again later.</div>}
         </div>
-        <Footer/>
     </div>
+    <Footer/>
     </>
   )
 }
