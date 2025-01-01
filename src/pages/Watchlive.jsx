@@ -185,7 +185,7 @@ export default function Watchlive() {
       
       {isLive && 
       <div>
-        <iframe width={pageWidth} height={pageHeight} src={source} title="YouTube video player" frameBorder="0" 
+        <iframe className='full-size-smaller-screen' width={pageWidth} height={pageHeight} src={source} title="YouTube video player" frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
         </iframe>

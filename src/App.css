@@ -1582,4 +1582,15 @@ nav{
   .live-and-upcominglive-container > div:first-child{
     width: 100vw;
   }
+
+  .full-size-smaller-screen{
+    width: 100vw !important;
+    height: 36vh !important;
+  }
+
+}
+
+.full-size-smaller-screen{
+  width: 60vw;
+  height: calc(60vw * .562);
 }
