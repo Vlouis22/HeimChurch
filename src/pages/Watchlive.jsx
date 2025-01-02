@@ -4,9 +4,10 @@ import fakeData from './fakeData.js';
 import Video from '../components/Video.jsx';
 import Footer from '../components/Footer.jsx';
 import HeimChurchLogo from '../images/heimchurchlogo.JPG';
-import { createClient } from "@supabase/supabase-js";
 import { LuMessageSquare } from "react-icons/lu";
-import {supabase} from '../utils/supabaseClient.js'
+import {supabase} from '../utils/supabaseClient.js';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 export default function Watchlive() {
   
@@ -173,9 +174,7 @@ export default function Watchlive() {
 
       {!isLive && (
         <div className='not-live-container'>
-          <img
-            src={HeimChurchLogo}
-          />
+          <LazyLoadImage src={HeimChurchLogo} width={pageWidth} height={pageHeight} alt='HEIM Church logo'/>
         <div className='not-live-container-text'>
           <RegularButton text={<span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
           <LuMessageSquare style={{paddingLeft: '3px'}}/> Request Prayer</span>} color="white" bgcolor="blue" width="150px" height="50px" to='Prayer'/>
@@ -185,7 +184,7 @@ export default function Watchlive() {
       
       {isLive && 
       <div>
-        <iframe className='full-size-smaller-screen' width={pageWidth} height={pageHeight} src={source} title="YouTube video player" frameBorder="0" 
+        <iframe loading='lazy' className='full-size-smaller-screen' width={pageWidth} height={pageHeight} src={source} title="YouTube video player" frameBorder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
         </iframe>

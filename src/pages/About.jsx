@@ -3,14 +3,29 @@ import Footer from '../components/Footer'
 // import TextContainer from '../components/TextContainer'
 // import Leader from '../components/Leader'
 import outsideChurchPic from '../images/church-outside-picture.png'
+import { useState, useEffect } from 'react';
 
 export default function About() {
 
-  const backgroundImg = {
-    backgroundImage: `url(${outsideChurchPic})`, 
-    height: '100%', 
-    backgroundSize: 'cover', 
-  }
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = outsideChurchPic;
+    img.onload = () => setIsImageLoaded(true);
+  }, []);
+
+  const backgroundImg = isImageLoaded
+    ? {
+        backgroundImage: `url(${outsideChurchPic})`,
+        height: '100%',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }
+    : {
+        backgroundColor: '#f0f0f0', 
+        height: '100%',
+      };
 
   return (
     <>
