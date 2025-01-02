@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import RegularButton from '../components/RegularButton';
-import fakeData from './fakeData.js';
 import Video from '../components/Video.jsx';
 import Footer from '../components/Footer.jsx';
 import HeimChurchLogo from '../images/heimchurchlogo.JPG';
 import { LuMessageSquare } from "react-icons/lu";
 import {supabase} from '../utils/supabaseClient.js';
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import fakeData from "../data/fakeData.js"
 
 
 export default function Watchlive() {
