@@ -63,4 +63,28 @@ const AboutQuestions = [
     }
 ];
 
-export { YouthQuestions, WomenQuestions, AboutQuestions };
+const OtherGroupsQuestions = [
+    { 
+        question: "What groups are available besides Youth, Kids, and Women's?",
+        answer: "In addition to these groups, we also have Men's Ministry, the Tech and Media Team, the Musicians' Group, and the Worship Team."
+
+    },
+    { 
+        question: "Can I join more than one group?",
+        answer: "Yes, if you have multiple talents or interests, you're welcome to join more than one group."
+
+    },
+    { 
+        question: "Can I join a group if I’m not baptized?",
+        answer: (
+            <>
+                While we encourage everyone to consider baptism, it is not a requirement to join a group. 
+                However, there may be some limitations on your involvement in certain activities if you are not baptized. 
+                If you’re interested in learning more about baptism, please visit our <a href="/Baptizing">baptism page</a>.
+            </>
+        )
+
+    }
+]
+
+export { YouthQuestions, WomenQuestions, AboutQuestions, OtherGroupsQuestions};
