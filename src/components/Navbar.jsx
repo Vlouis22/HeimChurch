@@ -61,7 +61,7 @@ export default function Navbar() {
                 {/* this is the sub navbar ad it should only show up if in smaller screen size*/}
                 <NavLink to='/Youth' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Youth Ministry</NavLink>
                 <NavLink to='/Womens' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Women's Ministry</NavLink>
-                {/* <NavLink to='/Kids' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")}>Kids Ministry</NavLink> */}
+                <NavLink to='/Kids' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Kids Ministry</NavLink>
                 <NavLink to='/Others' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>Other Ministries</NavLink>
 
                 <NavLink to='/WatchLive' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Watch Live</NavLink>

@@ -537,6 +537,11 @@ nav a.active-link {
   .ministry--container{
     padding: 2% 0% !important;
   }
+  
+  .ministry-picture{
+    width: 95vw;
+    height: auto;
+  }
 }
 
 .link-container-holder{
@@ -1574,11 +1579,6 @@ nav{
 
   .baptizing-picture{
     width: 100% !important;
-  }
-
-  .ministry-picture{
-    width: 95vw;
-    height: auto;
   }
 
   .live-and-upcominglive-container{

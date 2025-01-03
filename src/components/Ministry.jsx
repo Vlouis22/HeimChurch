@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 
-export default function Ministry({name, picture1, picture2, picture3, picture4, descriptionTitle1, description1, descriptionTitle2, description2, descriptionTitle3, description3, descriptionTitle4, questions}) {
+export default function Ministry({name, picture1, picture2, picture3, picture4, descriptionTitle1, description1, descriptionTitle2, description2, descriptionTitle3, description3, questions}) {
   return (
     <>
     <div className='ministry--container maximum-height'>
@@ -20,11 +20,11 @@ export default function Ministry({name, picture1, picture2, picture3, picture4, 
           <div className='blue-text bold size-medium'>{descriptionTitle2}</div>
           <div className='ministry-paragraphs'>{description2}</div>
         </div>
-        {picture2 && <img className='rounded-border ministry-picture' width='60%' height='100%' src={picture2} style={{minWidth: '300px', minHeight: 'auto'}}></img>}
+        {picture2 && <img className='rounded-border ministry-picture' width='50%' height='100%' src={picture2} style={{minWidth: '300px', minHeight: 'auto'}}></img>}
       </div>
 
       <div style={{marginTop: '35px', marginBottom: '10px'}} className='ministry--subcontainer-1'>
-        {picture3 && <img className='rounded-border ministry-picture' width='60%' height='100%' src={picture3} style={{minWidth: '300px'}}></img>}
+        {picture3 && <img className='rounded-border ministry-picture' width='50%' height='100%' src={picture3} style={{minWidth: '300px'}}></img>}
         <div>
           <div className='blue-text bold size-medium'>{descriptionTitle3}</div>
           <div className='ministry-paragraphs'>{description3}</div>
@@ -32,7 +32,7 @@ export default function Ministry({name, picture1, picture2, picture3, picture4, 
       </div>
 
       <div style={{marginTop: '50px', marginBottom: '10px'}} className='ministry--subcontainer-1 ministry-subcontainer-leaders'>
-        {picture4 && <img className='rounded-border ministry-picture' width='35%' height='70%' src={picture4}  style={{minWidth: '300px'}}></img>}
+        {picture4 && <img className='rounded-border ministry-picture'  src={picture4}  style={{minWidth: '300px', maxWidth: '90vw', maxHeight: '50vh'}}></img>}
       </div>
       {questions}
     </div>
