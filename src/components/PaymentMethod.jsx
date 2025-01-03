@@ -9,6 +9,7 @@ export default function PaymentMethod({logo, name, qrCode, info1, info2}) {
         {/* <p>{info1}</p>
         <p>{info2}</p> */}
         <h1>Not yet set up</h1>
+        <p style={{margin: '1rem'}}>Please check back soon for updates</p>
     </div>
   )
 }
