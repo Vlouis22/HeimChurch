@@ -666,10 +666,17 @@ footer > div{
   justify-content: center;
 }
 
+.payment-method > img{
+  padding-bottom: 1rem;
+}
+
 .payment-logo {
   max-width: 100%;
-  object-fit:contain;
+  object-fit: fill;
+  object-position: center;
   max-height: 100px;
+  transform: scale(1.5);
+  transform-origin: center;
 }
 
 .payment-qrcode {
