@@ -4,7 +4,8 @@ export default function PaymentMethod({logo, name, qrCode, info1, info2}) {
 
   return (
     <div className='payment-method white-background black-text rounded-border'>
-        <img className='payment-logo' src={logo}></img>
+        {!qrCode && <img className='payment-logo' src={logo}></img>}
+        {qrCode && logo}
         {
           qrCode && 
           <>

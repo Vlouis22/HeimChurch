@@ -668,6 +668,7 @@ footer > div{
 
 .payment-method > img{
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .payment-logo {
@@ -690,6 +691,39 @@ footer > div{
   text-align: center; 
   text-overflow: ellipsis; 
 }
+
+.payment--button{
+  width: 150px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.payment--button:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.payment--button:active {
+  transform: scale(0.98);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.cashapp:hover {
+  color: #00CF31 !important;
+  background-color: white !important;
+  border: 2px solid #00CF31;
+}
+
+.cashapp:active {
+  background-color: #1e7e34;
+}
+
 
 /* ---About page--- */
 
@@ -1613,3 +1647,4 @@ nav{
   width: 60vw;
   height: calc(60vw * .562);
 }
+
