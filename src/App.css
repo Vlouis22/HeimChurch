@@ -653,10 +653,10 @@ footer > div{
   overflow: auto; 
 }
 
-.payment-method {
-  flex: 0 1 320px;
+.payment-method{
+  flex: 0 1 300px;
   height: 420px;
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -693,17 +693,18 @@ footer > div{
 }
 
 .payment--button{
-  width: 150px;
-  height: 50px;
+  width: 170px;
+  height: 60px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   font-weight: bolder;
-  font-size: 1.7rem;
-  text-decoration: none;
+  font-size: 2rem;
+  text-decoration: underline;
 }
+
 .payment--button:hover {
   transform: scale(1.05); 
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); 
@@ -722,6 +723,26 @@ footer > div{
 
 .cashapp:active {
   background-color: #1e7e34;
+}
+
+.paypal:hover {
+  color: #003087 !important;
+  background-color: white !important;
+  border: 2px solid #003087;
+}
+
+.paypal:active {
+  background-color: #003087;
+}
+
+.venmo:hover {
+  color: #008CFF !important;
+  background-color: white !important;
+  border: 2px solid #008CFF;
+}
+
+.venmo:active {
+  background-color: #008CFF;
 }
 
 

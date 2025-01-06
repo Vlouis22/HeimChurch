@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PaymentMethod({logo, name, qrCode, info1, info2}) {
+export default function PaymentMethod({logo, name, qrCode, info1name, info2name, info1detail, info2detail}) {
 
   return (
     <div className='payment-method white-background black-text rounded-border'>
@@ -10,8 +10,8 @@ export default function PaymentMethod({logo, name, qrCode, info1, info2}) {
           qrCode && 
           <>
             <img className='payment-qrcode' src={qrCode}></img>
-            <p>{info1}</p>
-            <p>{info2}</p>
+            <p><b>{info1name}</b>{' ' + info1detail}</p>
+            <p><b>{info2name}</b>{' ' + info2detail}</p>
           </>
         }
         {
