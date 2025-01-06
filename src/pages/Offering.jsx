@@ -49,7 +49,7 @@ export default function Offering() {
           info1name='Name:' 
           info1detail='@Jean-Joseph-153'
           info2name='Number:' 
-          info2detail='(302) 387-7570'
+          info2detail='+1 (302) 387-7570'
           />
         </div>
       </div>
