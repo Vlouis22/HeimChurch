@@ -5,27 +5,19 @@ import { useState, useEffect } from 'react';
 import Questions from '../components/Questions';
 import { AboutQuestions } from '../data/questions';
 
+const outsideChurchPicture = 'https://i.postimg.cc/cHMZNQ1W/church-outside-picture.png'
+
 export default function About() {
 
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = outsideChurchPic;
-    img.onload = () => setIsImageLoaded(true);
-  }, []);
-
-  const backgroundImg = isImageLoaded
-    ? {
-        backgroundImage: `url(${outsideChurchPic})`,
+  const backgroundImg = 
+    {
+        backgroundImage: `url(${outsideChurchPicture})`,
         height: '100%',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-      }
-    : {
         backgroundColor: '#f0f0f0', 
-        height: '100%',
-      };
+    }
+
 
   return (
     <>

@@ -11,8 +11,8 @@ import Request from '../components/Request'
 import churchvan from '../images/churchvan.jpg'
 import prayer_request from '../images/prayer_request.jpeg'
 import Footer from '../components/Footer'
-import { useState, useEffect } from 'react'
 
+const churchImageBackground = 'https://i.postimg.cc/nrJz4FrF/churchphoto1.jpg'
 
 export default function Home() {
 
@@ -20,27 +20,19 @@ export default function Home() {
   const instagramLink = 'https://www.instagram.com/heim_church/?igsh=N3dqOGN6NXFkYWc%3D';
   const youtubeLink  = 'https://www.youtube.com/@heimchurch3540';
 
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = churchimage;
-    img.onload = () => setIsImageLoaded(true);
-  }, []);
 
   const backgroundStyle = {
-    backgroundImage: isImageLoaded ? `url(${churchimage})` : 'none',
+    backgroundImage: `url(${churchImageBackground})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100%',
-    backgroundColor: isImageLoaded ? 'none' : 'black', 
+    backgroundColor: 'black', 
   };
 
   return (
     <div className='home'>
 
       <div className='home-pg1-container' style={backgroundStyle}>
-        {/* <img src={back} className='home-church-image'></img> */}
         <div className='centered'>
           <div className='white-text abril-fatface-regular size-very-large welcome-to' >WELCOME TO</div>
           <div className='white-text size-large roboto-regular welcome-to-heim-church'>HEIM CHURCH</div>
@@ -66,6 +58,7 @@ export default function Home() {
             to={[instagramLink, faceBookLink, youtubeLink]}
             />
         </div>
+
         <div className='home-pg3-container-1'>
           <Request title="In Need Of A Prayer?" width='500px' height='275px' buttonText='Request Prayer' image={prayer_request} to='Prayer'/>
           <LinkContainers title="Get Involved"  
@@ -73,6 +66,7 @@ export default function Home() {
           links={['Giving', 'Groups']}
           to={['Offering', 'Others']}/>
         </div>
+        
         <div className='home-pg3-container-1'>
           <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' to='Ride'/>
           <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' to='Baptizing'/>
