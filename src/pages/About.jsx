@@ -1,7 +1,5 @@
 import React from 'react'
 import Footer from '../components/Footer'
-// import TextContainer from '../components/TextContainer'
-// import Leader from '../components/Leader'
 import outsideChurchPic from '../images/church-outside-picture.png'
 import { useState, useEffect } from 'react';
 import Questions from '../components/Questions';
