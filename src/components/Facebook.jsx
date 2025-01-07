@@ -8,8 +8,13 @@ export default function Facebook({color, size}) {
 
   return (
     <span>
-      <a href={faceBookLink} target='blank' style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}>
-          <LuFacebook/>
+      <a 
+      href={faceBookLink} 
+      target='blank' 
+      style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}
+      aria-label='HEIM Church Facebook'
+      >
+      <LuFacebook/>
       </a>
     </span>
   )

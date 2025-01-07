@@ -11,13 +11,13 @@ export default function Baptizing() {
       <img className='baptizing-picture' width='60%' height='100%' src={BaptizingPicture}></img>
 
       <div className='baptizing-page-1-text-container'>
-        <h4>What is Baptism?</h4>
+        <div className='baptizing-page-headers'>What is Baptism?</div>
         <p style={{marginTop: '10px'}}>A Christian sacrament signifying spiritual cleansing and rebirth.</p>
       </div>
       
       </div>
       <div>
-        <h3>Acts 2:38</h3>
+        <div className='baptizing-page-headers'>Acts 2:38</div>
         <p>"Repent and be Baptized in the name of Jesus Christ for the remission of sins"</p>
       </div>
       <div>

@@ -13,8 +13,15 @@ export default function LinkContainers({title, isIcons, icons, links, to}) {
                     <span>
                     {icons[i]}
                     </span>
-                    <a href={full_url} target='_blank' style={{textDecoration: 'none', cursor: 'pointer', color: 'black'}}>
-                    <div className='link-container-items' onClick={handleClick(i)}><span className='underlined' style={{marginTop: '-5px'}}>{item}</span></div>
+                    <a 
+                        href={full_url}
+                        target='_blank'
+                        style={{textDecoration: 'none', cursor: 'pointer', color: 'black'}}>
+                        <div 
+                            className='link-container-items' 
+                            onClick={handleClick(i)}>
+                            <span className='underlined' style={{marginTop: '-5px'}}>{item}</span>
+                        </div>
                     </a>
                 </div>
         }

@@ -10,8 +10,13 @@ export default function Instagram({color, size}) {
 
   return (
     <div>
-      <a href={instagramLink} target='blank' style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}>
-          <FaInstagram/>
+      <a 
+        href={instagramLink} 
+        target='blank' 
+        style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}
+        aria-label='HEIM Church Instagram'
+        >
+        <FaInstagram/>
       </a>
     </div>
 

@@ -50,7 +50,7 @@ export default function Navbar() {
     return (
         <header>
             <p className='nav-churchname'>
-                <img src={ChurchLogoWhite} style={{ width: '50px' }}></img>
+                <img src={ChurchLogoWhite} style={{ width: '50px' }} alt='a picture of the church logo'></img>
                 <NavLink to="/Home" className={({ isActive }) => (isActive ? "active-link" : "")} style={{ textDecoration: 'none', color: 'black' }} onClick={refreshPage}>HEIM Church</NavLink>
             </p>
             <nav ref={navRef}>
@@ -67,11 +67,11 @@ export default function Navbar() {
                 <NavLink to='/WatchLive' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Watch Live</NavLink>
                 <NavLink to='/Offering' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Offering</NavLink>
                 {window.innerWidth < 1024 ? <Socials /> : null}
-                <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+                <button className='nav-btn nav-close-btn' onClick={showNavbar} aria-label='close navigation button'>
                     <FaTimes />
                 </button>
             </nav>
-            <button className='nav-btn' onClick={showNavbar}>
+            <button className='nav-btn' onClick={showNavbar} aria-label='open navigation button'>
                 <FaBars />
             </button>
             {window.innerWidth > 1024 ? <Socials /> : null}

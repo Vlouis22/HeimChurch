@@ -12,10 +12,10 @@ export default function EventHolder({eventName, eventBackground, eventDay, event
         <img src={eventBackground} className='event-holder-img' alt="Event background" />
         <div className='event-holder-day'>
         <p style={{textAlign: 'center'}}>{eventMonth}</p>
-        <h3 style={{textAlign: 'center'}}>{eventDay}</h3>
+        <div style={{textAlign: 'center', fontWeight: '700', fontSize: '1.2rem'}}>{eventDay}</div>
         </div>
     </div>
-    <h2 style={{paddingTop: '15px'}} >{eventName}</h2>
+    <div style={{paddingTop: '15px', fontWeight: '700', fontSize: '1.5rem'}} >{eventName}</div>
     <div style={{paddingTop: '5px'}}>{eventDescription}</div>
     </div>
   )

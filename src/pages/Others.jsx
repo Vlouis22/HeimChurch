@@ -14,7 +14,7 @@ export default function Others() {
         </div>
 
         <div className="others-introduction">
-          <h3 className="others-introduction-title">Find Your Community at HEIM Church</h3>
+          <div className="others-introduction-title">Find Your Community at HEIM Church</div>
           <p className="others-introduction-text">
             At HEIM Church, we offer a wide variety of ministries and groups designed to welcome everyone. 
             No matter your stage in life or the skills you bring, there’s a place for you here. These groups 

@@ -8,8 +8,13 @@ export default function Youtube({color, size}) {
 
   return (
     <span>
-    <a href={youtubeLink} target='blank' style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}> 
-        <SlSocialYoutube />
+    <a 
+      href={youtubeLink} 
+      target='blank' 
+      style={{textDecoration: 'none', color: color? color :'black', margin: '7px', fontSize: size ? fontSize: null}}
+      aria-label='HEIM Church Youtube'
+      > 
+      <SlSocialYoutube />
     </a>
     </span>
   )

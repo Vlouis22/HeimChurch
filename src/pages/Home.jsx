@@ -52,24 +52,26 @@ export default function Home() {
       <div className='home-pg3-container'>
         <div className='home-pg3-container-1'>
           <AboutUs to='About'/>
-          <LinkContainers title="Follow Us" 
+          <LinkContainers 
+            title="Follow Us" 
             isIcons={true} icons={[<Instagram/>, <Facebook/>, <Youtube/>]} 
             links={['Instagram', 'Facebook', 'Youtube']} 
             to={[instagramLink, faceBookLink, youtubeLink]}
-            />
+          />
         </div>
 
         <div className='home-pg3-container-1'>
           <Request title="In Need Of A Prayer?" width='500px' height='275px' buttonText='Request Prayer' image={prayer_request} to='Prayer'/>
           <LinkContainers title="Get Involved"  
-          icons={[]}
-          links={['Giving', 'Groups']}
-          to={['Offering', 'Others']}/>
+            icons={[]}
+            links={['Giving', 'Groups']}
+            to={['Offering', 'Others']}
+          />
         </div>
         
         <div className='home-pg3-container-1'>
-          <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' to='Ride'/>
-          <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' to='Baptizing'/>
+          <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' to='Ride' alt='picture of a van'/>
+          <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' to='Baptizing' alt='picture of a person praying'/>
         </div>
       </div>
       <Footer/>
