@@ -71,7 +71,7 @@ export default function Home() {
         
         <div className='home-pg3-container-1'>
           <Request title="In Need Of A Ride?" width='500px' height='275px' image={churchvan} buttonText='Request Ride' to='Ride' alt='picture of a van'/>
-          <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' to='Baptizing' alt='picture of a person praying'/>
+          <Request title="Are you interested in Getting Baptized?" buttonText='Learn More' to='Baptizing' alt='person praying'/>
         </div>
       </div>
       <Footer/>
