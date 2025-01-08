@@ -164,7 +164,7 @@ export default function Watchlive() {
   }
 
   const loader = (
-    <div style={{backgroundColor: 'black', height:pageHeight, width:pageWidth, display: "flex", justifyContent:'center', alignItems:'center'}}>
+    <div className='notLoading-container' style={{backgroundColor: 'black', height:pageHeight, width:pageWidth, display: "flex", justifyContent:'center', alignItems:'center'}}>
     <div className="loader--3">
     </div>
     </div>

@@ -113,6 +113,10 @@ header .nav-churchname{
   .navbar-minitries{
     font-weight: bold;
   }
+
+  .notLoading-container{
+    width: 100vw !important;
+  }
   
 }
 
@@ -895,6 +899,9 @@ footer > div{
 
 /* ---Live styling--- */
 
+.notLoading-container{
+  min-height: 35vh !important;
+}
 
 .live-and-upcominglive-container{
   width: 100%;
