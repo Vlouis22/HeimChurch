@@ -1027,6 +1027,10 @@ footer > div{
   min-width: 100px;
 }
 
+.notLoading{
+  display: none;
+}
+
 /* ---Calendar styling--- */
 
 .heim-church-calendar{
@@ -1683,3 +1687,19 @@ nav{
 @keyframes l13{ 
   100%{transform: rotate(1turn)}
 }
+
+/* HTML: <div class="loader"></div> */
+.loader--3 {
+  color: white;
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-bottom: 8px;
+  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+  animation: l2 2s linear infinite;
+}
+.loader--3:before {
+  content:"Loading..."
+}
+@keyframes l2 {to{background-size: 100% 3px}}
