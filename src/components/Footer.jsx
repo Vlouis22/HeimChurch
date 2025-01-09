@@ -25,7 +25,7 @@ export default function Footer() {
             <div className='footer-button-container'>
               <RegularButton color='black' bgcolor='white' text='GIVE' width={120} height={40} to='Offering'/>  
             </div>
-            <div className='footer-socials footer-button-container' width={120} ><Socials color='white' size={30}/></div>
+            <div className='footer-socials footer-button-container' width={120} ><Socials color='white' size={28} blackIcon={true}/></div>
           </div>
         </div>
         <div className='all-rights-reserved'><p>&copy;2024 By <b>HEIM Church</b> | All Rights Reserved</p></div>

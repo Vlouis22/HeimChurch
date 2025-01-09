@@ -74,7 +74,7 @@ export default function Navbar() {
             <button className='nav-btn' onClick={showNavbar} aria-label='open navigation button'>
                 <FaBars />
             </button>
-            {window.innerWidth > 1024 ? <Socials /> : null}
+            {window.innerWidth > 1024 ? <Socials size={20} blackIcon={true}/> : null}
         </header>
     )
 }
