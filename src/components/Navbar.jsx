@@ -66,7 +66,7 @@ export default function Navbar() {
 
                 <NavLink to='/WatchLive' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Watch Live</NavLink>
                 <NavLink to='/Offering' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>Offering</NavLink>
-                {window.innerWidth < 1024 ? <Socials /> : null}
+                {window.innerWidth < 1024 ? <Socials size={25} blackIcon={true}/> : null}
                 <button className='nav-btn nav-close-btn' onClick={showNavbar} aria-label='close navigation button'>
                     <FaTimes />
                 </button>
