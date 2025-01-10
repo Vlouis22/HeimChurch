@@ -3,7 +3,10 @@ import RegularButton from './RegularButton'
 
 export default function Request({title, width, height, image, buttonText, to, alt}) {
   return (
-    <div className='rounded-border request-container grey-background' style={{width: width? width: '300px', height: height? height: '200px'}}>
+    <div 
+      className='rounded-border request-container grey-background' 
+      style={{width: width? width: '300px', height: height? height: '200px'}}
+    >
         {
         image && 
         <img 
@@ -14,7 +17,7 @@ export default function Request({title, width, height, image, buttonText, to, al
         </img>
         }
         <div className='request-text'><p className='size-medium'>{title}</p></div>
-        <div className='request-button'><RegularButton color='white' bgcolor='blue' text={buttonText} width={150} height={50} to={to}/></div>
+      <div className='request-button'><RegularButton color='white' bgcolor='blue' text={buttonText} width={150} height={50} to={to}/></div>
     </div>
   )
 }

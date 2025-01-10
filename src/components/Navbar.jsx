@@ -38,8 +38,8 @@ export default function Navbar() {
     }, []);
 
     async function refreshPage() {
-        await sleep(1); // Wait for 2 seconds
-        window.location.reload(true); // Set to `true` to force a reload from the server
+        await sleep(1);
+        window.location.reload(true); 
       };
 
     function sleep(ms) {

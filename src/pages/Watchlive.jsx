@@ -5,7 +5,6 @@ import Footer from '../components/Footer.jsx';
 import HeimChurchLogo from '../images/heimchurchlogo.JPG';
 import { LuMessageSquare } from "react-icons/lu";
 import {supabase} from '../utils/supabaseClient.js';
-import fakeData from "../data/fakeData.js"
 
 
 export default function Watchlive() {

@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function RegularButton({ text, color, bgcolor, width, height, to }) {
-  // State to track whether the button is hovered
   const [isHovered, setIsHovered] = useState(false);
 
   // Conditional class or style based on hover state
@@ -12,7 +11,6 @@ export default function RegularButton({ text, color, bgcolor, width, height, to 
   const paragraphSize = Number(width / 7.5);
   const paragraphcss = `centered-text roboto-bold`;
 
-  // Handle mouse enter and leave
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
 

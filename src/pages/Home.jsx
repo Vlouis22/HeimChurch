@@ -1,5 +1,4 @@
 import React from 'react'
-import churchimage from '../images/churchphoto1.jpg'
 import RegularButton from '../components/RegularButton'
 import EventsContainer from '../components/EventsContainer'
 import AboutUs from '../components/AboutUs'

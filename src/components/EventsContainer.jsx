@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import EventHolder from './EventHolder';
-import { createClient } from "@supabase/supabase-js";
 import DefaultPicture from "../images/heimchurchlogo.JPG";
 import { supabase } from '../utils/supabaseClient';
 
