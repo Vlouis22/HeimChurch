@@ -87,4 +87,22 @@ const OtherGroupsQuestions = [
     }
 ]
 
-export { YouthQuestions, WomenQuestions, AboutQuestions, OtherGroupsQuestions};
+const KidsQuestions = [
+    { 
+        question: "What time does the kids service starts?",
+        answer: "The Kids Ministry service begins at 11:00 AM, coinciding with our main worship service."
+
+    },
+    { 
+        question: "What time does the kids service ends?",
+        answer: "The Kids Ministry service concludes at the same time as our main worship service."
+
+    },
+    { 
+        question: "Is there an age limit for participating in the Kids Ministry?",
+        answer: "All children from toddlers to age 13 are welcome to participate in the Kids Ministry."
+
+    }
+]
+
+export { YouthQuestions, WomenQuestions, AboutQuestions, OtherGroupsQuestions, KidsQuestions};
