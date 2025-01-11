@@ -28,12 +28,14 @@ export default function EventsContainer() {
     
     const upcomingEvents = events.map((obj, i) => {
 
-      let date = new Date(obj.eventDate);
+      // let date = new Date(obj.eventDate);
+      let date = new Date(Date.parse(obj.eventDate));
+
       let month = getMonth(date.getMonth());
       let day = date.getDate();
 
       // If the event is a regular church service, additional related events will be created as needed.
-      if(obj.eventName == RegularChurchServiceName && events){
+      if(obj.eventName == "Church Service" && events){
         const eventsLength = events.length;
         const eventsNeeded = 4 - eventsLength > 0 ? 4 - eventsLength : 0;
         const currentDate = new Date(obj.eventDate)
@@ -53,7 +55,7 @@ export default function EventsContainer() {
         if (currentDate > eventDate) {
 
           var date = new Date(eventDate);
-          date.setDate(date.getDate() + 7 )
+          date.setDate(date.getDate() + 7)
 
           // formatting the new date that will be sent to the database
           let month = date.getMonth()+1
@@ -61,7 +63,7 @@ export default function EventsContainer() {
           let day = date.getDate();
           day = day <= 9 ? `0${day}`: day;
           let year = date.getFullYear();
-          let nextSunday = `${month}-${day}-${year}`            
+          let nextSunday = `${month}/${day}/${year}`;
 
           // sends the new update to the database
           const { data, error } = await supabase
@@ -86,27 +88,32 @@ export default function EventsContainer() {
     */
 
     function regularEvents (currentEvent, currentDate, numberOfEventsToGenerate){
+
       for(let i = 1; i < numberOfEventsToGenerate+1; i++){
 
         var date = new Date(currentDate);
         date.setDate(date.getDate() + (7 * i) )
+        console.log(`current date test is : ${date}`)
 
-        let month = getMonth(date.getMonth());
+
+        let month = date.getMonth()+1;
+        month = month <= 9 ? `0${month}` : month
         let day = date.getDate();
+        day = day <= 9 ? `0${day}` : day
+
         let year = date.getFullYear();
 
         const newEvent = {
             eventName: currentEvent.eventName,
             eventDescription: currentEvent.eventDescription,
             eventBackgroundPicture: currentEvent.eventBackgroundPicture,
-            eventDate: `${month}-${day}-${year}`
+            eventDate: `${year}/${month}/${day}`
         }
         setEvents(events => [...events, newEvent])
         setIsLoading(false);
-        console.log(events)
+        // console.log(events)
         // const sortedEvents = events.sort((event1, event2) => (new Date(event1.eventDate) - new Date(event2.eventDate)));
         // console.log(`sorted events: ${[...sortedEvents]}`)
-        console.log(events)
       }      
     }
 
@@ -119,6 +126,10 @@ export default function EventsContainer() {
     const loader = (
       <div className='loading-events'></div>   
     )
+
+  useEffect(()=>{
+      console.log([...events])
+  }, [events] )
 
   return (
     <div 
