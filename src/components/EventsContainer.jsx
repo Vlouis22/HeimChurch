@@ -29,10 +29,10 @@ export default function EventsContainer() {
     const upcomingEvents = events.map((obj, i) => {
 
       // let date = new Date(obj.eventDate);
-      let date = new Date(Date.parse(obj.eventDate));
-
-      let month = getMonth(date.getMonth());
-      let day = date.getDate();
+      // let date = new Date(Date.parse(obj.eventDate));
+      // let month = getMonth(date.getMonth());
+      // let day = date.getDate();
+      let month = getMonth((obj.eventMonth));
 
       // If the event is a regular church service, additional related events will be created as needed.
       if(obj.eventName == "Church Service" && events){
@@ -42,7 +42,7 @@ export default function EventsContainer() {
         updateDateToDatabase(obj, currentDate);
         regularEvents(events[i], currentDate, eventsNeeded)
       }
-      return <EventHolder eventMonth={month} eventDay={day} eventName={obj.eventName} eventDescription={obj.eventDescription} eventBackground={obj.eventBackgroundPicture? obj.eventBackgroundPicture : DefaultPicture} key={i}/>
+      return <EventHolder eventMonth={obj.eventMonth} eventDay={obj.eventDay} eventName={obj.eventName} eventDescription={obj.eventDescription} eventBackground={obj.eventBackgroundPicture? obj.eventBackgroundPicture : DefaultPicture} key={i}/>
     
     })
 
@@ -59,16 +59,18 @@ export default function EventsContainer() {
 
           // formatting the new date that will be sent to the database
           let month = date.getMonth()+1
+          let monthName = getMonth(date.getMonth);
           month = month <= 9 ? `0${month}` : month;
           let day = date.getDate();
           day = day <= 9 ? `0${day}`: day;
           let year = date.getFullYear();
           let nextSunday = `${month}/${day}/${year}`;
 
+
           // sends the new update to the database
           const { data, error } = await supabase
           .from('HeimChurchEvents')
-          .update({eventDate: nextSunday})
+          .update({eventDate: nextSunday, eventDay: day, eventMonth: monthName})
           .order('id', { ascending: true })
           .limit(1)
           .select()
@@ -97,6 +99,7 @@ export default function EventsContainer() {
 
 
         let month = date.getMonth()+1;
+        let monthName = getMonth(month-1);
         month = month <= 9 ? `0${month}` : month
         let day = date.getDate();
         day = day <= 9 ? `0${day}` : day
@@ -107,7 +110,9 @@ export default function EventsContainer() {
             eventName: currentEvent.eventName,
             eventDescription: currentEvent.eventDescription,
             eventBackgroundPicture: currentEvent.eventBackgroundPicture,
-            eventDate: `${year}/${month}/${day}`
+            eventDate: `${year}/${month}/${day}`,
+            eventMonth: monthName,
+            eventDay: day
         }
         setEvents(events => [...events, newEvent])
         setIsLoading(false);
@@ -120,6 +125,7 @@ export default function EventsContainer() {
     // returns the month corresponding to the month number
     function getMonth(monthNumber){
       const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      console.log(`month returning ${months[monthNumber]} for ${monthNumber}`)
       return months[monthNumber];
     }
 
