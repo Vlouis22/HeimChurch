@@ -1754,4 +1754,20 @@ nav{
 .loader--3:before {
   content:"Loading..."
 }
+
 @keyframes l2 {to{background-size: 100% 3px}}
+
+/* HTML: <div class="loading-events"></div> */
+.loading-events {
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 45px;
+  padding: 0 5px 8px 0;
+  background: repeating-linear-gradient(90deg,currentColor 0 8%,#0000 0 10%) 200% 100%/200% 5px no-repeat;
+  animation: l3 2s steps(6) infinite;
+}
+.loading-events:before {
+  content:"Loading..."
+}
+@keyframes l3 {to{background-position: 80% 100%}}

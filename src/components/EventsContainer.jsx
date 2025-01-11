@@ -9,6 +9,7 @@ export default function EventsContainer() {
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {
+      // gets all the upcoming events that are stored in the database
       async function getEvents() {
         let { data: HeimChurchEvents, error } = await supabase
           .from('HeimChurchEvents')
@@ -29,6 +30,7 @@ export default function EventsContainer() {
       let month = getMonth(date.getMonth());
       let day = date.getDate();
 
+      // If the event is a regular church service, additional related events will be created as needed.
       if(obj.eventName == "Church Service" && events){
         console.log(obj)
         const eventsLength = events.length;
@@ -52,6 +54,7 @@ export default function EventsContainer() {
           var date = new Date(eventDate);
           date.setDate(date.getDate() + 7 )
 
+          // formatting the new date that will be sent to the database
           let month = date.getMonth()+1
           month = month <= 9 ? `0${month}` : month;
           let day = date.getDate();
@@ -59,6 +62,7 @@ export default function EventsContainer() {
           let year = date.getFullYear();
           let nextSunday = `${month}-${day}-${year}`            
 
+          // sends the new update to the database
           const { data, error } = await supabase
           .from('HeimChurchEvents')
           .update({eventDate: nextSunday})
@@ -70,13 +74,16 @@ export default function EventsContainer() {
             console.error('Error updating HeimChurchEvents:', error.message);
         } else {
             console.log('Update successful:', data);
-        }        
+          }        
         }
       }
     }
 
+    /*
+    * when there is less than 4 upcoming events, 
+    * this function is called to fill the events container with regular church services
+    */
     function regularEvents (currentEvent, currentDate, numberOfEventsToGenerate){
-      
       for(let i = 1; i < numberOfEventsToGenerate+1; i++){
 
         var date = new Date(currentDate);
@@ -101,15 +108,24 @@ export default function EventsContainer() {
       }      
     }
 
+    // returns the month corresponding to the month number
     function getMonth(monthNumber){
       const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
       return months[monthNumber];
     }
 
-  return (
-    <div className='home-page-event-container light-grey-background rounded-border'>
+    const loader = (
+      <div className='loading-events'></div>   
+    )
 
-        {events && upcomingEvents}    
+  return (
+    <div 
+      className='home-page-event-container light-grey-background rounded-border'
+      style={{minHeight: '400px'}}
+    >
+
+        {!isLoading && events && upcomingEvents}    
+        {isLoading && loader}
 
     </div>
   )
