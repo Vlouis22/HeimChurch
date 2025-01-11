@@ -28,12 +28,6 @@ export default function EventsContainer() {
     
     const upcomingEvents = events.map((obj, i) => {
 
-      // let date = new Date(obj.eventDate);
-      // let date = new Date(Date.parse(obj.eventDate));
-      // let month = getMonth(date.getMonth());
-      // let day = date.getDate();
-      let month = getMonth((obj.eventMonth));
-
       // If the event is a regular church service, additional related events will be created as needed.
       if(obj.eventName == "Church Service" && events){
         const eventsLength = events.length;
@@ -95,8 +89,6 @@ export default function EventsContainer() {
 
         var date = new Date(currentDate);
         date.setDate(date.getDate() + (7 * i) )
-        console.log(`current date test is : ${date}`)
-
 
         let month = date.getMonth()+1;
         let monthName = getMonth(month-1);
@@ -116,16 +108,12 @@ export default function EventsContainer() {
         }
         setEvents(events => [...events, newEvent])
         setIsLoading(false);
-        // console.log(events)
-        // const sortedEvents = events.sort((event1, event2) => (new Date(event1.eventDate) - new Date(event2.eventDate)));
-        // console.log(`sorted events: ${[...sortedEvents]}`)
       }      
     }
 
     // returns the month corresponding to the month number
     function getMonth(monthNumber){
       const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-      console.log(`month returning ${months[monthNumber]} for ${monthNumber}`)
       return months[monthNumber];
     }
 
@@ -136,6 +124,16 @@ export default function EventsContainer() {
   useEffect(()=>{
       console.log([...events])
   }, [events] )
+
+  useEffect(() => {
+    // Ensure events are sorted whenever the state changes
+    setEvents((prevEvents) =>
+      [...prevEvents].sort(
+        (event1, event2) => new Date(event1.eventDate) - new Date(event2.eventDate)
+      )
+    );
+  }, [isLoading]);
+
 
   return (
     <div 
