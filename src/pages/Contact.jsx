@@ -34,7 +34,7 @@ export default function Contact() {
         <div className='contact-section'>
           <h2 className='contact-heading'>General Inquiries</h2>
           <p className='contact-info'>
-            Phone: <a href="tel:+13026703007">+1 (302) 670-3007</a>
+            Phone: <a href="tel:+13026703007">+1 (302) 535-8307</a>
           </p>
           <p className='contact-info'>
             Email: <a href="mailto:heimchurch3540@gmail.com">Heimchurch3540@gmail.com</a>
