@@ -84,6 +84,7 @@ export default function EventsContainer() {
     * when there is less than 4 upcoming events, 
     * this function is called to fill the events container with regular church services
     */
+
     function regularEvents (currentEvent, currentDate, numberOfEventsToGenerate){
       for(let i = 1; i < numberOfEventsToGenerate+1; i++){
 
@@ -103,8 +104,8 @@ export default function EventsContainer() {
         setEvents(events => [...events, newEvent])
         setIsLoading(false);
         console.log(events)
-        const sortedEvents = events.sort((event1, event2) => (new Date(event1.eventDate) - new Date(event2.eventDate)));
-        console.log(`sorted events: ${[...sortedEvents]}`)
+        // const sortedEvents = events.sort((event1, event2) => (new Date(event1.eventDate) - new Date(event2.eventDate)));
+        // console.log(`sorted events: ${[...sortedEvents]}`)
         console.log(events)
       }      
     }
