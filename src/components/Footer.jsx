@@ -10,7 +10,7 @@ export default function Footer() {
       <div>
         <div className='footer-text-container'>
           <FooterTextHolder title='Sunday Morning' description='11:00am service - in person & online'/>
-          <FooterTextHolder title='Visit Us' description='3540 peachtree run Dover, DE 19901 United States'/>
+          <FooterTextHolder title='Visit Us' description='3540 Peachtree Run Dover, DE 19901, United States'/>
         </div>
         <div className='smaller-footer-text-container'>
           <div>
