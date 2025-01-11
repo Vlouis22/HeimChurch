@@ -23,8 +23,81 @@ export default function EventsContainer() {
     }, []);
     
     const upcomingEvents = events.map((obj, i) => {
-        return <EventHolder eventMonth={obj.eventMonth} eventDay={obj.eventDay} eventName={obj.eventName} eventDescription={obj.eventDescription} eventBackground={obj.eventBackgroundPicture? obj.eventBackgroundPicture : DefaultPicture} key={i}/>
+
+      let date = new Date(obj.eventDate);
+      let month = getMonth(date.getMonth());
+      let day = date.getDate();
+
+      if(i == 0 && events){
+        const eventsLength = events.length;
+        const eventsNeeded = 4 - eventsLength > 0 ? 4 - eventsLength : 0;
+        const currentDate = new Date(obj.eventDate)
+        updateDateToDatabase(obj, currentDate);
+        regularEvents(events[i], currentDate, eventsNeeded)
+      }
+      return <EventHolder eventMonth={month} eventDay={day} eventName={obj.eventName} eventDescription={obj.eventDescription} eventBackground={obj.eventBackgroundPicture? obj.eventBackgroundPicture : DefaultPicture} key={i}/>
+    
     })
+
+    async function updateDateToDatabase(currentEvent, eventDate){
+      
+      if(currentEvent){
+
+        const currentDate = new Date();
+
+        if (currentDate > eventDate) {
+
+          var date = new Date(eventDate);
+          date.setDate(date.getDate() + 7 )
+
+          let month = date.getMonth()+1
+          month = month <= 9 ? `0${month}` : month;
+          let day = date.getDate();
+          day = day <= 9 ? `0${day}`: day;
+          let year = date.getFullYear();
+          let nextSunday = `${month}-${day}-${year}`            
+
+          const { data, error } = await supabase
+          .from('HeimChurchEvents')
+          .update({eventDate: nextSunday})
+          .order('id', { ascending: true })
+          .limit(1)
+          .select()
+
+          if (error) {
+            console.error('Error updating HeimChurchEvents:', error.message);
+        } else {
+            console.log('Update successful:', data);
+        }        
+        }
+      }
+    }
+
+    function regularEvents (currentEvent, currentDate, numberOfEventsToGenerate){
+      
+      for(let i = 1; i < numberOfEventsToGenerate+1; i++){
+
+        var date = new Date(currentDate);
+        date.setDate(date.getDate() + (7 * i) )
+
+        let month = getMonth(date.getMonth());
+        let day = date.getDate();
+        let year = date.getFullYear();
+
+        const newEvent = {
+            eventName: currentEvent.eventName,
+            eventDescription: currentEvent.eventDescription,
+            eventBackgroundPicture: currentEvent.eventBackgroundPicture,
+            eventDate: `${month}-${day}-${year}`
+        }
+        setEvents(events => [...events, newEvent])
+      }      
+    }
+
+    function getMonth(monthNumber){
+      const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      return months[monthNumber];
+    }
 
   return (
     <div className='home-page-event-container light-grey-background rounded-border'>
