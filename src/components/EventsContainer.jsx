@@ -7,6 +7,7 @@ export default function EventsContainer() {
 
     const [events, setEvents] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const [RegularChurchServiceName, setRegularChurchServiceName] = useState();
     
     useEffect(() => {
       // gets all the upcoming events that are stored in the database
@@ -19,6 +20,7 @@ export default function EventsContainer() {
           console.error('Error fetching events:', error);
         } else {
           setEvents(HeimChurchEvents)
+          setRegularChurchServiceName(HeimChurchEvents[0].eventName)
         }
       }
       getEvents();
@@ -31,8 +33,7 @@ export default function EventsContainer() {
       let day = date.getDate();
 
       // If the event is a regular church service, additional related events will be created as needed.
-      if(obj.eventName == "Church Service" && events){
-        console.log(obj)
+      if(obj.eventName == RegularChurchServiceName && events){
         const eventsLength = events.length;
         const eventsNeeded = 4 - eventsLength > 0 ? 4 - eventsLength : 0;
         const currentDate = new Date(obj.eventDate)
