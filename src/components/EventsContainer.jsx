@@ -6,6 +6,7 @@ import { supabase } from '../utils/supabaseClient';
 export default function EventsContainer() {
 
     const [events, setEvents] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {
       async function getEvents() {
@@ -28,7 +29,8 @@ export default function EventsContainer() {
       let month = getMonth(date.getMonth());
       let day = date.getDate();
 
-      if(i == 0 && events){
+      if(obj.eventName == "Church Service" && events){
+        console.log(obj)
         const eventsLength = events.length;
         const eventsNeeded = 4 - eventsLength > 0 ? 4 - eventsLength : 0;
         const currentDate = new Date(obj.eventDate)
@@ -91,6 +93,11 @@ export default function EventsContainer() {
             eventDate: `${month}-${day}-${year}`
         }
         setEvents(events => [...events, newEvent])
+        setIsLoading(false);
+        console.log(events)
+        const sortedEvents = events.sort((event1, event2) => (new Date(event1.eventDate) - new Date(event2.eventDate)));
+        console.log(`sorted events: ${[...sortedEvents]}`)
+        console.log(events)
       }      
     }
 
