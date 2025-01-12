@@ -1,9 +1,12 @@
 import React from 'react'
 import churchimage from '../images/churchphoto1.jpg'
 import { useNavigate } from 'react-router-dom';
+import { englishDatabase } from '../data/EnglishDatabase';
 
 
 export default function AboutUs({to}) {
+
+  let language = englishDatabase;
 
   const navigate = useNavigate()
     
@@ -15,7 +18,7 @@ export default function AboutUs({to}) {
   return (
     <div className='about-us-container'>
         <img className='about-us-img rounded-border' src={churchimage} alt='picture of the church'></img>
-        <div className='about-us-text button'  style={{fontSize: '38px'}} onClick={handleClick}><p className='white-text underlined'>About Us</p></div>
+        <div className='about-us-text button'  style={{fontSize: '38px'}} onClick={handleClick}><p className='white-text underlined'>{language.homepage['container-1-button']}</p></div>
     </div>
   )
 }
