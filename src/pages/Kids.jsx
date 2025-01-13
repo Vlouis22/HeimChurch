@@ -5,19 +5,23 @@ import KidsPic2 from "../images/kids_heim_pic_2.jpeg"
 import KidsPic3 from "../images/kids_heim_pic_4.jpeg"
 import { KidsQuestions } from '../data/questions'
 import Questions from '../components/Questions'
+import { database } from '../data/ChurchDatabase'
 
 
 export default function Kids() {
+
+  let language = database
+
   return (
     <div>
-        <Ministry name='Kids'
+        <Ministry name={language.ministries.Kids.name}
         picture1={KidsPic1}
         picture2={KidsPic2}
         picture4={KidsPic3}
-        descriptionTitle1='About Kids Ministry'
-        description1='At HEIM Church, we are committed to helping children grow in their faith in a fun and safe environment. We offer a special service just for kids aged 13 and under, led by caring and experienced instructors. This allows parents to focus on the regular service while their children enjoy a program designed just for them.' 
-        descriptionTitle2='Our Goals' 
-        description2='Our Kids Ministry is all about helping children learn about God in a way that makes sense to them. We want them to build strong friendships, discover how to read and explore the Bible, and learn songs that help them praise God. To make their time enjoyable, we’ve created a welcoming space filled with books, games, iPads, and plenty of fun activities. At HEIM Church, we’re here to help every child grow in their love for God while having a great time doing it.'
+        descriptionTitle1={language.ministries.Kids.descriptionTitle1}
+        description1={language.ministries.Kids.description1}
+        descriptionTitle2={language.ministries.Kids.descriptionTitle2}
+        description2={language.ministries.Kids.description2}
         questions = {<Questions questions={KidsQuestions}/>}
         />
     </div>

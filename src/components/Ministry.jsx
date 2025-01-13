@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Footer from './Footer';
+import { database } from '../data/ChurchDatabase';
 
 export default function Ministry({
   name,
@@ -15,6 +16,9 @@ export default function Ministry({
   description3,
   questions,
 }) {
+
+  let language = database
+
   const [isLoading1, setIsLoading1] = useState(true);
   const [isLoading2, setIsLoading2] = useState(true);
   const [isLoading3, setIsLoading3] = useState(true);
@@ -39,7 +43,7 @@ export default function Ministry({
           }}
           className="blue-text bold"
         >
-          Welcome to the {name} ministry page
+          {language.ministries.ministry['text-1']} {name} {language.ministries.ministry['text-2']}
         </div>
 
         <div style={{ marginTop: '35px', marginBottom: '10px' }} className="ministry--subcontainer-1">

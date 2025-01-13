@@ -7,14 +7,14 @@ import { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import ChurchLogoWhite from "../images/heimchurchlogo_processed.JPG";
 import { useNavigate } from 'react-router-dom';
-import { englishDatabase } from '../data/EnglishDatabase';
+import { database } from '../data/ChurchDatabase';
 
 
 export default function Navbar() {
 
     const navigate = useNavigate();
 
-    let language = englishDatabase;
+    let language = database;
 
     const navRef = useRef();
     const showNavbar = () => {

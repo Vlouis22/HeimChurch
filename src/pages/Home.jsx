@@ -10,13 +10,13 @@ import Request from '../components/Request'
 import churchvan from '../images/churchvan.jpg'
 import prayer_request from '../images/prayer_request.jpeg'
 import Footer from '../components/Footer'
-import { englishDatabase } from '../data/EnglishDatabase'
+import { database } from '../data/ChurchDatabase'
 
 const churchImageBackground = 'https://i.postimg.cc/nrJz4FrF/churchphoto1.jpg'
 
 export default function Home() {
 
-  let language = englishDatabase
+  let language = database
 
   const faceBookLink = 'https://www.facebook.com/people/HEIM-Church-LIVE/61553576407518/?mibextid=wwXIfr&rdid=cex9k3X5IaFQuv5Y&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EGnJNCVKr%2F%3Fmibextid%3DwwXIfr';
   const instagramLink = 'https://www.instagram.com/heim_church/?igsh=N3dqOGN6NXFkYWc%3D';

@@ -1,4 +1,8 @@
-const YouthQuestions = [
+import {getLanguage} from "./language";
+
+let language = getLanguage()
+
+const YouthQuestions = language == "English" ? [
     {
     question: "How do I join?",
     answer: "Simply connect with one of our youth leaders after church, and we’ll be happy to discuss how you can get involved!"
@@ -11,10 +15,23 @@ const YouthQuestions = [
         question: "When do you meet?",
         answer: "We meet every second Sunday of the month after our church service."
     }
+] : [
+    {
+        "question": "Kijan mwen ka rantre?",
+        "answer": "Senpleman konekte ak youn nan lidè jèn nou yo apre sèvis legliz la, epi nou pral kontan diskite sou kijan ou ka angaje w!"
+    },
+    {
+        "question": "Èske mwen ka envite yon zanmi?",
+        "answer": "Natirèlman! Envite nenpòt kantite zanmi ou ta renmen."
+    },
+    {
+        "question": "Kilè nou reyini?",
+        "answer": "Nou reyini chak dezyèm dimanch nan mwa a apre sèvis legliz nou an."
+    }
 ]
 
 
-const WomenQuestions = [
+const WomenQuestions = language == "English" ?  [
     { 
         question: "How do I join?",
         answer: "Simply connect with one of our Women's group leaders after church, and we’ll be happy to discuss how you can get involved!"
@@ -30,9 +47,22 @@ const WomenQuestions = [
         answer: "We typically announce upcoming events during our church services and also in the Womens ministry group chat."
 
     }
+] : [
+    { 
+        "question": "Kijan mwen ka rantre?",
+        "answer": "Senpleman konekte ak youn nan lidè gwoup Fanm nou yo apre sèvis legliz la, epi nou pral kontan diskite sou kijan ou ka angaje w!"
+    },
+    { 
+        "question": "Kilès ki ka rantre nan Ministè Fanm nan?",
+        "answer": "Tout fanm byenveni! Kit ou jèn, marye, oswa nan yon lòt etap nan lavi, nou ankouraje ou pou konekte avèk nou. Pale ak yon lidè si ou gen nenpòt kesyon."
+    },
+    { 
+        "question": "Kijan mwen ka rete enfòme sou evènman kap vini yo?",
+        "answer": "Nou anons evènman kap vini yo anjeneral pandan sèvis legliz nou yo epi tou nan gwoup chat Ministè Fanm nan."
+    }
 ]
 
-const AboutQuestions = [
+const AboutQuestions = language == "English" ? [
     {
         question: "How can I get in touch with church leaders or members?",
         answer: (<>You can reach out to our church leaders or members by <span className='blue-text underlined'><a href='/Contact'>clicking here</a></span>. There, you’ll find email addresses and phone numbers you can use to reach out to us. You’re also welcome to speak with someone in person after any of our services.</>)
@@ -61,9 +91,38 @@ const AboutQuestions = [
         question: "I don't speak Haitian Creole, can I still visit?",
         answer: "Absolutely! We would be delighted to have you visit. While our church services are primarily conducted in Haitian Creole, we also incorporate French and English throughout the service. Additionally, we provide translation services for your convenience."
     }
-];
+] : [
+    {
+        "question": "Kijan mwen ka kontakte lidè legliz oswa manm yo?",
+        "answer": (<>Ou ka kontakte lidè legliz nou yo oswa manm yo pa <span className='blue-text underlined'><a href='/Contact'>klike isit la</a></span>. La a, w ap jwenn adrès imel ak nimewo telefòn ou ka itilize pou kontakte nou. Ou ka tou pale ak yon moun an pèsòn apre nenpòt nan sèvis nou yo.</>)
+    },
+    {
+        "question": "Kote legliz la ye ak ki lè nou rasanble?",
+        "answer": "Legliz nou an sitiye nan 3540 Peachtree Run, Dover, DE 19901, Etazini. Nou rasanble chak dimanch a 11:00 AM."
+    },
+    {
+        "question": "Ki gwoup ki disponib, ak kijan mwen ka rantre nan youn?",
+        "answer": "Gen anpil gwoup ou ka rantre ladan yo! Vizite seksyon Ministè nou an pou eksplore gwoup ki disponib yo epi aprann plis sou chak youn."
+    },
+    {
+        "question": "Èske gen sesyon etid biblik?",
+        "answer": "Wi, nou fè sesyon etid biblik chak mèkredi a 6:30 PM. Tout moun byenveni!"
+    },
+    {
+        "question": "Kijan mwen ka vizite legliz la si mwen pa gen transpò?",
+        "answer": "Nou gen transpò pou ale ak vini nan legliz la, ranpli yon fòm demann vwayaj si sa pral premye fwa ou vizite legliz la."
+    },
+    {
+        "question": "Ki sa ou ofri pou jèn granmoun?",
+        "answer": "Si ou se yon jèn granmoun, nou ankouraje ou rantre nan ministè jèn yo! Nou òganize yon varyete aktivite, ki gen ladan sesyon etid biblik, evènman sosyal, elatriye..."
+    },
+    {
+        "question": "Mwen pa pale kreyòl ayisyen, èske mwen ka toujou vizite?",
+        "answer": "Absoliman! Nou ta kontan anpil pou ou vizite. Pandan ke sèvis legliz nou yo fèt an kreyòl ayisyen, nou entegre tou franse ak anglè pandan sèvis la. Anplis de sa, nou bay sèvis tradiksyon pou konvenyans ou."
+    }
+]
 
-const OtherGroupsQuestions = [
+const OtherGroupsQuestions = language == "English" ? [
     { 
         question: "What groups are available besides Youth, Kids, and Women's?",
         answer: "In addition to these groups, we also have Men's Ministry, the Tech and Media Team, the Musicians' Group, and the Worship Team."
@@ -85,9 +144,28 @@ const OtherGroupsQuestions = [
         )
 
     }
+] : [
+    { 
+        "question": "Ki lòt gwoup ki disponib anplis Gwoup Jèn, Timoun, ak Fanm?",
+        "answer": "Anplis gwoup sa yo, nou gen tou Ministè Gason, Ekip Teknoloji ak Medya, Gwoup Mizisyen yo, ak Ekip Adorasyon an."
+    },
+    { 
+        "question": "Èske mwen ka rantre nan plis pase yon gwoup?",
+        "answer": "Wi, si ou gen plizyè talan oswa enterè, ou byenveni pou rantre nan plis pase yon gwoup."
+    },
+    { 
+        "question": "Èske mwen ka rantre nan yon gwoup si mwen pa batize?",
+        "answer": (
+            <>
+                Pandan nou ankouraje tout moun pou reflechi sou batèm, li pa yon egzijans pou rantre nan yon gwoup. 
+                Sepandan, ka gen kèk limit sou patisipasyon ou nan sèten aktivite si ou pa batize. 
+                Si w enterese aprann plis sou batèm, tanpri vizite <a href="/Baptizing">paj batèm nou an</a>.
+            </>
+        )
+    }
 ]
 
-const KidsQuestions = [
+const KidsQuestions = language == "English" ? [
     { 
         question: "What time does the kids service starts?",
         answer: "The Kids Ministry service begins at 11:00 AM, coinciding with our main worship service."
@@ -102,6 +180,19 @@ const KidsQuestions = [
         question: "Is there an age limit for participating in the Kids Ministry?",
         answer: "All children from toddlers to age 13 are welcome to participate in the Kids Ministry."
 
+    }
+] : [
+    { 
+        "question": "A ki lè sèvis Timoun yo kòmanse?",
+        "answer": "Sèvis Ministè Timoun yo kòmanse a 11:00 AM, ansanm ak sèvis adorasyon prensipal la."
+    },
+    { 
+        "question": "A ki lè sèvis Timoun yo fini?",
+        "answer": "Sèvis Ministè Timoun yo fini an menm tan ak sèvis adorasyon prensipal la."
+    },
+    { 
+        "question": "Eske gen yon limit laj pou patisipe nan Ministè Timoun yo?",
+        "answer": "Tout timoun soti nan tibebe rive nan laj 13 ka patisipe nan Ministè Timoun yo."
     }
 ]
 

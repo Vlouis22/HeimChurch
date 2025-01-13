@@ -1,12 +1,12 @@
 import React from 'react'
 import churchimage from '../images/churchphoto1.jpg'
 import { useNavigate } from 'react-router-dom';
-import { englishDatabase } from '../data/EnglishDatabase';
+import { database } from '../data/ChurchDatabase';
 
 
 export default function AboutUs({to}) {
 
-  let language = englishDatabase;
+  let language = database;
 
   const navigate = useNavigate()
     

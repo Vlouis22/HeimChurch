@@ -5,9 +5,12 @@ import Footer from '../components/Footer.jsx';
 import HeimChurchLogo from '../images/heimchurchlogo.JPG';
 import { LuMessageSquare } from "react-icons/lu";
 import {supabase} from '../utils/supabaseClient.js';
+import { database } from '../data/ChurchDatabase.js';
 
 
 export default function Watchlive() {
+
+  let language = database
   
   const [isLive, setIsLive] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -194,7 +197,7 @@ export default function Watchlive() {
           />
         <div className='not-live-container-text'>
           <RegularButton text={<span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-          <LuMessageSquare style={{paddingLeft: '3px'}}/> Request Prayer</span>} color="white" bgcolor="blue" width="150px" height="50px" to='Prayer'/>
+          <LuMessageSquare style={{paddingLeft: '3px'}}/> {language.watchlive['prayer-button']}</span>} color="white" bgcolor="blue" width="150px" height="50px" to='Prayer'/>
         </div>
         </div>
         }
@@ -229,17 +232,17 @@ export default function Watchlive() {
 
       <div className='upcominglive-container'>
         <div className='upcominglive-container-child'>
-          <div className='inter bold'>Upcoming Live Streams</div>
-          <RegularButton color='white' bgcolor='blue' text='VIEW CALENDAR' width={135} height={54} to='Calendar'/>
+          <div className='inter bold'>{language.watchlive.upcoming.title}</div>
+          <RegularButton color='white' bgcolor='blue' text={language.watchlive.upcoming['button-text']} width={135} height={54} to='Calendar'/>
         </div>
       </div>
       </div>
 
       <div className='view-previous-lives'>
-        <div className='inter bold'>View Recorded Live Events</div>
+        <div className='inter bold'>{language.watchlive.pastEvents.title}</div>
         {isLoaded && <div className='view-previous-lives-videos-container'>{displayVideos(data)}</div>}
         {!isLoaded && !anErrorOccured &&  <div className='loader'></div>}
-        {!isLoaded && anErrorOccured &&  <div className=''>An unexpected error occured. Please try again later.</div>}
+        {!isLoaded && anErrorOccured &&  <div className=''>{language.watchlive.pastEvents.errorMessage}</div>}
       </div>
       
     </div>

@@ -3,15 +3,19 @@ import Ministry from '../components/Ministry';
 import picture1 from "../images/groupe_dame.jpg";
 import { WomenQuestions } from '../data/questions';
 import Questions from '../components/Questions';
+import { database } from '../data/ChurchDatabase';
 
 export default function Womens() {
+
+  let language = database
+
   return (
     <div>
         <Ministry 
-          name='Womens' 
+          name={language.ministries.Womens.name} 
           picture1={picture1} 
-          descriptionTitle1='About Womens ministry' 
-          description1="HEIM Church's Women’s Ministry is a vibrant community where women grow in faith, build lasting relationships, and serve the church and community. Every 3rd Sunday, the women lead the service in worship and fellowship. The Ministry provides opportunities for spiritual enrichment and connection, supporting one another through life’s challenges and serving together. Join us as we grow in Christ and support one another in love and unity." 
+          descriptionTitle1={language.ministries.Womens.descriptionTitle1} 
+          description1={language.ministries.Womens.description1}
           questions={<Questions questions={WomenQuestions}/>}
         />
     </div>
