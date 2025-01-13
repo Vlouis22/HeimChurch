@@ -101,8 +101,8 @@ const creoleDatabase = {
         "welcome-screen":{
             'text-1': "Byenveni Nan",
             'text-2': "HEIM CHURCH",
-            'button-1': "Gade Live",
-            'button-2': "Bay"
+            'button-1': "GADE LIVE",
+            'button-2': "BAY"
         },
         "pg2-coming-up-text": "Ap Rive Nan HEIM CHURCH",
         "calendar-button-text": "Gade Kalendriye",
