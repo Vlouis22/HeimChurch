@@ -25,3 +25,7 @@ code {
 body{
   background-color: var(--darkGrey);
 }
+
+.button{
+  padding: 0px 3px !important;
+}

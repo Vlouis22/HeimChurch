@@ -90,7 +90,14 @@ const englishDatabase = {
             "mainTitle": "Other Groups/Ministries at HEIM Church",
             "subtitle": "Find Your Community at HEIM Church",
             "subtitle-description": "At HEIM Church, we offer a wide variety of ministries and groups designed to welcome everyone. No matter your stage in life or the skills you bring, there’s a place for you here. These groups are opportunities to build friendships, grow in faith, and make a difference. Whether you’re seeking support, meaningful connections, or ways to serve, you’ll find something just right for you. We invite you to join us and be a part of the vibrant HEIM Church community."
-        }
+        },
+    },
+    "baptism": {
+        "title-1": "What is Baptism?",
+        "description-1": "A Christian sacrament signifying spiritual cleansing and rebirth.",
+        "title-2": "Acts 2:38",
+        "description-2": <>"Repent and be Baptized in the name of Jesus Christ for the remission of sins"</>,
+        "interested-in-baptizing": "If you are interested in getting baptized or would like to know more about baptism, visit us in person at 3540 peachtree run, Dover, DE 19901 United States"
     }   
 }
 
@@ -183,7 +190,14 @@ const creoleDatabase = {
             "subtitle": "Jwenn Kominote Ou Nan HEIM CHURCH",
             "subtitle-description": "Nan HEIM CHURCH, nou ofri yon varyete gwo ministè ak gwoup ki fèt pou akeyi tout moun. Kit ou nan nenpòt etap nan lavi oswa gen kapasite espesyal, gen yon kote pou ou la. Gwoup sa yo se opòtinite pou bati zanmitay, grandi nan lafwa, epi fè yon diferans. Kit ou ap chèche sipò, koneksyon ki gen sans, oswa fason pou sèvi, ou pral jwenn yon bagay ki jis pou ou. Nou envite ou rantre nan nou e vin yon pati nan kominote vivan HEIM CHURCH."
         }
-    }   
+    },
+"baptism": {
+    "title-1": "Kisa Batèm ye?",
+    "description-1": "Yon sakreman kretyen ki siyifi netwayaj espirityèl ak renesans.",
+    "title-2": "Travay 2:38",
+    "description-2": "\"Repanti nou epi resevwa batèm nan non Jezikri pou padon peche nou yo.\"",
+    "interested-in-baptizing": "Si w enterese resevwa batèm oswa ou ta renmen konnen plis sou batèm, vizite nou an pèsòn nan 3540 Peachtree Run, Dover, DE 19901, Etazini."
+}    
 }
 
 const database = language == "English" ? englishDatabase : creoleDatabase;
