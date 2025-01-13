@@ -10,7 +10,7 @@ const englishDatabase = {
             'text-1': "WELCOME TO",
             'text-2': "HEIM CHURCH",
             'button-1': "WATCH LIVE",
-            'button-2': "Give"
+            'button-2': "GIVE"
         },
         "pg2-coming-up-text": "Coming Up At HEIM Church",
         "calendar-button-text": "VIEW CALENDAR",
