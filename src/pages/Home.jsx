@@ -66,7 +66,7 @@ export default function Home() {
           <Request title={language.homepage['container-3-title']} width='500px' height='275px' buttonText={language.homepage['container-3-button-text']} image={prayer_request} to='Prayer'/>
           <LinkContainers title={language.homepage['container-4-title']}
             icons={[]}
-            links={['Giving', 'Groups']}
+            links={language.homepage['container-4-links']}
             to={['Offering', 'Others']}
           />
         </div>
