@@ -63,10 +63,10 @@ export default function Navbar() {
                 <div className='navbar-minitries subnav-ministries'>{language.navbar[2]}<SubNav /></div>
 
                 {/* this is the sub navbar ad it should only show up if in smaller screen size*/}
-                <NavLink to='/Youth' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language.subnav[0]}</NavLink>
-                <NavLink to='/Womens' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language.subnav[1]}</NavLink>
-                <NavLink to='/Kids' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language.subnav[2]}</NavLink>
-                <NavLink to='/Others' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language.subnav[3]}</NavLink>
+                <NavLink to='/Youth' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language['subnav-for-phone'][0]}</NavLink>
+                <NavLink to='/Womens' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language['subnav-for-phone'][1]}</NavLink>
+                <NavLink to='/Kids' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language['subnav-for-phone'][2]}</NavLink>
+                <NavLink to='/Others' className={({ isActive }) => (isActive ? "active-link subnav-invisible" : "subnav-invisible")} onClick={refreshPage}>{language['subnav-for-phone'][3]}</NavLink>
 
                 <NavLink to='/WatchLive' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>{language.navbar[3]}</NavLink>
                 <NavLink to='/Offering' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>{language.navbar[4]}</NavLink>

@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function EventHolder({eventName, eventBackground, eventDay, eventMonth, eventDescription}) {
 
-  if(eventName.length > 30){
-    eventName = eventName.slice(0, 81) + '...';
+  if(eventName.length > 50){
+    eventName = eventName.slice(0, 50) + '...';
   }
 
   return (

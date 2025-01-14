@@ -5,6 +5,7 @@ let language = getLanguage()
 const englishDatabase = {
     "navbar": ["Home", "About", "Ministries", "Watch Live", "Offering"],
     "subnav": ["Youth", "Women's", "Kids", "Others"],
+    "subnav-for-phone": ["Youth Ministry", "Women's Ministry", "Kids Ministry", "Other Ministries"],
     "homepage": {
         "welcome-screen":{
             'text-1': "WELCOME TO",
@@ -104,6 +105,7 @@ const englishDatabase = {
 const creoleDatabase = {
     "navbar": ["Akèy", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
     "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
+    "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
         "welcome-screen":{
             'text-1': "Byenveni Nan",
