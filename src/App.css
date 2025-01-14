@@ -1822,3 +1822,35 @@ nav{
   background-color: #eee;
   color: #000; 
 }
+
+/* Language Selector <previous code for button>*/
+
+/* .language-selector-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 150px;
+  height: fit-content;
+  font-size: 12px;
+  margin-left: 1rem;
+}
+
+.english-button,.kreyol-button {
+  border-bottom: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-right: 1.5px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 7px 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.english-button{
+  border-left: 1.5px solid black;
+}
+
+
+
+.selected-language{
+  background-color: var(--darkGrey);
+} */
