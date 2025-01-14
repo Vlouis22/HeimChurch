@@ -1,7 +1,7 @@
 export function getLanguage() {
     let language = localStorage.getItem("language");
     if (language == null) {
-        return "Creole";
+        return "English";
     } else {
         return language;
     }

@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import ChurchLogoWhite from "../images/heimchurchlogo_processed.JPG";
 import { useNavigate } from 'react-router-dom';
 import { database } from '../data/ChurchDatabase';
+import LanguageSelector from './LanguageSelector';
 
 
 export default function Navbar() {
@@ -69,6 +70,7 @@ export default function Navbar() {
 
                 <NavLink to='/WatchLive' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>{language.navbar[3]}</NavLink>
                 <NavLink to='/Offering' className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>{language.navbar[4]}</NavLink>
+                <LanguageSelector/>
                 {window.innerWidth < 1024 ? <Socials size={25} blackIcon={true}/> : null}
                 <button className='nav-btn nav-close-btn' onClick={showNavbar} aria-label='close navigation button'>
                     <FaTimes />
@@ -77,7 +79,8 @@ export default function Navbar() {
             <button className='nav-btn' onClick={showNavbar} aria-label='open navigation button'>
                 <FaBars />
             </button>
-            {window.innerWidth > 1024 ? <Socials size={20} blackIcon={true}/> : null}
+            
+            {window.innerWidth > 1024 ? <div style={{width: '200px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}><Socials size={20} blackIcon={true}/></div> : null}
         </header>
     )
 }
