@@ -63,6 +63,7 @@ const englishDatabase = {
     },
     "ministries": {
         "ministry": {
+            "title" : "Frequently Asked Questions",
             "text-1": "Welcome to the",
             "text-2": "ministry page"
         },
@@ -163,6 +164,7 @@ const creoleDatabase = {
     },
     "ministries": {
         "ministry": {
+            "title" : "Kesyon yo poze souvan",
             "text-1": "Byenvini sou paj Ministè",
             "text-2": "yo"
         },
