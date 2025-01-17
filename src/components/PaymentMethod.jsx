@@ -44,6 +44,7 @@ export default function PaymentMethod({logo, name, qrCode, info1name, info2name,
                 src={qrCode}
                 onLoad={turnOffLoading}
                 onError={setAnError}
+                alt={`${name} qr code`}
                 >
               </img>
             </div>

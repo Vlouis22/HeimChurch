@@ -100,7 +100,11 @@ const englishDatabase = {
         "title-2": "Acts 2:38",
         "description-2": <>"Repent and be Baptized in the name of Jesus Christ for the remission of sins"</>,
         "interested-in-baptizing": "If you are interested in getting baptized or would like to know more about baptism, visit us in person at 3540 peachtree run, Dover, DE 19901 United States"
-    }   
+    },
+    "calendar":
+    {
+        "title": "HEIM Church Calendar"
+    }      
 }
 
 const creoleDatabase = {
@@ -201,7 +205,11 @@ const creoleDatabase = {
     "title-2": "Travay 2:38",
     "description-2": "\"Repanti nou epi resevwa batèm nan non Jezikri pou padon peche nou yo.\"",
     "interested-in-baptizing": "Si w enterese resevwa batèm oswa ou ta renmen konnen plis sou batèm, vizite nou an pèsòn nan 3540 Peachtree Run, Dover, DE 19901, Etazini."
-}    
+},
+"calendar":
+    {
+        "title": "Kalandriye HEIM Church"
+    }    
 }
 
 const database = language == "English" ? englishDatabase : creoleDatabase;

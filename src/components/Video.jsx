@@ -8,7 +8,7 @@ export default function Video({videoId, title, url}) {
   return (
     <div className='video-container'>
         <a target='_blank' href={fullLink}>
-            <img className='video-image' src={url}></img>
+            <img className='video-image' src={url} alt='recorded live event'></img>
             <div className='video-title'>{title}</div>
         </a>
     </div>

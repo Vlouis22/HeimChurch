@@ -12,7 +12,7 @@ export default function Baptizing() {
     <>
     <div className='baptizing-page'>
       <div className='baptizing-page-1'>
-      <img className='baptizing-picture' width='60%' height='100%' src={BaptizingPicture}></img>
+      <img className='baptizing-picture' width='60%' height='100%' src={BaptizingPicture} alt='Person getting baptized'></img>
 
       <div className='baptizing-page-1-text-container'>
         <div className='baptizing-page-headers'>{language.baptism['title-1']}</div>
@@ -25,7 +25,7 @@ export default function Baptizing() {
         <p>{language.baptism['description-2']}</p>
       </div>
       <div>
-        <img src={BaptizingQuote}></img>
+        <img src={BaptizingQuote} alt='baptizing quote'></img>
       </div>
       <div>
         <p className='interested-in-baptizing'>{language.baptism['interested-in-baptizing']}</p>
