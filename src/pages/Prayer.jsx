@@ -32,7 +32,7 @@ export default function Prayer() {
     <div className='prayer--container'>
       <form onSubmit={sendEmail}>
 
-        <h1 style={{width: '100%', textAlign: 'center'}} className='blue-text'>Prayer Request</h1>
+        <h1 style={{width: '100%', textAlign: 'center'}} className='blue-text'>Prayer Request/Demann Lapriyè</h1>
 
         <label>Name/Non<span style={{color: 'red'}}>*</span></label>
           <div>
@@ -41,10 +41,10 @@ export default function Prayer() {
           </div>
 
         <label>Email<span style={{color: 'red'}}>*</span></label>
-        <input type='email' name='email' value={prayerRequest.email || ''} onChange={handleChange} className='regular-input-height regular-input-width' required></input>
+        <input type='email' name='email' value={prayerRequest.email || ''} onChange={handleChange} placeholder="e.g., user@example.com" className='regular-input-height regular-input-width' required></input>
 
         <label>Phone/telefòn<span style={{color: 'red'}}>*</span></label>
-        <input type='text' name='phone' value={prayerRequest.phone || ''} onChange={handleChange} className='regular-input-height regular-input-width' required></input>
+        <input type='text' name='phone' value={prayerRequest.phone || ''} onChange={handleChange} placeholder="e.g., (555) 555-5555" className='regular-input-height regular-input-width' required></input>
 
         <label>Address/adrès <span style={{fontWeight: 300}}>(optional)</span></label>
         <div>
@@ -58,7 +58,7 @@ export default function Prayer() {
         <textarea onChange={handleChange} name='prayer_request' value={prayerRequest.prayer_request}></textarea>
 
         <button onSubmit={sendEmail} className='blue-background underlined' style={{width: 'fit-content', display: 'flex', justifyContent: 'center', margin: '0 auto', marginTop: '20px'}}>
-        Submit Prayer Request <IoIosSend style={{ marginLeft: '8px' }} />
+        Submit<IoIosSend style={{ marginLeft: '8px' }} />
         </button>
       </form>
     </div>

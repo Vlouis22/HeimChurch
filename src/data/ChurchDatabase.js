@@ -104,6 +104,16 @@ const englishDatabase = {
     "calendar":
     {
         "title": "HEIM Church Calendar"
+    },
+
+    "contact": {
+        "title": "Ways To Contact Us",
+        "ride-request": "Ride Requests",
+        "prayer-request": "Prayer Requests",
+        "website-inquiry": "Website Support",
+        "general-inquiry": "General Inquiries",
+        "email": "Email",
+        "phone": "Phone",
     }      
 }
 
@@ -206,10 +216,20 @@ const creoleDatabase = {
     "description-2": "\"Repanti nou epi resevwa batèm nan non Jezikri pou padon peche nou yo.\"",
     "interested-in-baptizing": "Si w enterese resevwa batèm oswa ou ta renmen konnen plis sou batèm, vizite nou an pèsòn nan 3540 Peachtree Run, Dover, DE 19901, Etazini."
 },
-"calendar":
-    {
+"calendar": {
         "title": "Kalandriye HEIM Church"
-    }    
+},
+
+"contact": {
+    "title": "Fason Pou Kontakte Nou",
+    "ride-request": "Demann woulib",
+    "prayer-request": "Demann Lapriyè",
+    "website-inquiry": "Sipò Sitwèb",
+    "general-inquiry": "Ankèt jeneral",
+    "email": "Email",
+    "phone": "Telefòn",
+}
+
 }
 
 const database = language == "English" ? englishDatabase : creoleDatabase;
