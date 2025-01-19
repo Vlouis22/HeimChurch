@@ -69,7 +69,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         question: "Where are you located and when do you gather?",
-        answer: "Our church is located at 3540 Peachtree Run, Dover, DE 19901, United States. We gather every Sunday at 11:00 AM."
+        answer: "Our church is located at 3540 Peachtree Run, Dover, DE 19901, United States. We gather every Sunday at 11:00 an maten."
     },
     {
         question: "What groups are available, and how can I join one?",
@@ -77,7 +77,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         question: "Are there any Bible study sessions?",
-        answer: "Yes, we hold Bible study sessions every Wednesday at 6:30 PM. Everyone is welcome!"
+        answer: "Yes, we hold Bible study sessions every Wednesday at 6:30 nan apremidi. Everyone is welcome!"
     },
     {
         question: "How can I visit the church if I don't have a ride?",
@@ -97,8 +97,8 @@ const AboutQuestions = language == "English" ? [
         "answer": (<>Ou ka kontakte lidè legliz la <span className='blue-text underlined'><a href='/Contact'>pa klike nan lyen sa</a></span>. La, w ap jwenn adrès, imèl, ak nimewo telefòn ou ka itilize pou kontakte nou.</>)
     },
     {
-        "question": "Kote legliz la ye epi ki lè nou rasanble?",
-        "answer": "Legliz nou an sitiye nan 3540 Peachtree Run, Dover, DE 19901, Etazini. Nou rasanble chak dimanch a 11:00 AM."
+        "question": "Kote legliz la ye, epi ki lè nou rasanble?",
+        "answer": "Legliz nou an sitiye nan 3540 Peachtree Run, Dover, DE 19901, Etazini. Nou rasanble chak dimanch a 11:00 an maten."
     },
     {
         "question": "Ki gwoup ki disponib, epi kijan mwen ka rantre nan yon group?",
@@ -106,7 +106,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         "question": "Èske gen etid biblik?",
-        "answer": "Wi, nou fè etid biblik chak mèkredi a 6:30 PM. Tout moun envite!"
+        "answer": "Wi, nou fè etid biblik chak mèkredi a 6:30 nan apremidi. Tout moun envite!"
     },
     {
         "question": "Kijan mwen ka vizite legliz la si mwen pa gen transpòtasyon?",
@@ -167,7 +167,7 @@ const OtherGroupsQuestions = language == "English" ? [
 const KidsQuestions = language == "English" ? [
     { 
         question: "What time does the kids service starts?",
-        answer: "The Kids Ministry service begins at 11:00 AM, coinciding with our main worship service."
+        answer: "The Kids Ministry service begins at 11:00 an maten, coinciding with our main worship service."
 
     },
     { 

@@ -138,7 +138,7 @@ const creoleDatabase = {
         "container-3-button-text": "Demann Priyè",
         "container-4-title": "Patisipe",
         "container-4-links": ["Ofrann", "Gwoup"],
-        "container-5-title": "Ou Bezwen transpòtasyon?",
+        "container-5-title": "Ou Bezwen Transpòtasyon?",
         "container-5-button-text": "Demann transpòtasyon",
         "container-6-title": "Èske w enterese batize?",
         "container-6-button-text": "Plis Enfòmasyon",
@@ -146,7 +146,7 @@ const creoleDatabase = {
     "footer": {
         "text-container-1": {
             "title": "Dimanch Maten",
-            "description": "Sèvis 11:00am - an pèsòn ak an dirèk"
+            "description": "Sèvis 11:00 nan maten - an pèsòn ak an dirèk"
         },
         "text-container-2": {
             "title": "Vizite Nou",
@@ -186,7 +186,7 @@ const creoleDatabase = {
         },
         "Youth": {
             "name": "Jèn",
-            "descriptionTitle1": "Konsènan HEIM Jèn",
+            "descriptionTitle1": "Konsènan jenès legliz HEIM",
             "description1": "Byenvini nan Paj Jèn HEIM CHURCH! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
             "descriptionTitle2": 'Objektif Nou',
             "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou ap grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan group jèn nan. Nou planifye anpil aktivite spirityèl ak sosyal chak mwa epi nou mennen sèvis legliz la chak dezyèm dimanch nan mwa.',
