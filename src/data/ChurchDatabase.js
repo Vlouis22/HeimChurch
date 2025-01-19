@@ -3,6 +3,7 @@ import {getLanguage} from "./language";
 let language = getLanguage()
 
 const englishDatabase = {
+    "church-name": "HEIM Church",
     "navbar": ["Home", "About", "Ministries", "Watch Live", "Offering"],
     "subnav": ["Youth", "Women's", "Kids", "Others"],
     "subnav-for-phone": ["Youth Ministry", "Women's Ministry", "Kids Ministry", "Other Ministries"],
@@ -118,13 +119,14 @@ const englishDatabase = {
 }
 
 const creoleDatabase = {
+    "church-name": "Legliz HEIM",
     "navbar": ["Home", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
     "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
     "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
         "welcome-screen":{
-            'text-1': "Byenveni Nan",
-            'text-2': "HEIM CHURCH",
+            'text-1': "Byenvini Nan",
+            'text-2': "Legliz HEIM",
             'button-1': "GADE LIVE",
             'button-2': "Ofrann"
         },
@@ -156,7 +158,7 @@ const creoleDatabase = {
         }
     },
     "aboutpage": {
-        "title": "Byenveni Nan HEIM CHURCH"
+        "title": "Byenvini Nan Legliz HEIM"
     },
     "watchlive": {
         "prayer-button": "Demand Priyè",
@@ -185,7 +187,7 @@ const creoleDatabase = {
         "Youth": {
             "name": "Jèn",
             "descriptionTitle1": "Konsènan HEIM Jèn",
-            "description1": "Byenveni nan Paj Jèn HEIM CHURCH! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
+            "description1": "Byenvini nan Paj Jèn HEIM CHURCH! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
             "descriptionTitle2": 'Objektif Nou',
             "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou ap grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan group jèn nan. Nou planifye anpil aktivite spirityèl ak sosyal chak mwa epi nou mennen sèvis legliz la chak dezyèm dimanch nan mwa.',
             "descriptionTitle3":'Etid Biblik', 
@@ -194,19 +196,19 @@ const creoleDatabase = {
         "Womens": {
             "name": "Fanm",
             "descriptionTitle1":"Konsènan Ministè Fanm", 
-            "description1": "Ministè Fanm HEIM CHURCH se yon kominote vivan kote fanm grandi nan lafwa, bati relasyon ki dire lontan, epi sèvi legliz ak kominote a. Chak 3yèm Dimanch, fanm yo mennen sèvis la nan adorasyon ak kolektivite. Ministè a ofri opòtinite pou ranfòse espirityèl ak koneksyon, sipòte youn lòt atravè defi lavi yo epi sèvi ansanm. Rantre nan nou pandan nou grandi nan Kris epi sipòte youn lòt nan lanmou ak inite."
+            "description1": "Ministè Fanm HEIM CHURCH se yon kominote vivan kote fanm nou nan lafwa, bati relasyon ki dire lontan, epi sèvi legliz ak kominote a. Chak 3yèm Dimanch, fanm yo mennen sèvis la nan adorasyon ak kolektivite. Ministè a ofri opòtinite pou ranfòse espirityèl ak koneksyon, sipòte youn lòt atravè defi lavi yo epi sèvi ansanm. Rantre nan nou pandan nou grandi nan Kris epi sipòte youn lòt nan lanmou ak inite."
         },
         "Kids": {
             "name": "Timoun",
             "descriptionTitle1": "Konsènan Ministè Timoun",
-            "description1": "Nan HEIM CHURCH, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal sèlman pou timoun ki gen 13 an ak pi piti, dirije pa enstriktè ki gen kè kontan ak eksperyans. Sa pèmèt paran yo konsantre sou sèvis regilye a pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
+            "description1": "Nan Legliz HEIM, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal sèlman pou timoun ki gen 13 an ak pi piti, dirije pa enstriktè ki gen kè kontan ak eksperyans. Sa pèmèt paran yo konsantre sou sèvis regilye a pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
             "descriptionTitle2": "Objektif Nou",
             "description2": "Ministè Timoun nou an konsantre sou ede timoun aprann sou Bondye nan yon fason ki gen sans pou yo. Nou vle yo bati zanmitay fò, dekouvri kijan pou li ak eksplore Bib la, epi aprann chante ki ede yo louwe Bondye. Pou fè tan yo amizan, nou kreye yon espas akeyan ki ranpli ak liv, jwèt, iPad, ak anpil lòt aktivite amizan. Nan HEIM CHURCH, nou la pou ede chak timoun grandi nan lanmou pou Bondye pandan y ap pran plezi nan sa yo ap fè."
         },
         "Others": {
-            "mainTitle": "Lòt Gwoup/Ministè Nan HEIM CHURCH",
-            "subtitle": "Jwenn Kominote Ou Nan HEIM CHURCH",
-            "subtitle-description": "Nan HEIM CHURCH, nou ofri yon varyete gwo ministè ak gwoup ki fèt pou akeyi tout moun. Kit ou nan nenpòt etap nan lavi oswa gen kapasite espesyal, gen yon kote pou ou la. Gwoup sa yo se opòtinite pou bati zanmitay, grandi nan lafwa, epi fè yon diferans. Kit ou ap chèche sipò, koneksyon ki gen sans, oswa fason pou sèvi, ou pral jwenn yon bagay ki jis pou ou. Nou envite ou rantre nan nou e vin yon pati nan kominote vivan HEIM CHURCH."
+            "mainTitle": "Lòt Gwoup/Ministè Nan Legliz HEIM",
+            "subtitle": "Jwenn Kominote Ou Nan Legliz HEIM",
+            "subtitle-description": "Nan Legliz HEIM, nou ofri yon varyete gwo ministè ak gwoup ki fèt pou akeyi tout moun. Kit ou nan nenpòt etap nan lavi oswa gen kapasite espesyal, gen yon kote pou ou la. Gwoup sa yo se opòtinite pou bati zanmitay, grandi nan lafwa, epi fè yon diferans. Kit ou ap chèche sipò, koneksyon ki gen sans, oswa fason pou sèvi, ou pral jwenn yon bagay ki jis pou ou. Nou envite ou rantre nan nou e vin yon pati nan kominote vivan HEIM CHURCH."
         }
     },
 "baptism": {
@@ -217,7 +219,7 @@ const creoleDatabase = {
     "interested-in-baptizing": "Si w enterese resevwa batèm oswa ou ta renmen konnen plis sou batèm, vizite nou an pèsòn nan 3540 Peachtree Run, Dover, DE 19901, Etazini."
 },
 "calendar": {
-        "title": "Kalandriye HEIM Church"
+        "title": "Kalandriye Legliz HEIM"
 },
 
 "contact": {

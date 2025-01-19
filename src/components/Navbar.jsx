@@ -55,7 +55,7 @@ export default function Navbar() {
         <header>
             <p className='nav-churchname'>
                 <img src={ChurchLogoWhite} style={{ width: '50px' }} alt='a picture of the church logo'></img>
-                <NavLink to="/Home" className={({ isActive }) => (isActive ? "active-link" : "")} style={{ textDecoration: 'none', color: 'black' }} onClick={refreshPage}>HEIM Church</NavLink>
+                <NavLink to="/Home" className={({ isActive }) => (isActive ? "active-link" : "")} style={{ textDecoration: 'none', color: 'black' }} onClick={refreshPage}>{language['church-name']}</NavLink>
             </p>
             <nav ref={navRef}>
                 <NavLink to="/Home" className={({ isActive }) => (isActive ? "active-link" : "")} onClick={refreshPage}>{language.navbar[0]}</NavLink>
