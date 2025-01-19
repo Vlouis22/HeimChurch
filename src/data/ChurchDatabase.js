@@ -120,18 +120,18 @@ const englishDatabase = {
 
 const creoleDatabase = {
     "church-name": "Legliz HEIM",
-    "navbar": ["Home", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
+    "navbar": ["Home", "Konsènan nou", "Ministè", "Gade An Dirèk", "Ofrann"],
     "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
     "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
         "welcome-screen":{
             'text-1': "Byenvini Nan",
             'text-2': "Legliz HEIM",
-            'button-1': "GADE LIVE",
+            'button-1': "Gade An Dirèk",
             'button-2': "Ofrann"
         },
         "pg2-coming-up-text": "Evènman k'ap vini",
-        "calendar-button-text": "Gade Kalendriye",
+        "calendar-button-text": "Kalendriye",
         "container-1-button": "Konsènan Nou",
         "container-2-title": "Swiv Nou",
         "container-3-title": "Èske w bezwen yon priyè?",
@@ -151,7 +151,7 @@ const creoleDatabase = {
         "text-container-2": {
             "title": "Vizite Nou",
         },  
-        "buttons": ["KONTAKTE NOU", "GADE LIVE", "Ofrann"],
+        "buttons": ["KONTAKTE NOU", "GADE AN DIRÈK", "Ofrann"],
         "copyright" : {
             "text-1": "Pa",
             "text-2": "Tout Dwa Rezève"
@@ -164,7 +164,7 @@ const creoleDatabase = {
         "prayer-button": "Demand Priyè",
         "upcoming": {
             "title": "Sèvis an lign",
-            "button-text": "Gade Kalendriye"
+            "button-text": "Kalendriye"
         },
         "pastEvents": {
             "title": "Gade Evènman Anrejistre yo",
