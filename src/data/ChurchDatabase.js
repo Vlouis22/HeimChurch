@@ -161,7 +161,7 @@ const creoleDatabase = {
     "watchlive": {
         "prayer-button": "Demand Priyè",
         "upcoming": {
-            "title": "Ap Rive Nan Sèvis Live",
+            "title": "Sèvis an lign",
             "button-text": "Gade Kalendriye"
         },
         "pastEvents": {
@@ -184,21 +184,21 @@ const creoleDatabase = {
         },
         "Youth": {
             "name": "Jèn",
-            "descriptionTitle1": "Sou HEIM Jèn",
-            "description1": "Byenveni nan Paj Jèn HEIM CHURCH! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati zanmitay pou tout lavi. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope zanmitay ki gen sans, epi fè yon diferans nan mond lan.",
+            "descriptionTitle1": "Konsènan HEIM Jèn",
+            "description1": "Byenveni nan Paj Jèn HEIM CHURCH! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
             "descriptionTitle2": 'Objektif Nou',
-            "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan jèn nou an. Nou planifye anpil aktivite espirityèl ak sosyal chak mwa epi nou mennen sèvis legliz la chak dezyèm dimanch nan mwa a.',
+            "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou ap grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan group jèn nan. Nou planifye anpil aktivite spirityèl ak sosyal chak mwa epi nou mennen sèvis legliz la chak dezyèm dimanch nan mwa.',
             "descriptionTitle3":'Etid Biblik', 
-            "description3":'Gwoup Jèn Granmoun nou an rasanble chak Mèkredi soti 6:30 PM pou rive 8:00 PM pou yon tan kolektivite ak kwasans espirityèl. Chak swa Etid Biblik gen ladan yon devosyon ki santre sou yon pati nan plan lekti a, ki ap dirije pa Sadrac Danjoint oswa youn nan manm gwoup nou an. Rantre nan nou pou diskisyon ki gen sans ak ankourajman!'
+            "description3":'Gwoup Jèn nan rasanble chak Mèkredi apati 6:30 PM pou rive a 8:00 PM pou yon tan kolektivite ak kwasans espirityèl. Chak swa Etid Biblik gen ladan yon devosyon ki santre sou yon pati nan plan lekti a, ki ap dirije pa Sadrac Danjoint oswa youn nan manm gwoup nou an. Rantre nan nou pou diskisyon ki gen sans ak ankourajman!'
         },
         "Womens": {
             "name": "Fanm",
-            "descriptionTitle1":"Sou Ministè Fanm", 
+            "descriptionTitle1":"Konsènan Ministè Fanm", 
             "description1": "Ministè Fanm HEIM CHURCH se yon kominote vivan kote fanm grandi nan lafwa, bati relasyon ki dire lontan, epi sèvi legliz ak kominote a. Chak 3yèm Dimanch, fanm yo mennen sèvis la nan adorasyon ak kolektivite. Ministè a ofri opòtinite pou ranfòse espirityèl ak koneksyon, sipòte youn lòt atravè defi lavi yo epi sèvi ansanm. Rantre nan nou pandan nou grandi nan Kris epi sipòte youn lòt nan lanmou ak inite."
         },
         "Kids": {
             "name": "Timoun",
-            "descriptionTitle1": "Sou Ministè Timoun",
+            "descriptionTitle1": "Konsènan Ministè Timoun",
             "description1": "Nan HEIM CHURCH, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal sèlman pou timoun ki gen 13 an ak pi piti, dirije pa enstriktè ki gen kè kontan ak eksperyans. Sa pèmèt paran yo konsantre sou sèvis regilye a pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
             "descriptionTitle2": "Objektif Nou",
             "description2": "Ministè Timoun nou an konsantre sou ede timoun aprann sou Bondye nan yon fason ki gen sans pou yo. Nou vle yo bati zanmitay fò, dekouvri kijan pou li ak eksplore Bib la, epi aprann chante ki ede yo louwe Bondye. Pou fè tan yo amizan, nou kreye yon espas akeyan ki ranpli ak liv, jwèt, iPad, ak anpil lòt aktivite amizan. Nan HEIM CHURCH, nou la pou ede chak timoun grandi nan lanmou pou Bondye pandan y ap pran plezi nan sa yo ap fè."
