@@ -118,7 +118,7 @@ const englishDatabase = {
 }
 
 const creoleDatabase = {
-    "navbar": ["Akèy", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
+    "navbar": ["Paj General", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
     "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
     "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
@@ -126,18 +126,18 @@ const creoleDatabase = {
             'text-1': "Byenveni Nan",
             'text-2': "HEIM CHURCH",
             'button-1': "GADE LIVE",
-            'button-2': "BAY"
+            'button-2': "Ofrann"
         },
-        "pg2-coming-up-text": "Ap Rive Nan HEIM CHURCH",
+        "pg2-coming-up-text": "Evènman k'ap vini",
         "calendar-button-text": "Gade Kalendriye",
         "container-1-button": "Konsènan Nou",
         "container-2-title": "Swiv Nou",
         "container-3-title": "Èske w bezwen yon priyè?",
-        "container-3-button-text": "Mande Lapriyè",
-        "container-4-title": "Angaje Ou",
-        "container-4-links": ["Bay", "Gwoup"],
-        "container-5-title": "Èske w bezwen yon woulib?",
-        "container-5-button-text": "Mande Woulib",
+        "container-3-button-text": "demand priyè",
+        "container-4-title": "Patisipe",
+        "container-4-links": ["Ofrann", "Gwoup"],
+        "container-5-title": "Èske w bezwen yon transportation?",
+        "container-5-button-text": "Demand transportation",
         "container-6-title": "Eske Ou Enterese Pou Batize?",
         "container-6-button-text": "Aprann Plis",
     },
@@ -149,7 +149,7 @@ const creoleDatabase = {
         "text-container-2": {
             "title": "Vizite Nou",
         },  
-        "buttons": ["KONTAKTE NOU", "GADE LIVE", "BAY"],
+        "buttons": ["KONTAKTE NOU", "GADE LIVE", "Ofrann"],
         "copyright" : {
             "text-1": "Pa",
             "text-2": "Tout Dwa Rezève"
@@ -159,7 +159,7 @@ const creoleDatabase = {
         "title": "Byenveni Nan HEIM CHURCH"
     },
     "watchlive": {
-        "prayer-button": "Mande Lapriyè",
+        "prayer-button": "Demand Priyè",
         "upcoming": {
             "title": "Ap Rive Nan Sèvis Live",
             "button-text": "Gade Kalendriye"
@@ -222,8 +222,8 @@ const creoleDatabase = {
 
 "contact": {
     "title": "Fason Pou Kontakte Nou",
-    "ride-request": "Demann woulib",
-    "prayer-request": "Demann Lapriyè",
+    "ride-request": "Demand transportation",
+    "prayer-request": "Demand Priyè",
     "website-inquiry": "Sipò Sitwèb",
     "general-inquiry": "Ankèt jeneral",
     "email": "Email",
