@@ -18,7 +18,7 @@ const englishDatabase = {
         "calendar-button-text": "VIEW CALENDAR",
         "container-1-button": "About Us",
         "container-2-title": "Follow Us",
-        "container-3-title": "In Need Of A Prayer?",
+        "container-3-title": "In Need Of Prayer?",
         "container-3-button-text": "Request Prayer",
         "container-4-title": "Get Involved",
         "container-4-links": ["Giving", "Groups"],
@@ -120,7 +120,7 @@ const englishDatabase = {
 
 const creoleDatabase = {
     "church-name": "Legliz HEIM",
-    "navbar": ["Home", "Konsènan nou", "Ministè", "Gade An Dirèk", "Ofrann"],
+    "navbar": ["Paj Prensipal", "Konsènan nou", "Ministè", "Gade An Dirèk", "Ofrann"],
     "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
     "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
@@ -133,13 +133,13 @@ const creoleDatabase = {
         "pg2-coming-up-text": "Evènman k'ap vini",
         "calendar-button-text": "Kalendriye",
         "container-1-button": "Konsènan Nou",
-        "container-2-title": "Swiv Nou",
-        "container-3-title": "Èske w bezwen yon priyè?",
-        "container-3-button-text": "Demand Priyè",
+        "container-2-title": "Swiv Nou Sou",
+        "container-3-title": "Ou Bezwen Lapriyè",
+        "container-3-button-text": "Demann Priyè",
         "container-4-title": "Patisipe",
         "container-4-links": ["Ofrann", "Gwoup"],
         "container-5-title": "Èske w bezwen yon transpòtasyon?",
-        "container-5-button-text": "Demand transpòtasyon",
+        "container-5-button-text": "Demann transpòtasyon",
         "container-6-title": "Eske Ou Enterese Pou Batize?",
         "container-6-button-text": "Aprann Plis",
     },
@@ -161,7 +161,7 @@ const creoleDatabase = {
         "title": "Byenvini Nan Legliz HEIM"
     },
     "watchlive": {
-        "prayer-button": "Demand Priyè",
+        "prayer-button": "Demann Priyè",
         "upcoming": {
             "title": "Sèvis an lign",
             "button-text": "Kalendriye"
@@ -224,8 +224,8 @@ const creoleDatabase = {
 
 "contact": {
     "title": "Fason Pou Kontakte Nou",
-    "ride-request": "Demand transpòtasyon",
-    "prayer-request": "Demand Priyè",
+    "ride-request": "Demann transpòtasyon",
+    "prayer-request": "Demann Priyè",
     "website-inquiry": "Sipò Sitwèb",
     "general-inquiry": "Ankèt jeneral",
     "email": "Email",
