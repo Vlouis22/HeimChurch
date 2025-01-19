@@ -140,13 +140,13 @@ const creoleDatabase = {
         "container-4-links": ["Ofrann", "Gwoup"],
         "container-5-title": "Èske w bezwen transpòtasyon?",
         "container-5-button-text": "Demann transpòtasyon",
-        "container-6-title": "Eske Ou Enterese Pou Batize?",
-        "container-6-button-text": "Aprann Plis",
+        "container-6-title": "Èske w enterese batize?",
+        "container-6-button-text": "Plis Enfòmasyon",
     },
     "footer": {
         "text-container-1": {
-            "title": "Dimanch Matin",
-            "description": "Sèvis 11:00am - an pèsòn & sou entènèt"
+            "title": "Dimanch Maten",
+            "description": "Sèvis 11:00am - an pèsòn ak an dirèk"
         },
         "text-container-2": {
             "title": "Vizite Nou",
