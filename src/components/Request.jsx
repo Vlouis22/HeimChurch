@@ -17,7 +17,7 @@ export default function Request({title, width, height, image, buttonText, to, al
         </img>
         }
         <div className='request-text'><p className='size-medium'>{title}</p></div>
-      <div className='request-button'><RegularButton color='white' bgcolor='blue' text={buttonText} width={150} height={50} to={to}/></div>
+      <div className='request-button'><RegularButton color='white' bgcolor='blue' text={buttonText} width={150} height={55} to={to}/></div>
     </div>
   )
 }

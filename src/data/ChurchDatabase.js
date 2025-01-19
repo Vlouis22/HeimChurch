@@ -118,7 +118,7 @@ const englishDatabase = {
 }
 
 const creoleDatabase = {
-    "navbar": ["Paj General", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
+    "navbar": ["Home", "Konsènan nou", "Ministè", "Gade Live", "Ofrann"],
     "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
     "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
@@ -133,11 +133,11 @@ const creoleDatabase = {
         "container-1-button": "Konsènan Nou",
         "container-2-title": "Swiv Nou",
         "container-3-title": "Èske w bezwen yon priyè?",
-        "container-3-button-text": "demand priyè",
+        "container-3-button-text": "Demand Priyè",
         "container-4-title": "Patisipe",
         "container-4-links": ["Ofrann", "Gwoup"],
-        "container-5-title": "Èske w bezwen yon transportation?",
-        "container-5-button-text": "Demand transportation",
+        "container-5-title": "Èske w bezwen yon transpòtasyon?",
+        "container-5-button-text": "Demand transpòtasyon",
         "container-6-title": "Eske Ou Enterese Pou Batize?",
         "container-6-button-text": "Aprann Plis",
     },
@@ -222,7 +222,7 @@ const creoleDatabase = {
 
 "contact": {
     "title": "Fason Pou Kontakte Nou",
-    "ride-request": "Demand transportation",
+    "ride-request": "Demand transpòtasyon",
     "prayer-request": "Demand Priyè",
     "website-inquiry": "Sipò Sitwèb",
     "general-inquiry": "Ankèt jeneral",
