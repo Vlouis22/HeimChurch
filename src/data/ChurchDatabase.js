@@ -138,7 +138,7 @@ const creoleDatabase = {
         "container-3-button-text": "Demann Priyè",
         "container-4-title": "Patisipe",
         "container-4-links": ["Ofrann", "Gwoup"],
-        "container-5-title": "Èske w bezwen transpòtasyon?",
+        "container-5-title": "Ou Bezwen transpòtasyon?",
         "container-5-button-text": "Demann transpòtasyon",
         "container-6-title": "Èske w enterese batize?",
         "container-6-button-text": "Plis Enfòmasyon",
@@ -180,7 +180,7 @@ const creoleDatabase = {
     },
     "ministries": {
         "ministry": {
-            "title" : "Kesyon yo poze souvan",
+            "title" : "Kesyon Popilè",
             "text-1": "Byenvini sou paj Ministè",
             "text-2": "yo"
         },

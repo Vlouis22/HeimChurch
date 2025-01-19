@@ -94,7 +94,7 @@ const AboutQuestions = language == "English" ? [
 ] : [
     {
         "question": "Kijan mwen ka kontakte lidè legliz la?",
-        "answer": (<>Ou ka kontakte lidè legliz la <span className='blue-text underlined'><a href='/Contact'>pa klike nan link sa</a></span>. La, w ap jwenn adrès, imèl, ak nimewo telefòn ou ka itilize pou kontakte nou.</>)
+        "answer": (<>Ou ka kontakte lidè legliz la <span className='blue-text underlined'><a href='/Contact'>pa klike nan lyen sa</a></span>. La, w ap jwenn adrès, imèl, ak nimewo telefòn ou ka itilize pou kontakte nou.</>)
     },
     {
         "question": "Kote legliz la ye epi ki lè nou rasanble?",

@@ -1601,6 +1601,10 @@ nav{
 
 .navbar-minitries{
   top: -10px;
+  padding-left: .5rem !important;
+  margin-left: 0 !important;
+  padding-right: .5rem !important;
+  margin-right: 0 !important;
 }
 
 .button:hover{
