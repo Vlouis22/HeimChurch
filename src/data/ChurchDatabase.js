@@ -85,7 +85,7 @@ const englishDatabase = {
         "Kids": {
             "name": "Kids",
             "descriptionTitle1": "About Kids Ministry",
-            "description1": "At HEIM Church, we are committed to helping children grow in their faith in a fun and safe environment. We offer a special service just for kids aged 13 and under, led by caring and experienced instructors. This allows parents to focus on the regular service while their children enjoy a program designed just for them.",
+            "description1": "At HEIM Church, we are committed to helping children grow in their faith in a fun and safe environment. We offer a special service for kids between the age of 4 to 9 years old, led by caring and experienced instructors. This allows parents to focus on the regular service while their children enjoy a program designed just for them.",
             "descriptionTitle2": "Our Goals",
             "description2": "Our Kids Ministry is all about helping children learn about God in a way that makes sense to them. We want them to build strong friendships, discover how to read and explore the Bible, and learn songs that help them praise God. To make their time enjoyable, we’ve created a welcoming space filled with books, games, iPads, and plenty of fun activities. At HEIM Church, we’re here to help every child grow in their love for God while having a great time doing it."
         },
@@ -181,17 +181,17 @@ const creoleDatabase = {
     "ministries": {
         "ministry": {
             "title" : "Kesyon Popilè",
-            "text-1": "Byenvini sou paj Ministè",
+            "text-1": "Byenvini sou paj ministè",
             "text-2": "yo"
         },
         "Youth": {
             "name": "Jèn",
             "descriptionTitle1": "Konsènan jenès legliz HEIM",
-            "description1": "Byenvini nan Paj Jèn HEIM CHURCH! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
+            "description1": "Byenvini nan Paj Jèn Legliz HEIM! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
             "descriptionTitle2": 'Objektif Nou',
             "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou ap grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan group jèn nan. Nou planifye anpil aktivite spirityèl ak sosyal chak mwa epi nou mennen sèvis legliz la chak dezyèm dimanch nan mwa.',
             "descriptionTitle3":'Etid Biblik', 
-            "description3":'Gwoup Jèn nan rasanble chak Mèkredi apati 6:30 PM pou rive a 8:00 PM pou yon tan kolektivite ak kwasans espirityèl. Chak swa Etid Biblik gen ladan yon devosyon ki santre sou yon pati nan plan lekti a, ki ap dirije pa Sadrac Danjoint oswa youn nan manm gwoup nou an. Rantre nan nou pou diskisyon ki gen sans ak ankourajman!'
+            "description3":'Gwoup Jèn nan rasanble chak Mèkredi apati 6:30 nan apremidi pou rive a 8:00 nan apremidi pou yon tan kolektivite ak kwasans espirityèl. Chak swa Etid Biblik gen ladan yon devosyon ki santre sou yon pati nan plan lekti a, ki ap dirije pa Sadrac Danjoint oswa youn nan manm gwoup nou an.'
         },
         "Womens": {
             "name": "Fanm",
@@ -201,14 +201,14 @@ const creoleDatabase = {
         "Kids": {
             "name": "Timoun",
             "descriptionTitle1": "Konsènan Ministè Timoun",
-            "description1": "Nan Legliz HEIM, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal sèlman pou timoun ki gen 13 an ak pi piti, dirije pa enstriktè ki gen kè kontan ak eksperyans. Sa pèmèt paran yo konsantre sou sèvis regilye a pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
+            "description1": "Nan Legliz HEIM, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal pou timoun ki gen laj ant 4 ak 9 ane, dirije pa enstriktè ki gen anpil eksperyans ak timoun. Sa pèmèt paran yo konsantre sou pwòp sèvis yo pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
             "descriptionTitle2": "Objektif Nou",
             "description2": "Ministè Timoun nou an konsantre sou ede timoun aprann sou Bondye nan yon fason ki gen sans pou yo. Nou vle yo bati zanmitay fò, dekouvri kijan pou li ak eksplore Bib la, epi aprann chante ki ede yo louwe Bondye. Pou fè tan yo amizan, nou kreye yon espas akeyan ki ranpli ak liv, jwèt, iPad, ak anpil lòt aktivite amizan. Nan HEIM CHURCH, nou la pou ede chak timoun grandi nan lanmou pou Bondye pandan y ap pran plezi nan sa yo ap fè."
         },
         "Others": {
             "mainTitle": "Lòt Gwoup/Ministè Nan Legliz HEIM",
             "subtitle": "Jwenn Kominote Ou Nan Legliz HEIM",
-            "subtitle-description": "Nan Legliz HEIM, nou ofri yon varyete gwo ministè ak gwoup ki fèt pou akeyi tout moun. Kit ou nan nenpòt etap nan lavi oswa gen kapasite espesyal, gen yon kote pou ou la. Gwoup sa yo se opòtinite pou bati zanmitay, grandi nan lafwa, epi fè yon diferans. Kit ou ap chèche sipò, koneksyon ki gen sans, oswa fason pou sèvi, ou pral jwenn yon bagay ki jis pou ou. Nou envite ou rantre nan nou e vin yon pati nan kominote vivan HEIM CHURCH."
+            "subtitle-description": "Nan Legliz HEIM, nou gen anpil ministè ak gwoup ouvè pou tout moun. Kèlkeswa kote ou ye nan lavi a oswa ki konpetans ou genyen, gen yon kote pou ou isit la. Gwoup sa yo ede w fè zanmi, grandi nan lafwa, epi fè yon diferans. Si w ap chèche sipò, koneksyon, oswa fason pou ede lòt moun, w ap jwenn yon bagay pou ou. Vin jwenn nou epi fè pati kominote legliz la!"
         }
     },
 "baptism": {

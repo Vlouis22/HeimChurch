@@ -18,11 +18,11 @@ const YouthQuestions = language == "English" ? [
 ] : [
     {
         "question": "Kijan mwen ka rantre?",
-        "answer": "Senpleman konekte ak youn nan lidè jèn yo apre sèvis legliz la, epi n ap di w kijan w ka antre nan gwoup jèn yo"
+        "answer": "Senpleman konekte ak youn nan lidè jèn yo apre sèvis legliz la, epi n ap di w kijan w ka antre nan gwoup jèn yo."
     },
     {
         "question": "Èske mwen ka envite yon zanmi?",
-        "answer": "Wi, Envite nenpòt kantite zanmi ou vle."
+        "answer": "Wi, envite nenpòt kantite zanmi ou vle."
     },
     {
         "question": "Kilè nou reyini?",
@@ -177,13 +177,13 @@ const KidsQuestions = language == "English" ? [
     },
     { 
         question: "Is there an age limit for participating in the Kids Ministry?",
-        answer: "All children from toddlers to age 13 are welcome to participate in the Kids Ministry."
+        answer: "All children from age 4 to age 9 are welcome to participate in the Kids Ministry."
 
     }
 ] : [
     { 
         "question": "A ki lè sèvis Timoun yo kòmanse?",
-        "answer": "Sèvis Ministè Timoun yo kòmanse a 11:00 AM, ansanm ak sèvis adorasyon prensipal la."
+        "answer": "Sèvis Ministè Timoun yo kòmanse a 11:00 nan maten, ansanm ak sèvis adorasyon prensipal la."
     },
     { 
         "question": "A ki lè sèvis Timoun yo fini?",
@@ -191,7 +191,7 @@ const KidsQuestions = language == "English" ? [
     },
     { 
         "question": "Èske gen yon laj maksimòm pou patisipe nan Ministè timoun yo?",
-        "answer": "Tout timoun soti nan tibebe rive nan laj 13 an ka patisipe nan Ministè Timoun yo."
+        "answer": "Tout timoun soti nan laj 4 rive a 9 ane ka patisipe nan Ministè Timoun yo."
     }
 ]
 
