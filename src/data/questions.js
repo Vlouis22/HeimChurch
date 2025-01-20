@@ -69,7 +69,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         question: "Where are you located and when do you gather?",
-        answer: "Our church is located at 3540 Peachtree Run, Dover, DE 19901, United States. We gather every Sunday at 11:00 nan maten."
+        answer: "Our church is located at 3540 Peachtree Run, Dover, DE 19901, United States. We gather every Sunday at 11:00 AM."
     },
     {
         question: "What groups are available, and how can I join one?",
