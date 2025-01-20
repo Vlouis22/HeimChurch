@@ -69,7 +69,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         question: "Where are you located and when do you gather?",
-        answer: "Our church is located at 3540 Peachtree Run, Dover, DE 19901, United States. We gather every Sunday at 11:00 an maten."
+        answer: "Our church is located at 3540 Peachtree Run, Dover, DE 19901, United States. We gather every Sunday at 11:00 nan maten."
     },
     {
         question: "What groups are available, and how can I join one?",
@@ -98,7 +98,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         "question": "Kote legliz la ye, epi ki lè nou rasanble?",
-        "answer": "Legliz nou an sitiye nan 3540 Peachtree Run, Dover, DE 19901, Etazini. Nou rasanble chak dimanch a 11:00 an maten."
+        "answer": "Legliz nou an sitiye nan 3540 Peachtree Run, Dover, DE 19901, Etazini. Nou rasanble chak dimanch a 11:00 nan maten."
     },
     {
         "question": "Ki gwoup ki disponib, epi kijan mwen ka rantre nan yon group?",
@@ -167,7 +167,7 @@ const OtherGroupsQuestions = language == "English" ? [
 const KidsQuestions = language == "English" ? [
     { 
         question: "What time does the kids service starts?",
-        answer: "The Kids Ministry service begins at 11:00 an maten, coinciding with our main worship service."
+        answer: "The Kids Ministry service begins at 11:00 AM, coinciding with our main worship service."
 
     },
     { 
