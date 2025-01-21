@@ -125,7 +125,7 @@ const AboutQuestions = language == "English" ? [
 const OtherGroupsQuestions = language == "English" ? [
     { 
         question: "What groups are available besides Youth, Kids, and Women's?",
-        answer: "In addition to these groups, we also have Men's Ministry, the Tech and Media Team, the Musicians' Group, and the Worship Team."
+        answer: "In addition to these groups, we also have Men's Ministry, the Tech and Media Team, the Musicians' Group, the choir group, and the Worship Team."
 
     },
     { 
@@ -147,7 +147,7 @@ const OtherGroupsQuestions = language == "English" ? [
 ] : [
     { 
         "question": "Ki gwoup ki disponib apre gwoup jèn yo, timoun yo ak gwoup fanm yo?",
-        "answer": "Anplis gwoup sa yo, nou genyen Ministè Gason, Ekip Teknoloji ak Media, Gwoup Mizisyen ak Ekip Adorasyon."
+        "answer": "Anplis gwoup sa yo, nou genyen Ministè Gason, Ekip Teknoloji ak Media, Gwoup Mizisyen, ekip koral la ak Ekip Adorasyon an."
     },
     { 
         "question": "Èske mwen ka rantre nan plisye gwoup?",
