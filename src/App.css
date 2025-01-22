@@ -1879,7 +1879,7 @@ nav{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: rgba(249, 249, 249, 0.8);
   padding: 25px 0px 50px 0px;
 }
 
