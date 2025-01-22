@@ -9,10 +9,12 @@ export default function Contact() {
   return (
     <>
     <div className='page'>
+
+      <div style={{ width: '100%', textAlign: 'center', fontSize: '38px', marginBottom: '1.5rem' }} className='blue-text bold contact-headers'>
+        {language.contact.title}
+      </div>
+
       <div className='contact--container'>
-        <div style={{ width: '100%', textAlign: 'center', fontSize: '38px', marginBottom: '3rem' }} className='blue-text bold'>
-          {language.contact.title}
-        </div>
 
         <div className='contact-section'>
           <h2 className='contact-heading'>{language.contact['ride-request']}</h2>
@@ -44,6 +46,21 @@ export default function Contact() {
           {language.contact.email}: <a href="mailto:heimchurch3540@gmail.com">Heimchurch3540@gmail.com</a>
           </p>
         </div>
+      </div>
+      <div className='map-container'>
+      <div 
+        style={{textAlign: 'center', fontSize: '38px', marginBottom: '1.2rem' }} 
+        className='blue-text bold special-underline'>
+        {language.contact.location}
+        </div>
+        <iframe
+          width="100%"
+          height="450"
+          frameborder="0"
+          referrerpolicy="no-referrer-when-downgrade"
+          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_personal_api_k}&q=3540+Peachtree+Run+Dover+DE+19901`}
+          allowfullscreen>
+        </iframe>
       </div>
       </div>
       <Footer />

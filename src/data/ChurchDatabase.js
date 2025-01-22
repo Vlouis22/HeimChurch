@@ -115,6 +115,7 @@ const englishDatabase = {
         "general-inquiry": "General Inquiries",
         "email": "Email",
         "phone": "Phone",
+        "location": "Our Location"
     }      
 }
 
@@ -230,6 +231,7 @@ const creoleDatabase = {
     "general-inquiry": "Ankèt jeneral",
     "email": "Email",
     "phone": "Telefòn",
+    "location": "Kote Nou Sitiye"
 }
 
 }
