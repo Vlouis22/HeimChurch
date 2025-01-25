@@ -33,7 +33,7 @@ export default function Ministry({
 
   return (
     <>
-      <div className="ministry--container maximum-height">
+      <div className="ministry--container">
       <div className="ministry-header-container">
         <h1 className="ministry-header">
           {language.ministries.ministry['text-1']} {name} {language.ministries.ministry['text-2']}
@@ -118,7 +118,7 @@ export default function Ministry({
                 src={picture4}
                 style={{
                   minWidth: '300px',
-                  maxWidth: '90vw',
+                  maxWidth: '40rem',
                   maxHeight: '80vh',
                   display: isLoading4 ? 'none' : 'block',
                 }}
@@ -129,10 +129,8 @@ export default function Ministry({
             </div>
           )}
         </div>
-
         {questions}
       </div>
-      <Footer />
     </>
   );
 }

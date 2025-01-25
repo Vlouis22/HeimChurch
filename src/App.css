@@ -43,13 +43,12 @@ nav a{
   margin: 0 .5rem;
   color: var(--black);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
 }
 
 nav a:hover{
-  border-bottom: 2px solid black;
-  font-weight: 800;
+  font-weight: 750;
   transition: opacity 0.3s ease;
 }
 
@@ -117,7 +116,7 @@ header .nav-churchname{
   }
 
   .navbar-minitries{
-    font-weight: bold;
+    font-weight: 600;
   }
 
   .notLoading-container{
@@ -161,7 +160,7 @@ header .nav-churchname{
 }
 
 .navbar-minitries{
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: -22px;
   font-size: 20px;
   margin-left: 22px;
@@ -412,8 +411,15 @@ nav a.active-link {
   .navbar-minitries{
     margin-top: 10px;
   }
-  nav a{
-    margin-bottom: 15px;
+
+  nav a.active-link{
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 5px; /* Adjust the value as needed */
+  }
+
+  nav > a, .language-selector-container{
+    margin-top: 12px !important;
   }
 
   .home-pg3-container{
@@ -552,13 +558,15 @@ nav a.active-link {
   .ministry--container{
     padding: 2% 0% !important;
   }
-  
+
   .ministry-picture{
     width: 95vw;
     height: auto;
     max-height: max-content !important;
   }
+  
 }
+
 
 .link-container-holder{
   display: flex;
@@ -588,6 +596,7 @@ footer {
   color: white;
   margin-bottom: 0;
   padding-bottom: 0;
+  margin-top: auto !important;
 }
 
 .footer-text-holder{
@@ -633,7 +642,7 @@ footer > div{
   height: auto !important;
   padding: 0 !important;
   gap: 0 !important;
-  margin: 0 m !important;
+  margin: 0 !important;
 }
 .all-rights-reserved{
   text-align: center;
@@ -1644,8 +1653,10 @@ nav{
 }
 
 .maximum-height{
-  min-height: 100vh;
-  flex: 1;
+  min-height: 100vh !important;
+  flex: auto !important;
+  margin-top: auto !important;
+  margin-bottom: 0px !important;
 }
 
 /* HTML: <div class="loader"></div> */
@@ -1878,8 +1889,6 @@ nav{
 .english-button{
   border-left: 1.5px solid black;
 }
-
-
 
 .selected-language{
   background-color: var(--darkGrey);
