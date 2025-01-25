@@ -34,17 +34,11 @@ export default function Ministry({
   return (
     <>
       <div className="ministry--container maximum-height">
-        <div
-          style={{
-            width: '100%',
-            textAlign: 'center',
-            fontSize: '38px',
-            paddingBottom: '1rem',
-          }}
-          className="blue-text bold"
-        >
+      <div className="ministry-header-container">
+        <h1 className="ministry-header">
           {language.ministries.ministry['text-1']} {name} {language.ministries.ministry['text-2']}
-        </div>
+        </h1>
+      </div>
 
         <div style={{ marginTop: '35px', marginBottom: '10px' }} className="ministry--subcontainer-1">
           {picture1 && (

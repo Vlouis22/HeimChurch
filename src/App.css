@@ -1323,6 +1323,27 @@ form > button:active {
   align-items: center;
 }
 
+.ministry-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.ministry-header {
+  font-size: 2.5rem; 
+  color: var(--blue);
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 3.5px solid var(--blue);
+  padding-bottom: 0.5rem;
+  margin: 0; 
+  letter-spacing: 0.05rem;
+  line-height: 1.2; 
+  font-weight: 700; 
+}
+
 /* ---Others page styling--- */
 
 .others--ministry--container {
