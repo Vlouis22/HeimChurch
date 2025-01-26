@@ -78,12 +78,30 @@ export default function Watchlive() {
     }
   }
 
+  function isSundayServiceHours(){
+    const currentTime = new Date();
+    let day = currentTime.getDay()
+
+    if(day == 0){
+      let timeOfDay = currentTime.getHours()
+      if (timeOfDay >= 11 && timeOfDay <= 14){
+        return true
+      }
+    }
+    return false;
+  }
+
   useEffect(() => {
 
     let isChurchLive = false;
     let lastupdated;
 
     const currentTime = new Date();
+
+    if(isSundayServiceHours()){
+      setIsLive(true)
+      updateLiveStatusToDatabase(true)
+    }
 
     async function getStatus(){
 
@@ -121,8 +139,9 @@ export default function Watchlive() {
         }
       }
     }
-
-    getStatus();
+    if(!isSundayServiceHours()){
+      getStatus();
+    }
 
   }, []);
 
