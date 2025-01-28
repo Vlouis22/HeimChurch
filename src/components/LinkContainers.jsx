@@ -33,12 +33,18 @@ export default function LinkContainers({title, isIcons, icons, links, to}) {
         )
     }
 
-    function handleClick(i) {
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function handleClick(i) {
         if (!to[i].startsWith('http')) {
             let navigation = `/` + to[i];
+            await sleep(250);
             navigate(navigation);
+            window.location.reload();
         }
-      }
+    }
 
   return (
     <div className='link-containers grey-background black-text rounded-border'>

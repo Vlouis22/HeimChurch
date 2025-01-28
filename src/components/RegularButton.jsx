@@ -15,10 +15,16 @@ export default function RegularButton({ text, color, bgcolor, width, height, to 
   const handleMouseLeave = () => setIsHovered(false);
 
   const navigate = useNavigate()
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+    }
     
-  function handleClick() {
+  async function handleClick() {
     let navigation = `/` + to;
+    await sleep(250);
     navigate(navigation);
+    window.location.reload(true); 
   }
 
 
