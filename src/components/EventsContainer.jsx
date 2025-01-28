@@ -53,7 +53,8 @@ export default function EventsContainer() {
 
           // formatting the new date that will be sent to the database
           let month = date.getMonth()+1
-          let monthName = getMonth(date.getMonth);
+          let monthName = getMonth(date.getMonth());
+          console.log("Next sunday will be in "+ monthName)
           month = month <= 9 ? `0${month}` : month;
           let day = date.getDate();
           day = day <= 9 ? `0${day}`: day;
