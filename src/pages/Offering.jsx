@@ -11,21 +11,19 @@ import { database } from '../data/ChurchDatabase'
 
 export default function Offering() {
 
-  let language = database
-
   return (
     <div className='offering-page maximum-height page'>
       <div className='offering-page-container'> 
-        <div className='ways-to-give size-medium roboto-bold'>{language.offering.title}</div>
+        <div className='ways-to-give size-medium roboto-bold'>{database.offering.title}</div>
         <div className='payment-methods-container grey-background'>
         <PaymentMethod 
           paymentName='Cash App' 
           // logo={CashappLogo} 
           logo = {<PaymentButton text='Cash App' color='white' bgColor='#00CF31' to='https://cash.app/$HEIMCHURCH18?qr=1' specialclassName='cashapp'/>}
           qrCode={CashAppQrCode} 
-          info1name={language.offering.payment['description-1']}
+          info1name={database.offering.payment['description-1']}
           info1detail='$HEIMCHURCH18' 
-          info2name={language.offering.payment['description-2']}
+          info2name={database.offering.payment['description-2']}
           info2detail='+1 (302) 387-7570'
 
         />
@@ -35,9 +33,9 @@ export default function Offering() {
           // logo={PaypalLogo} 
           logo = {<PaymentButton text='Paypal' color='white' bgColor='#003087' to='https://www.paypal.com/qrcodes/managed/06e1da78-d8f4-4c36-9c2a-f4d2910fe767?utm_source=bizapp_download' specialclassName='paypal'/>}
           qrCode={PaypalQrCode} 
-          info1name={language.offering.payment['description-1']} 
+          info1name={database.offering.payment['description-1']} 
           info1detail='Haitian evange international ministry' 
-          info2name={language.offering.payment['description-2']}
+          info2name={database.offering.payment['description-2']}
           info2detail='+1 (302) 387-7570'
         />
         <PaymentMethod 
@@ -45,9 +43,9 @@ export default function Offering() {
           // logo={VenmoLogo} 
           qrCode={VenmoQrCode} 
           logo = {<PaymentButton text='Venmo' color='white' bgColor='#008CFF' to='https://venmo.com/code?user_id=4236972109334496461&created=1735935029' specialclassName='venmo'/>}
-          info1name={language.offering.payment['description-1']}
+          info1name={database.offering.payment['description-1']}
           info1detail='@Jean-Joseph-153'
-          info2name={language.offering.payment['description-2']}
+          info2name={database.offering.payment['description-2']}
           info2detail='+1 (302) 387-7570'
           />
         </div>

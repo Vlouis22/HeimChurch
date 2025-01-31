@@ -11,19 +11,17 @@ import Footer from '../components/Footer'
 
 export default function Kids() {
 
-  let language = database
-
   return (
     <div>
       <div className="maximum-height">
-        <Ministry name={language.ministries.Kids.name}
+        <Ministry name={database.ministries.Kids.name}
         picture1={KidsPic1}
         picture2={KidsPic2}
         picture4={KidsPic3}
-        descriptionTitle1={language.ministries.Kids.descriptionTitle1}
-        description1={language.ministries.Kids.description1}
-        descriptionTitle2={language.ministries.Kids.descriptionTitle2}
-        description2={language.ministries.Kids.description2}
+        descriptionTitle1={database.ministries.Kids.descriptionTitle1}
+        description1={database.ministries.Kids.description1}
+        descriptionTitle2={database.ministries.Kids.descriptionTitle2}
+        description2={database.ministries.Kids.description2}
         questions = {<Questions questions={KidsQuestions}/>}
         />
       </div>
