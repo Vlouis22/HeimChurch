@@ -8,7 +8,6 @@ import VenmoQrCode from "../images/heim_church_venmo_qrcode.jpg"
 import { database } from '../data/ChurchDatabase'
 
 
-
 export default function Offering() {
 
   return (
