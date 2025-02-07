@@ -5,12 +5,11 @@ import { useState, useEffect } from 'react';
 import Questions from '../components/Questions';
 import { AboutQuestions } from '../data/questions';
 import { database } from '../data/ChurchDatabase';
+import { data } from 'react-router-dom';
 
 const outsideChurchPicture = 'https://i.postimg.cc/cHMZNQ1W/church-outside-picture.png'
 
 export default function About() {
-
-  let language = database
 
   const backgroundImg =
   {
@@ -26,7 +25,7 @@ export default function About() {
     <>
       <div className='about-page' style={backgroundImg}>
         <div className='about-page-container'>
-          <div className='about-page-welcome size-medium bold montserrat'>{language.aboutpage.title}</div>
+          <div className='about-page-welcome size-medium bold montserrat'>{database.aboutpage.title}</div>
           {/* <div className='general-container about-text-container' style={{width: '100%'}}>
         <TextContainer title='Background' description='this description will contain information about the church background'/>
         <TextContainer title='Our Mission' description='this description will contain information about the church mission'/>
