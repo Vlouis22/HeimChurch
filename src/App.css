@@ -27,6 +27,7 @@ body, html {
   --lightGrey: #F3F3F3;
   --darkGrey: #D9D9D9;
   --purple: #7311A0;
+  --red: #FF0000;
 }
 
 header{
@@ -1511,6 +1512,14 @@ form > button:active {
 
 .blue-text{
   color: var(--blue);
+}
+
+.red-text{
+  color: var(--red);
+}
+
+.red-background{
+  background-color: var(--red);
 }
 
 .white-background{

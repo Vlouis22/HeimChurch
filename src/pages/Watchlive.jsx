@@ -6,6 +6,7 @@ import HeimChurchLogo from '../images/heimchurchlogo.JPG';
 import { LuMessageSquare } from "react-icons/lu";
 import {supabase} from '../utils/supabaseClient.js';
 import { database } from '../data/ChurchDatabase.js';
+import LiveError from '../components/LiveError.jsx';
 
 
 export default function Watchlive() {
@@ -248,11 +249,12 @@ export default function Watchlive() {
       }
 
       <div className='upcominglive-container'>
-        <div className='upcominglive-container-child'>
-          <div className='inter bold'>{database.watchlive.upcoming.title}</div>
-          <RegularButton color='white' bgcolor='blue' text={database.watchlive.upcoming['button-text']} width={135} height={54} to='Calendar'/>
-        </div>
+          <div className='upcominglive-container-child'>
+            <div className='inter bold'>{database.watchlive.upcoming.title}</div>
+            <RegularButton color='white' bgcolor='blue' text={database.watchlive.upcoming['button-text']} width={135} height={54} to='Calendar'/>
+            </div>
       </div>
+
       </div>
 
       <div className='view-previous-lives'>
