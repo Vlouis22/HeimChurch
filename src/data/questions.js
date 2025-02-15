@@ -64,8 +64,8 @@ const WomenQuestions = language == "English" ?  [
 
 const AboutQuestions = language == "English" ? [
     {
-        question: "How can I get in touch with church leaders or members?",
-        answer: (<>You can reach out to our church leaders or members by <span className='blue-text underlined'><a href='/Contact'>clicking here</a></span>. There, you’ll find email addresses and phone numbers you can use to reach out to us. You’re also welcome to speak with someone in person after any of our services.</>)
+        question: "How can I contact the church?",
+        answer: (<>You can reach out to us by <span className='blue-text underlined'><a href='/Contact'>clicking here</a></span>. There, you’ll find email addresses and phone numbers you can use to reach out to us. You’re also welcome to speak with one of our leaders in person after any of our services.</>)
     },
     {
         question: "Where are you located and when do you gather?",
@@ -89,12 +89,12 @@ const AboutQuestions = language == "English" ? [
     },
     {
         question: "I don't speak Haitian Creole, can I still visit?",
-        answer: "Absolutely! We would be delighted to have you visit. While our church services are primarily conducted in Haitian Creole, we also incorporate French and English throughout the service. Additionally, we provide translation services for your convenience."
+        answer: "Absolutely! We would be delighted to have you visit even if you don’t speak Haitian Creole. While our church services are primarily conducted in Haitian Creole, we also incorporate French and English throughout the service. Additionally, we provide translation services for your convenience."
     }
 ] : [
     {
-        "question": "Kijan mwen ka kontakte lidè legliz la?",
-        "answer": (<>Ou ka kontakte lidè legliz la <span className='blue-text underlined'><a href='/Contact'>pa klike nan lyen sa</a></span>. La, w ap jwenn adrès, imèl, ak nimewo telefòn ou ka itilize pou kontakte nou.</>)
+        "question": "Kijan mwen ka kontakte legliz la?",
+        "answer": (<>Ou ka kontakte nou lè w klike sou <span className='blue-text underlined'><a href='/Contact'>lyen</a></span> sa. La, w ap jwenn adrès imel ak nimewo telefòn ou ka itilize pou kontakte nou. Ou ka pale ak youn nan lidè nou yo an pèsòn apre nenpòt nan sèvis nou yo.</>)
     },
     {
         "question": "Kote legliz la ye, epi ki lè nou rasanble?",
@@ -118,7 +118,7 @@ const AboutQuestions = language == "English" ? [
     },
     {
         "question": "Mwen pa pale kreyòl ayisyen, èske mwen ka toujou vin vizite?",
-        "answer": "Wi, nou tap renmen anpil pou ou ta vizite nou. Pandan ke sèvis legliz nou yo fèt an kreyòl ayisyen, nou entegre franse ak anglè nan sèvis la tou. Anplis de sa, nou bay sèvis tradiksyon pou konvenyans ou."
+        "answer": "Wi, nou tap renmen pou ou ta vizite nou menm si ou pa pale kreyol. Pandan ke sèvis legliz nou yo fèt an kreyòl ayisyen, nou entegre franse ak anglè nan sèvis la tou. Anplis de sa, nou bay sèvis tradiksyon pou konvenyans ou."
     }
 ]
 
