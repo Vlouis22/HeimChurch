@@ -92,7 +92,7 @@ const englishDatabase = {
         "Others": {
             "mainTitle": "Other Groups/Ministries at HEIM Church",
             "subtitle": "Find Your Community at HEIM Church",
-            "subtitle-description": "At HEIM Church, we offer a wide variety of ministries and groups designed to welcome everyone. No matter your stage in life or the skills you bring, there’s a place for you here. These groups are opportunities to build friendships, grow in faith, and make a difference. Whether you’re seeking support, meaningful connections, or ways to serve, you’ll find something just right for you. We invite you to join us and be a part of the vibrant HEIM Church community."
+            "subtitle-description": "At HEIM Church, we have a wide variety of ministries and groups designed to welcome everyone. No matter your stage in life or the skills you bring, there’s a place for you here. These groups are opportunities to build friendships, grow in faith, and make a difference. Whether you’re seeking support, meaningful connections, or ways to serve, you’ll find something just right for you. We invite you to join us and be a part of the vibrant HEIM Church community."
         },
     },
     "baptism": {
@@ -122,7 +122,7 @@ const englishDatabase = {
 const creoleDatabase = {
     "church-name": "Legliz HEIM",
     "navbar": ["Paj Prensipal", "Konsènan nou", "Ministè", "Gade An Dirèk", "Ofrann"],
-    "subnav": ["Jèn", "Fanm", "Timoun", "Lòt yo"],
+    "subnav": ["Jèn", "Fanm", "Timoun", "Group Adisyonèl"],
     "subnav-for-phone": ["Ministè Jèn", "Ministè Fanm", "Ministè Timoun", "Lòt Ministè"],
     "homepage": {
         "welcome-screen":{
@@ -164,16 +164,16 @@ const creoleDatabase = {
     "watchlive": {
         "prayer-button": "Demann Priyè",
         "upcoming": {
-            "title": "Sèvis an lign",
+            "title": "Sèvis an dirèk",
             "button-text": "Kalendriye"
         },
         "pastEvents": {
-            "title": "Gade Evènman Anrejistre yo",
+            "title": "Evènman Anrejistre yo",
             "errorMessage": "Yon erè ki pa te espere rive. Tanpri eseye ankò pita."
         }
     },
     "offering": {
-        "title": "Fason Pou Bay",
+        "title": "Fason Pou Bay Ofrann",
         "payment": {
             "description-1": "Non:",
             "description-2": "Nimewo:"

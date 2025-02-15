@@ -125,7 +125,7 @@ const AboutQuestions = language == "English" ? [
 const OtherGroupsQuestions = language == "English" ? [
     { 
         question: "What groups are available besides Youth, Kids, and Women's?",
-        answer: "In addition to these groups, we also have Men's Ministry, the Tech and Media Team, the Musicians' Group, the choir group, and the Worship Team."
+        answer: "In addition to these groups, we also have men's ministry, the choir group, and the worship team."
 
     },
     { 
@@ -146,12 +146,12 @@ const OtherGroupsQuestions = language == "English" ? [
     }
 ] : [
     { 
-        "question": "Ki gwoup ki disponib apre gwoup jèn yo, timoun yo ak gwoup fanm yo?",
-        "answer": "Anplis gwoup sa yo, nou genyen Ministè Gason, Ekip Teknoloji ak Media, Gwoup Mizisyen, ekip koral la ak Ekip Adorasyon an."
+        "question": "Ki gwoup ou ka entegre apre gwoup jèn yo, timoun yo ak gwoup fanm yo?",
+        "answer": "Anplis gwoup sa yo, nou genyen ministè gason, ekip koral la ak ekip adorasyon an."
     },
     { 
-        "question": "Èske mwen ka rantre nan plisye gwoup?",
-        "answer": "Wi, si ou gen plizyè talan oswa enterè, ou ka rantre nan plisye gwoup."
+        "question": "Èske mwen ka rantre nan plizye gwoup?",
+        "answer": "Wi, si ou gen plizyè talan oswa enterè, ou ka rantre nan plizye gwoup."
     },
     { 
         "question": "Èske mwen ka rantre nan yon gwoup si mwen pa batize?",
