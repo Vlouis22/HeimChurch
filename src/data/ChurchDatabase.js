@@ -190,21 +190,21 @@ const creoleDatabase = {
             "descriptionTitle1": "Konsènan jenès legliz HEIM",
             "description1": "Byenvini nan paj jèn legliz HEIM! Se la jèn nou yo ka rasanble pou grandi nan lafwa, pataje eksperyans, ak bati amitye pou tout lavi yo. Misyon nou se kreye yon espas kote jèn yo ka pwogrese nan relasyon yo ak Bondye, devlope amitye ki gen sans, epi fè yon diferans nan mond lan.",
             "descriptionTitle2": 'Objektif Nou',
-            "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou ap grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan group jèn nan. Nou planifye anpil aktivite spirityèl ak sosyal chak mwa epi nou dirijé sèvis legliz la chak dezyèm dimanch nan mwa.',
+            "description2": 'Objektif nou se pou ede ak ankouraje youn lòt pandan nou ap grandi ansanm nan lafwa. Nou swete sèvi Senyè a chak jou. Nenpòt moun ant 14 ak 29 an ka rantre nan group jèn nan. Nou planifye anpil aktivite spirityèl ak sosyal chak mwa epi nou dirije sèvis legliz la chak dezyèm dimanch nan mwa.',
             "descriptionTitle3":'Etid Biblik', 
             "description3":'Gwoup jèn nan rasanble chak Mèkredi apati 6:30 nan apremidi pou rive 8:15 nan apremidi pou yon tan kolektivite ak grandi kwayans spirityèl. Chak swa Etid Biblik gen ladan yon devosyon ki santre sou yon pati nan plan lekti a, ki ap dirije pa frè Sadrac Danjoint oswa youn nan manm gwoup nou an.'
         },
         "Womens": {
             "name": "Fanm",
             "descriptionTitle1":"Konsènan Ministè Fanm", 
-            "description1": "Ministè Fanm Legliz HEIM nan se yon gwoup aktif kote fanm yo apwofondi lafwa yo, fòme lyen solid, epi kontribye nan legliz la. Nan 3yèm dimanch nan chak mwa, yo dirijé sèvis adorasyon an. Ministè a ofri opòtinite pou grandi konesans spirityèl ak koneksyon, youn ede lòt nan difikilte lavi yo. Vini vin jwenn nou pandan n ap grandi nan Kris la epi youn sipòte lòt avèk lanmou ak inite."
+            "description1": "Ministè Fanm Legliz HEIM nan se yon gwoup aktif kote fanm yo apwofondi lafwa yo, fòme lyen solid, epi kontribye nan legliz la. Nan 3yèm dimanch nan chak mwa, yo dirije sèvis adorasyon an. Ministè a ofri opòtinite pou grandi konesans spirityèl ak koneksyon, youn ede lòt nan difikilte lavi yo. Vini vin jwenn nou pandan n ap grandi nan Kris la epi youn sipòte lòt avèk lanmou ak inite."
         },
         "Kids": {
             "name": "Timoun",
             "descriptionTitle1": "Konsènan Ministè Timoun",
-            "description1": "Nan Legliz HEIM, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal pou timoun ki gen laj 4 jiska 9 lanné, dirije pa enstriktè ki gen anpil eksperyans ak timoun. Sa pèmèt paran yo konsantre sou pwòp sèvis yo pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
+            "description1": "Nan Legliz HEIM, nou angaje pou ede timoun grandi nan lafwa yo nan yon anviwònman amizan ak an sekirite. Nou ofri yon sèvis espesyal pou timoun ki gen laj 4 jiska 9 lanne, dirije pa enstriktè ki gen anpil eksperyans ak timoun. Sa pèmèt paran yo konsantre sou pwòp sèvis yo pandan timoun yo ap jwi yon pwogram fèt espesyalman pou yo.",
             "descriptionTitle2": "Objektif Nou",
-            "description2": "Ministè Timoun nou an konsantre sou ede timoun aprann sou Bondye nan yon fason ki gen sans pou yo. Nou vle yo bati ammitye solid, dekouvri kijan pou li ak eksplore Bib la, epi aprann chante ki ede yo louwe Bondye. Pou fè tan yo amizan, nou kreye yon espas akeyan ki ranpli ak liv, jwèt, tablèt, ak anpil lòt aktivite amizan. Nan HEIM CHURCH, nou la pou ede chak timoun grandi nan lanmou pou Bondye pandan y ap pran plezi nan sa yo ap fè."
+            "description2": "Ministè Timoun nou an konsantre sou ede timoun aprann sou Bondye nan yon fason ki gen sans pou yo. Nou vle yo bati ammitye solid, dekouvri kijan pou li ak eksplore Bib la, epi aprann chante ki ede yo louwe Bondye. Pou fè tan yo amizan, nou kreye yon espas akeyan ki ranpli ak liv, jwèt, tablèt, ak anpil lòt aktivite amizan. Nan legliz HEIM, nou la pou ede chak timoun grandi nan lanmou pou Bondye pandan yap pran plezi nan sa yap fè a."
         },
         "Others": {
             "mainTitle": "Lòt Gwoup/Ministè Nan Legliz HEIM",

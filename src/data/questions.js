@@ -191,7 +191,7 @@ const KidsQuestions = language == "English" ? [
     },
     { 
         "question": "Èske gen yon laj maksimòm pou patisipe nan Ministè timoun yo?",
-        "answer": "Tout timoun soti nan laj 4 rive a 9 ane ka patisipe nan Ministè Timoun yo."
+        "answer": "Tout timoun soti nan laj 4 jiska 9 lanne ka patisipe nan ministè timoun yo."
     }
 ]
 
