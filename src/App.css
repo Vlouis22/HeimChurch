@@ -385,6 +385,10 @@ nav a.active-link {
 
 @media(max-width: 1024px){
 
+  .upcominglive-container-child{
+    max-width: 250px !important;
+  }
+
   .subnav-ministries{
       display: none;
   }
@@ -973,12 +977,18 @@ footer > div{
 }
 
 
-.upcominglive-container{
+.upcominglive-container {
   display: flex;
   width: 40%;
-  min-width:max-content;
+  min-width: max-content;
   justify-content: center;
-  padding: 1rem 3rem;
+  margin-left: auto; /* Centers horizontally */
+  margin-right: auto; /* Centers horizontally */
+  margin-top: 1.5rem;
+}
+
+.upcominglive-container-child {
+  max-width: 80%;
 }
 
 .upcominglive-container-child, .view-previous-lives{
@@ -1097,6 +1107,20 @@ footer > div{
   display: none;
 }
 
+.live-error{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.live-error-title{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 /* ---Calendar styling--- */
 
 .heim-church-calendar{
@@ -1687,6 +1711,10 @@ nav{
 
 .blue-corner{
   border: 2px solid var(--blue);
+}
+
+.red-corner{
+  border: 2px solid var(--red);
 }
 
 @keyframes fadeIn {
