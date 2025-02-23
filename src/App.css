@@ -446,6 +446,10 @@ nav a.active-link {
     width: 300px !important;
     height: 200px !important;
   }
+
+  .request-container:last-child{
+    margin-bottom: 60px;
+  }
   
   .about-us-container{
     max-width:fit-content;
@@ -1547,7 +1551,7 @@ form > button:active {
 }
 
 .white-background{
-  background-color: var(--white);
+  background-color: var(--white) !important;
 }
 
 .black-background{
@@ -1559,7 +1563,7 @@ form > button:active {
 }
 
 .grey-background{
-  background-color: var(--darkGrey);
+  background-color: var(--darkGrey) !important;
 }
 
 .light-grey-background{
@@ -1948,7 +1952,7 @@ nav{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(249, 249, 249, 0.8);
+  /* background-color: rgba(249, 249, 249, 0.8); */
   padding: 25px 0px 50px 0px;
 }
 
@@ -1957,5 +1961,5 @@ nav{
 }
 
 .special-underline {
-  border-bottom: 2px solid var(--blue);
+  border-bottom: 2px solid var(--black);
 }

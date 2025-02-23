@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import { database } from '../data/ChurchDatabase';
 import { data } from 'react-router-dom';
+import Map from '../components/Map';
 
 export default function Contact() {
 
@@ -46,21 +47,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className='map-container'>
-      <div 
-        style={{textAlign: 'center', fontSize: '38px', marginBottom: '1.2rem' }} 
-        className='blue-text bold special-underline'>
-        {database.contact.location}
-        </div>
-        <iframe
-          width="100%"
-          height="450"
-          frameborder="0"
-          referrerpolicy="no-referrer-when-downgrade"
-          src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_personal_api_k}&q=3540+Peachtree+Run+Dover+DE+19901`}
-          allowfullscreen>
-        </iframe>
-      </div>
+      <Map/>
       </div>
       <Footer />
     </>

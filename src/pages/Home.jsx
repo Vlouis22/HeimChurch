@@ -11,6 +11,7 @@ import churchvan from '../images/churchvan.jpg'
 import prayer_request from '../images/prayer_request.jpeg'
 import Footer from '../components/Footer'
 import { database } from '../data/ChurchDatabase'
+import Map from '../components/Map'
 
 const churchImageBackground = 'https://i.postimg.cc/nrJz4FrF/churchphoto1.jpg'
 
@@ -71,8 +72,9 @@ export default function Home() {
         
         <div className='home-pg3-container-1'>
           <Request title={database.homepage['container-5-title']} width='500px' height='275px' image={churchvan} buttonText={database.homepage['container-5-button-text']} to='Ride' alt='picture of a van'/>
-          <Request title={database.homepage['container-6-title']} buttonText={database.homepage['container-6-button-text']} to='Baptizing' alt='person praying'/>
+          <Request title={database.homepage['container-6-title']} buttonText={database.homepage['container-6-button-text']} to='Baptizing' alt='baptizing page'/>
         </div>
+      <Map backgroundColor='grey'/>
       </div>
       <Footer/>
     </div>
