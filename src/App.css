@@ -474,13 +474,14 @@ nav a.active-link {
   .smaller-footer-text-container {
     display: flex !important;
     flex-wrap: wrap !important; 
-    justify-content: center !important; 
+    justify-content:center !important; 
     align-items: center !important; 
     text-align: center !important;
     overflow: auto !important;
     height: auto !important; 
     flex-direction: column;
     margin-bottom: 5px !important;
+    width: max-content !important;
   }
   .smaller-footer-text-container > div{
     display: flex;
