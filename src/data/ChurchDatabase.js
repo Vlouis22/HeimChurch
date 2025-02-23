@@ -48,7 +48,8 @@ const englishDatabase = {
         "prayer-button": "Request Prayer",
         "upcoming": {
             "title": "Upcoming Live Streams",
-            "button-text": "VIEW CALENDAR"
+            "button-text": "VIEW CALENDAR",
+            "live-error-message": "Having trouble with the live stream? Watch on our YouTube page"
         },
         "pastEvents": {
             "title": "View Recorded Live Events",
@@ -165,7 +166,8 @@ const creoleDatabase = {
         "prayer-button": "Demann Priyè",
         "upcoming": {
             "title": "Sèvis an dirèk",
-            "button-text": "Kalendriye"
+            "button-text": "Kalendriye",
+            "live-error-message": "Èske w gen pwoblèm ak gade an dirèk? Gade sou paj YouTube nou an"
         },
         "pastEvents": {
             "title": "Evènman Anrejistre yo",

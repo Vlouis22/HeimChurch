@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { database } from '../data/ChurchDatabase';
 
 
 export default function LiveError() {
@@ -18,7 +19,7 @@ export default function LiveError() {
 
   return (
     <div className='live-error'>
-        <div className='live-error-title inter'>Having trouble with the live stream? Watch on our YouTube page.</div>
+        <div className='live-error-title inter bold'>{database.watchlive.upcoming['live-error-message']}</div>
         <div>
             <div
               onClick={handleClick}
