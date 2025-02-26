@@ -574,7 +574,10 @@ nav a.active-link {
     height: auto;
     max-height: max-content !important;
   }
-  
+
+  .all-rights-reserved{
+    font-size: smaller;
+  }
 }
 
 
@@ -627,6 +630,7 @@ footer {
   margin: 20px;
   align-items: center;
   padding: 0px 90px;
+  width: 100% !important;
 }
 
 .smaller-footer-text-container{
