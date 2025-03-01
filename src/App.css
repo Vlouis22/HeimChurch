@@ -576,7 +576,7 @@ nav a.active-link {
   }
 
   .all-rights-reserved{
-    font-size: smaller;
+    font-size: small;
   }
 }
 
@@ -1008,9 +1008,9 @@ footer > div{
   height: fit-content;
   gap: 1rem;
   width: 100%;
-  border-radius: 10px;
   align-items: center;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .view-previous-lives{
@@ -1119,11 +1119,12 @@ footer > div{
 .live-error{
   display: flex;
   flex-direction: column;
-  max-width: 400px;
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  padding: 10px;
+  border-top: 1.5rem solid var(--darkGrey);
+  width: inherit;
 }
 
 .live-error-title{
@@ -1910,36 +1911,6 @@ nav{
   color: #000; 
 }
 
-/* Language Selector <previous code for button>*/
-
-/* .language-selector-container{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 150px;
-  height: fit-content;
-  font-size: 12px;
-  margin-left: 1rem;
-}
-
-.english-button,.kreyol-button {
-  border-bottom: 1.5px solid black;
-  border-top: 1.5px solid black;
-  border-right: 1.5px solid black;
-  display: flex;
-  justify-content: center;
-  padding: 7px 0px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.english-button{
-  border-left: 1.5px solid black;
-}
-
-.selected-language{
-  background-color: var(--darkGrey);
-} */
-
 .droid-serif {
   font-family: "Droid Serif";
 }
@@ -1957,7 +1928,6 @@ nav{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* background-color: rgba(249, 249, 249, 0.8); */
   padding: 25px 0px 50px 0px;
 }
 

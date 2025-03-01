@@ -250,10 +250,8 @@ export default function Watchlive() {
 
       <div className='upcominglive-container'>
           <div className='upcominglive-container-child'>
-            {/* <div> */}
             <div className='inter bold'>{database.watchlive.upcoming.title}</div>
             <RegularButton color='white' bgcolor='blue' text={database.watchlive.upcoming['button-text']} width={135} height={54} to='Calendar'/>
-            {/* </div> */}
             <LiveError/>
             </div>
       </div>
