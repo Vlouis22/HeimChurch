@@ -31,7 +31,7 @@ export default function EventsContainer() {
       // If the event is a regular church service, additional related events will be created as needed.
       if(obj.eventName == "Church Service" && events){
         const eventsLength = events.length;
-        const eventsNeeded = 4 - eventsLength > 0 ? 4 - eventsLength : 0;
+        const eventsNeeded = 3 - eventsLength > 0 ? 3 - eventsLength : 0;
         const currentDate = new Date(obj.eventDate)
         updateDateToDatabase(obj, currentDate);
         regularEvents(events[i], currentDate, eventsNeeded)
